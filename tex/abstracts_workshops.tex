@@ -1,0 +1,296 @@
+\chapter{Workshops on Thursday, June 27}
+\begin{spacing}{1.0}
+
+%\descriptionWorkshop{ID}{room}{title}{online link}{abstract}{timetable}
+
+\newcommand{\descriptionWorkshop}[5]{
+\begingroup{}
+\vspace{8mm}
+  \section*{{\huge \textbf{#1}} #3}  
+
+%whether to add link or not::
+\ifthenelse{\equal{\targetoutput}{print}}{
+  \ifthenelse{\equal{#4}{}}{
+  
+  }{
+      workshop homepage\footnote{\url{#4}} 
+  }
+  \hfill {\bf {\large #2} }
+}{
+  \href{#4}{workshop homepage}
+  \hfill {\bf #2 }
+}
+\\*
+{#5}
+\endgroup{}
+}
+
+
+\newcommand{\descriptionLabTour}[5]{
+\begingroup{}
+\vspace{8mm}
+  \section*{{\huge \textbf{#1}} #3}  
+
+%whether to add link or not::
+\ifthenelse{\equal{\targetoutput}{print}}{
+  \ifthenelse{\equal{#4}{}}{
+  
+  }{
+      Lab homepage\footnote{\url{#4}} 
+  }
+  \hfill {\bf {\large #2} }
+}{
+  \href{#4}{Lab homepage}
+  \hfill {\bf #2 }
+}
+\\*
+{#5}
+\endgroup{}
+}
+
+
+
+\vspace*{-2.0cm}
+
+\descriptionWorkshop{01}{Thursday Morning, MAR 4.063}{Aerial Mobile Manipulation}{http://mysite.du.edu/~rvoyles/RSSwebsite.pdf}
+{
+The Osprey, a magnificent bird of prey that dives from undetectable heights to snatch fish from the water with its agile talons, is a master of aerial mobile manipulation. But the "snatch-and-go" is not representative of dexterous manipulation. The octopus, on the other hand, is one of the few known animals that manipulates while locomoting and does so while "flying" with great agility. Aerial mobile manipulation is a growing area of robotics research that endeavors to become the "octopus of the air" while starting out as an osprey. Capitalizing on the ubiquity of low cost and easy to fly UAVs, great strides have been made in a short time. A natural extension of the rebirth of interest in manipulation represented by the mobile manipulation community, aerial mobile manipulation addresses new challenges and overcomes new constraints not familiar to UGVs. But aerial mobile manipulation is still manipulation at heart, and manipulation requires careful attention to dynamics and collaboration which are sometimes overlooked in the practical process of defying gravity and mastering the snatch-and-go. This workshop proposes to bridge the theoretical and experimental by bringing together manipulation experts, UAV experts, real-time perception experts, and collaboration experts to present and discuss the current and future of aerial mobile manipulation.
+}
+
+\descriptionWorkshop{02}{Thursday Morning, MAR 0.003}{Sensitive Robotics}{http://users.wpi.edu/~etorresj/RSSSensitiveRobotics/}
+{
+New sensing technologies are allowing robots to be more aware of the interaction between their body and their environment. Such is the case for tactile sensors in arms and hands, MEMS air sensors in flying robots, and MEMS flow sensors in swimming robots. Processing these types of sensory input poses new challenges such as: modeling for large array of sensors, dealing with sparse information, representing sensor in reconfigurable structures like arms or wings. This workshop intends to bring people together from different areas of robotics that work with large
+arrays of sensors based on direct contact rather than light or other radiation, to discuss their different approaches.
+}
+
+
+
+
+\descriptionWorkshop{03}{Thursday, MAR 0.010}{Common Platforms in Robotic Manipulation}{http://www.willowgarage.com/coman13}
+{
+This workshop will focus on common hardware and software platforms for robotic manipulation. Participants will present work related to this theme, including open source hardware, software and simulation platforms that are being made available to the community. We will discuss results from research projects demonstrating the successful (or unsuccessful) use of common platforms for manipulation, including open source, commercial, or government-furnished equipment. Topics of interest also include the notion of benchmarking and comparing available hardware and software platforms for grasping and manipulation through shared experimental protocols and data.
+
+Our invited speakers will represent common platforms that have had a significant impact on robotic manipulation. In addition to including both hardware and software, we will aim to discuss the adoption and use of robotic platforms from both the point of view of the producer  and the user.
+}
+
+
+\descriptionWorkshop{04}{Thursday, MAR 0.015}{4th Workshop on Formal Methods for Robotics and Automation}{http://verifiablerobotics.com/RSS13/index.html}
+{
+How can we guarantee robots will never cause harm? How can we prove that complicated mechanical systems, controlled by computers and programmed by people will always behave as expected, under changing conditions and in a variety of uncertain environments?  How do we formalize what such behaviors are?
+
+Guaranteeing safety, predictability and reliability of robots is crucial for the assimilation of such systems into society, be it at home or in the workplace. While every robotics researcher working with or on a robot is aware of safety issues, only recently the robotics community has begun looking at ways to either formally prove or guarantee by design different behavioral properties such as safety and correctness. The results that will be presented in the workshop combine and extend ideas from automata theory, logic, model checking, hybrid systems and control and they pave the way toward creating robotic “formal methods” – a body of work that will ultimately result in provable correct robotic systems.
+
+This workshop brings together leading researchers in the field of robotics, together with top researchers from the formal methods and hybrid systems communities to discuss the state of the art, existing tools and challenges that must be addressed in order to create safe and reliable systems that can be proven to be correct, either by design or by verification. 
+}
+
+
+\descriptionWorkshop{05}{Thursday, MAR 0.016}{Inverse Optimal Control \& Robot Learning from Demonstration}{http://www.cs.uic.edu/Ziebart/IOCRLfD}
+{
+A proposed workshop in conjunction with Robotics: Science and Systems 2013. In many robotic domains, it is much easier to demonstrate appropriate behavior (through e.g., tele-operation, haptic feedback, or motion capture) than it is to program a controller to produce the same behavior. Driven by this observation, research in learning from demonstration and inverse optimal control has become increasingly popular in the last several years. This paradigm recasts reinforcement learning problems as supervised learning tasks, in which advances in machine learning can enable robots to learn the desired policy, utility, and/or dynamics of the robotic domain directly and efficiently from observed behavior. For example, inverse optimal control aims at identifying the unknown objective function or policy that produces a given solution of an optimal control problem. Input data can come from measurements related to the system’s state e.g. by motion capture, IMU or force plates. The identified function can then be used to 
+generate optimal motions for robots. An important goal of this workshop is to present and discuss the state of the art of solution methods for this challenging class of problems. 
+
+In this workshop, via a mix of invited talks, posters, and discussion, we seek to bring together experts in system identification, reinforcement learning, and inverse optimal control to explore the theoretical and applied aspects of learning from demonstration and inverse optimal control. We plan to discuss open problems, state-of-the-art solution methods, and interesting applications. 
+}
+
+\descriptionWorkshop{06}{Thursday, MAR 0.007}{Robotics Challenges and Vision Workshop}{http://compbio.cs.wayne.edu/robotics/rcv2013/}
+{
+Sponsored by the Computing Community Consortium (CCC) affiliated with the Computing Research Association (CRA), we are organizing a Challenges and Vision Workshop at RSS 2013. The solicited papers are expected to present challenges in the field and potential future directions. The main purpose of this workshop is promoting dialogue and brainstorming in the community to identify new research directions and underdeveloped areas. This workshop is part of a larger initiative fostered by the CCC to create vision for computing research through bringing special "Challenges and Visions" tracks to leading computer science research conferences. By design, we expect the submitted papers to be rather unconventional and potentially controversial to promote dialogue. To archive these discussions, the accepted papers will be published, and a summary of the discussed topics will be disseminated either in the form of a review article or a website. The CCC will sponsor three Best Paper Awards for our workshop, which will be 
+selected out of the accepted papers based on evaluations by the program committee and potentially votes from the audience.
+}
+
+
+
+\descriptionWorkshop{07}{Thursday, MAR 0.002}{4th Workshop on RGB-D: Advanced Reasoning with Depth Cameras}{http://www.cs.washington.edu/ai/Mobile_Robotics/rgbd-workshop-2013/}
+{
+The recent advances in RGB-D sensors, such as Kinect, have been transforming robotics research and applications. There have been a large number of research efforts in algorithms and application of RGB-D perception for enabling robots to operate in unstructured real-world environments. Some of the key challenges in this direction are to understand humans and their environments, which is key for robots to operate and perform various tasks in human environments. Our workshop welcomes high-quality work on all topics related to robotics and RGB-D. We will particularly promote and encourage contributions in the direction of applying RGB-D perception to understand human environments and activities, which enable robots to perform various tasks such as detection, navigation, manipulation and observation in human environments. 
+}
+
+
+\descriptionWorkshop{08}{Thursday, MAR 0.001}{2nd Workshop on Robots in Clutter: Preparing Robots for the Real World}{http://workshops.acin.tuwien.ac.at/clutter2013/}
+{
+ While recent advances in robotics tackle increasingly impressive problems, roboticists so far tend to shy away from specifically addressing many of the problems related to clutter. Vision for example faces the problem of segmenting task-relevant objects amidst clutter and occlusions. Unexpected changes of the dynamic scene pose challenges for maintaining valid and tractable scene representations for navigation. Domain knowledge in a cluttered environment must necessarily be incomplete, and action planning must be able to accommodate new, often uncertain information on the fly. Manipulation cannot expect precise pose knowledge of all objects in a pile, let alone all contact relations. Human robot interaction in crowded scenes needs to keep track of various strands of dialogue and deal with intermittent and sporadic user involvement. Finally, what is meant by "robust to clutter" is difficult to define and adequate benchmarks are still missing.
+ 
+All these problems, however, will become increasingly manifest as robots move into unstructured domestic, industrial or outdoor settings. Following in the footsteps of the first Workshop on Robots in Clutter held at RSS 2012, this workshop brings together researchers from different robotics domains to discuss experience with and ideas for handling various problems induced by clutter, and to advance theoretically founded and system-wide approaches of handling clutter, but as a requirement when designing algorithms and systems.
+
+To establish problems and methods related to clutter as a distinct and recognizable topic within the community we will pursue the publication of selected workshop contributions as a special journal issue. We will furthermore use the outcome of the discussions at the workshop to formulate a white paper on the topic and to establish a working group on robots in clutter.
+}
+
+
+\descriptionWorkshop{09}{Thursday, MAR 0.011}{Active Learning in Robotics: Exploration, Curiosity, and Interaction}{https://webdiis.unizar.es/~montesan/web/index.php/rss2013wsactivelearning}
+{
+Applications of robots are expanding at a fast rate and are expected to operate in less controllable and harder to model domains. Learning and adaptation becomes essential to deploy robots that continuously interact with the environment, acquire new data during operation and use them to improve its performance by developing new skills or improving and adapting its models.
+
+How should a robot acquire and use this stream of data? How can it close the action-perception loop to efficiently learn models and acquire skills? Researchers in robotics, statistics and machine learning have answered these questions from different perspectives and setups: active learning, submodular optimization, exploration strategies, multi-armed bandits among many others. All such approaches provide ways for the robot to choose better data to learn, reducing the time and energy used while at the same time improving generalization capabilities.
+
+The goal of this workshop is to show how formalisms developed in different communities can be applied in a multidisciplinary context as it is robotics research. It will bring together researchers to build bridges between these different perspectives and to exchange ideas about representations and methods for active learning in robotics. In addition to the classical exploration problem, the workshop will also explore connections with new trends such as using intrinsic motivation to model curiosity and drive exploration towards the acquisition of unknown skills or the development of active strategies for human-robot interaction in the context of co-working or learning from a human teacher. 
+}
+
+
+\descriptionWorkshop{10}{Thursday, MAR 0.017}{From Experience to Concepts and Back}{http://i61www.ira.uka.de/users/asfour/Workshop-RSS2013/}
+{
+Situated agents must be able to rapidly create new concepts and react to unanticipated situations in the light of previously acquired knowledge by making generative use of experience utilizing predictive processes. This process is largely driven by internal models based on prior experience. Such agents must also be able to help and learn from others by sharing these generative, experience based theories through teaching and interaction.
+
+The goal of the workshop is to bring together theoreticians and practitioners of robotics who are attempting to develop methods to bridge the gap from raw sensorimotor data to abstract conceptualizations of experience and to then exploit those concepts to guide robot behavior. 
+}
+
+
+
+
+\descriptionWorkshop{11}{Thursday, MAR 0.008}{Combined Robot Motion Planning and AI Planning for Practical Applications}{http://faculty.cua.edu/plaku/CombinedPlanningRoboticsAI2013RSSws.html}
+{
+Planning plays a crucial role as robots are deployed into less and less structured environments and are expected to complete sophisticated tasks autonomously. The objective of this workshop is to bring together researchers from Robotics and AI communities, who have generally approached the planning problem from very different perspectives. On the one hand, AI has emphasized symbolic abstractions to allow for sophisticated tasks composed of discrete sub-tasks. On the other hand, robotics has emphasized the continuous aspects of planning to compute feasible motions. This workshop will discuss current progress and open challenges in unifying these approaches with an emphasis on both practical applications and theoretical issues. The workshop will include invited speakers and presentations from authors of accepted papers. It follows up on successful workshops at AAAI 2010, ICAPS 2011, ICAPS 2012, ICRA 2013 on bridging task and motion planning.
+}
+
+
+
+\descriptionWorkshop{12}{Thursday Afternoon, MAR 4.065}{Proposals for experimental protocols for Robotics Research}{http://www.heronrobots.com/EuronGEMSig/gem-sig-events/proposals-for-experimental-protocols-rr}
+{
+This workshop aims to contribute to define viable procedures for the replication of robotics research results and the best practice to conduct experiments. As part of the experimental protocols we include the procedures, data, code and hardware description. In the past years a number of ideas on the topic have been proposed. The meeting will consist of a guided discussion on the alternatives and will try to reach a consensus on how to conduct significant experiments and make them replicable. We will invite some of the former participants that proposed the most promising ideas and results in order to contribute with methodological proposals and practical examples. We will look for novel concepts by means of a peer-reviewed open call. The workshop will provide a few examples of replicable experiments which will be made publicly available.
+
+In recent years the interest in experimental methodologies increased dramatically within the robotics community, both from researchers, aiming at more grounded and fast research advancement, and from public funding agencies, according to the idea that good experimental activities could reduce the gap between research and industrial applications.
+
+We believe that at this point we have mainly to agree on a number of conventions, on data set, on code identification or sharing procedure, on hardware identification or open sourcing, experimental ‘protocols’ etc.,   to facilitate result exchange and comparison.
+
+The best contributions will be invited to submit to a refereed edited book with extended materials to allow replication.
+}
+
+
+
+\descriptionWorkshop{13}{Thursday Afternoon, MAR 0.009}{Robot Design and Control: Advanced Robot Motion}{http://robotics.itee.uq.edu.au/wiki/pmwiki.php?n=Site.RSS2013RDC}
+{
+Interesting robots make for interesting control and interesting systems. Fast compliant robots with many degrees of freedom are central to having robotic systems that can interact with the world naturally in the way we do.
+
+Design and control are integral for such dynamic robotic systems. As a multi-disciplinary field of study, the diverse background can seem daunting and the methods of operation complex. By centering presentations and tutorial content around a forum consisting of both industrial and academic experts, this workshop will allow for an open discussion of the issues and complicating factors of both the hardware design, motion planning, optimization, and engineering methods in this field. Furthering the goal of how one approach design and control together to make robots "run" fast and stably so as to make them valuable. 
+}
+
+
+
+\descriptionWorkshop{14}{Thursday and Friday, MAR 4.064}{Robotic Exploration, Monitoring,  and Information Collection: Nonparametric Modeling,\\Information-based Control, and Planning under Uncertainty}{http://sertac.scripts.mit.edu/rssworkshop/}
+{
+A fundamental problem in robotics is efficient exploration and monitoring in uncertain environments. High-impact applications include aerial surveillance, ocean monitoring, urban search and rescue, space exploration, robotic surgery, and manipulation planning. Progress in this area requires solving three major sub-problems: (1) modeling the environment to maximize the accuracy of predictions based on limited information, (2) controlling a robot so that its motion maximally reduces its uncertainty about the environment, and (3) planning a motion for a robot to accomplish a specified task in an uncertain environment. These three problems are intimately linked, but research in these topic areas has largely proceeded independently. Following the success of our workshop on a subset of these topics at RSS12, this expanded workshop will bring together leading researchers in motion planning, information-based control, and nonparametric modeling to fuel an exchange of ideas between these diverse communities.
+}
+
+
+\vspace{2cm}
+\descriptionLabTour{Lab Tour}{Thursday 12:30--13:30,MAR 5.065}{Robotics and Biology Lab}{http://www.robotics.tu-berlin.de/}
+{
+The organizer of this year's RSS open their lab doors during lunch break on Thursday.  We present our research fields ranging from the analysis of human grasping, design of soft hands, and learning by interacting with the environment to the challenges of predicting protein structure~---~the microscopic machines within our cells. 
+}
+
+
+
+
+
+
+\chapter{Workshops on Friday, June 28}
+
+\vspace*{-2.0cm}
+
+
+\descriptionWorkshop{14}{Thursday and Friday, MAR 4.064}{Robotic Exploration, Monitoring,  and Information Collection: 
+Nonparametric Modeling,\\Information-based Control, and Planning under Uncertainty}{http://sertac.scripts.mit.edu/rssworkshop/}
+{
+Continued from Thursday
+}
+
+
+\descriptionWorkshop{15}{Friday Morning, MAR 4.063}{Workshop on Multi-View Geometry in Robotics}{http://www.cc.gatech.edu/events/mvigro/}
+{
+Multiple view geometry plays a key role in many areas in robotics with novel approaches being actively developed in recent years. Ongoing research includes different fields such as visual servoing and control, surveillance, indoor and outdoor vision-aided navigation, simultaneous localization and mapping (SLAM), cooperative localization, detection of moving objects and operation in dynamic environments. Next-generation robotics are required to have a higher level of autonomy and robustness, operating over long periods of time and in a wide spectrum of scenarios whose nature changes from one environment to another (e.g. ground, underwater, aerial, space). Harnessing the full potential of multiple view geometry can address these challenges, advancing the state of the art.  This workshop aims to bring forward the latest breakthroughs and cutting edge research on multiple view geometry in robotics, as well as discuss challenges and future research directions. 
+}
+
+
+
+\descriptionWorkshop{16}{Friday, MAR 0.001}{Resource-Efficient Integration of Perception, Control and Navigation for Micro Air Vehicles
+}{http://rss2013_uav.visual-navigation.com/}
+{
+ The wide availability of small and cheap flying platforms (e.g. quadrotors) in combination with advances in embedded systems, high density batteries and lightweight sensors has made small UAS very attractive for a wide range of applications like area surveillance, asset inspection, mapping or search and rescue. The compact size and small weight also make them easier to deploy, both due to their high portability and because obtaining an operational permit is typically easier for such systems.
+ 
+A disadvantage of using compact, low-power sensors is often their slower speed and lower accuracy making them unsuitable for direct capture and control of high dynamic motion. On the other hand, the inherent instability of some systems (e.g. helicopters or quadrotors), their limited on-board resources and payload, their multi-DOF design and the uncertain and dynamic environment they operate in, present unique challenges both in achieving robust low level control and in implementing higher level functions, like navigation, exploration or object tracking. These challenges can be exacerbated in search and rescue missions where the lack of communications infrastructure and the need for beyond-line-of-sight flying creates the need for operating at a higher degree of autonomy.
+
+The perceptual evaluation of high dynamic motion can be improved through fusion of proprioceptive (e.g. inertial) and exteroceptive (e.g. vision) sensors, through the use of internal environment representations and/or through the coordinated use of multiple platforms. Perception and action need to be strongly coupled to allow long-term stabilization in the face of challenging platform dynamics, external disturbances, sensor uncertainty and on-board failures. The same is true between perception and navigation/planning to achieve both the necessary reactive behaviors (e.g. for obstacle avoidance or for formation keeping), as well as the execution of goal-oriented tasks.
+
+The goal of the workshop is to collect current state-of-the art solutions to the aforementioned issues. Our key interests lie in the latest developments in the area of robust integration of perception with control and planning of the highly dynamic motion of resource-limited flying platforms. We are also interested in new developments in the field of internal environment representation and collaborative approaches in perception and exploration.
+
+After the great success of the last RSS workshop, we aim to bring together again researchers working on aspects of sensor data processing and fusion for robust navigation of flying platforms. The goal is to provide an opportunity to compare and discuss the current state-of-the-art approaches and solutions to the aforementioned problems. We encourage video and live presentations of the approaches during the conference. We aim to organize a panel at the end of the workshop to discuss current challenges in the field and to foster collaborations between the research groups.
+}
+
+
+
+\descriptionWorkshop{17}{Friday, MAR 0.002}{Hierarchical and Structured Learning for Robotics}{http://www.ias.tu-darmstadt.de/Workshops/RSS2013}
+{
+Learning robot control policies in complex real-world environments is a major challenge for machine learning due to the inherent high dimensionality, partial observability and the high costs of data generation. Treating robot learning as a monolithic machine problem and employing off-the-shelf approaches is unrealistic at best. However, the physical world can yield important insights into the inherent structure of control policies, state or action spaces and reward functions. For example, many robot motor tasks are also hierarchically structured decision tasks. For example, a tennis playing robot has to combine different striking movements sequentially. During locomotion there are at least three behaviors simultaneously active as a robot has to combine its gait generation with foot placement and balance control. First domain-driven skill learning approaches have already yielded impressive recent successes by incorporating such structural insights into the learning process. Hence, a promising route to more 
+scalable policy learning approaches includes the automatic exploitation of the environment's structure, resulting in new structured learning approaches for robot control.
+
+Structured and hierarchical learning has been an important trend in machine learning in recent years. In robotics, researchers often ended up naturally at well-structured hierarchical policies based on discrete-continuous partitions (e.g., define local movement generators as well as a prioritized operational space control for combining them) with nested control loops at several different speeds (i.e., fast control loops for smooth and accurate movement achievement, slower loops for model-predictive planning). Furthermore, evidence from the field cognitive sciences indicate that humans also heavily exploit such structures and hierarchies. Although such structures have been found in human motor control, are favored in robot control and exist in machine learning, the connections between these fields have not been well explored. Transferring insights from structured prediction methods, which make use of the inherent correlation in the data, to hierarchical robot skill learning may be a crucial step. General 
+approaches for bringing structured policies, states, actions and rewards into robot reinforcement learning may well be the key to tackle many challenges of real-world robot environments and an important step to the vision of intelligent autonomous robots which can learn rich and versatile sets of motor skills. This workshop aims to reveal how complex motor skills typically exhibit structures that can be exploited for learning reward functions and to find structure in the state or action space. 
+}
+
+
+
+\descriptionWorkshop{18}{Friday, MAR 0.007}{Programming with constraints: Combining high-level action specification and low-level motion execution}{http://robohow.eu/meetings/rss-2013-constraints-workshop}
+{
+Action instructions like ``put the screw inside the nut (to tighten it)'', ``grasp the shopping basket (to carry it around)” or ``push the spatula under the pancake (to flip it)” all describe the desired effects of motions of robot-controlled objects. From an artificial intelligence perspective, desired and undesired interactions can be modeled as symbolic constraints in the object-action-effect space. Such action formalism do, however, abstract away from how actions are performed, e.g. chosen movement parameters. This, in turn, leads to action effects which are non-deterministic and inexplicable for the high-level system.
+
+Numerous research endeavors in the field of robot motion control, on the other hand, have converged towards specifying robot motions using geometric and dynamic constraints. The proposed solutions often provide a methodology for translating a set of such constraints into corresponding control laws. By using these low-level, constraint-based, motion descriptions, researchers have found elegant formalizations to put a screw inside a nut, or a spatula under a pancake. These approaches, however, are often agnostic to the involved objects, performed actions and desired effects.
+
+This workshop focuses on the opportunities which arise when building systems combining technologies from both of the above fields. We identify and discuss problems emerging in the interplay of high-level action specification and low-level motion execution. More specifically, we investigate which properties an interlingua (i.e. a Domain Specific Language) requires to allow expression and exchange of available and necessary information between the two sub-systems. In particular, we examine how constraint-based task description can bridge high-level action specification and low-level motion execution.
+
+}
+
+
+
+\descriptionWorkshop{19}{Friday, MAR 0.008}{Towards Active Lower Limb Prosthetic Systems: Design Issues and Solutions}{http://www.prothetik.tu-darmstadt.de/forschungsprojekte_prothetik/workshop__towards_active_lower_limb_prosthetic_systems/towards_active_lower_limb_prosthetic_systems.de.jsp}
+{
+Within the last decades, lower limb prostheses developed from passive mechanisms to adaptive mechatronic systems. Contemporary, such prostheses evolve to robotic systems providing powered locomotion support by drives. With this, various new questions arise: Technically, developers are confronted with designing mechatronic subsystems like drive trains and kinematics as well as algorithms for control and the gait recognition.
+
+Further, system integration allows for improving function and feasibility for mobile application. Simultaneously, human factors show significant impact on prosthetic development. As prostheses are not only used by people, but aim at replacing lost parts of amputees’ bodies, their acceptance and integration to the body scheme are important design factors.
+
+Beyond this, biomechanical and medical constraints have to be considered to avoid injuries. The biomechanical role model can also deliver inspiration for system design. Finally, economic factors like production costs have to be considered for practical realization.
+}
+
+
+
+\descriptionWorkshop{20}{Friday Morning, MAR 0.010}{Robotics for Environmental Monitoring
+}{http://www2.isr.uc.pt/~embedded/events/WREM/RSS2013/Home.html}
+{
+This one day workshop at RSS 2013 will gather experts across multiple communities to present research conducted by robots to address practical problems in environmental monitoring applications. A goal of this workshop is to bring together researchers working on energy and communication-constrained control problems in the context of environmental monitoring, to share and explore compelling real-world applications, and to assess how advances within network-based control can project onto operational systems. The primary content of the workshop will be two invited talks, presentations from selected submitted papers, and two open discussion sessions. Presentations will cover a broad range of topics linked to robotic monitoring, including but not limited to: AI, aquatic robotics (both underwater and surface systems), ground and aerial field robotics, networked and multi-robot systems, environmental sensing, sensor networks, limited communications for dynamic tasks, telemetry in environmental monitoring 
+applications, energy harvesting, environmentally constrained path planning, multi-scale sampling, and coordination of heterogeneous systems. Design and implementation of robotic systems for environmental research presents significant challenges to robotics researchers. Static sensor networks have a major role in environmental monitoring, but in the air and in the ocean, observing systems are increasingly likely to include groups of widely-spaced mobile agents. Additionally, vehicles must be able to traverse through complex and unstructured environments easily with minimal energy consumption and limited communication. Optimally, a team of robots should be able to exchange information and cooperate with other agents which are necessary to cover large areas. Thus the motivation to study cooperative teams and coordination for large-scale sampling missions.
+}
+
+
+\descriptionWorkshop{21}{Friday, MAR 0.011}{Manipulation with Uncertain Models}{http://personalrobotics.ri.cmu.edu/RSS2013Uncertainty/}
+{
+The goal of this workshop is to look at recent advances in real-world manipulation. Manipulation under uncertainty requires new capabilities in perception, planning, and motion control. More importantly, these capabilities must be integrated together into a single working system, capable of handling uncertainty in each component. The focus will be on research involving complete systems and a strong experimental component. We would also like to emphasize the importance of building a unified framework to address uncertainty in manipulation. 
+}
+
+
+\descriptionWorkshop{22}{Friday, MAR 0.016}{Human Robot Collaboration}{http://people.csail.mit.edu/boerkoel/hrc2013/}
+{
+What would it take to introduce a robot into a human team, in an environment designed for humans? Sharing a workspace with humans and augmenting them to accomplish a task more effectively raises several important challenges. Humans must be able to effectively program the robot, as well as help it recover and learn from errors. The robot must be safe and intuitive, both through its hardware and through the way it acts and moves. It must not only possess or learn a model of the task at hand, but also coordinate its actions with those of its teammates within that model. In order to achieve this coordination, the robot must communicate relentlessly and via numerous channels (e.g. speech, gaze, motion). 
+}
+
+
+
+\descriptionWorkshop{23}{Friday, MAR 0.017}{What did we learn from the simulation phase of the DARPA Robotics Challenge}{http://www.cs.washington.edu/DRCWorkshop/}
+{
+The ongoing DARPA Robotics Challenge (DRC) aims to solve some of the most challenging problems in robotics within the context of disaster response. These include walking on arbitrary terrain, getting in and out of vehicles, driving them, manipulating flexible objects. Remote assistance from a human operator is limited due to an unreliable link. Thus the robot must have considerable autonomy which is beyond the state-of-the-art in Robotics. The participating teams have until June 2013 to advance the state-of-the-art enough to make this possible, at least in simulation. We do not presently know what new ideas will emerge from this effort, but given the scale and the interest it has generated, we believe that there will be many exciting developments. The workshop will provide a venue for presenting this ongoing work, as well as discussing the most promising approaches that can be applied to physical robots in the subsequent phase of the DRC. The topics will include advances in perception, estimation, control 
+and human-computer interaction. Since all teams will be tested in identical scenarios (the week before RSS), we will have a unique opportunity to compare competing ideas side-by-side and see how well they scale. More information about the DRC program can be found at: http://theroboticschallenge.org/
+}
+
+
+%\clearpage %nicefy things
+\descriptionWorkshop{24}{Friday Afternoon, MAR 4.065}{Scientific and Structural Achievements from Academia-Industry Projects in
+ECHORD}{http://echord.info/wikis/website/rss-2013-proposed-workshop}
+{
+Three years after the beginning of the largest project in European robotics, the ECHORD workshop will reflect and project the exchange of knowledge and experience between academic researchers and practitioners.
+
+One of the goals of modern robotics research is to make robotic technology directly usable within application contexts. For this purpose the flexibility, autonomy, safety and cooperation skills of such systems need to be improved further. In order of making this short term goal possible and to secure its long term sustainability, knowledge transfer between robot manufacturers and research institutions needs to be fostered and strengthened. Three years ago the ECHORD (European Clearing House for Open Robotics Development) started under a European Union FP7-ICT grant as a pioneering means of supporting the aforementioned goals. More than 50 sub-projects were carried out. Now, toward the end of the project it seems useful to reflect both on the scientific achievements within the area as well as the general topic of industry-academia collaboration.
+
+The vital collaboration between European robot manufacturers and research institutions within ECHORD has resulted in significant innovations in many aspects of the robotic field. A systematic overview of the ECHORD experiments will be given by the coordinating partners of ECHORD, accompanied by selected contributions from ECHORD experiments. Overall this workshop will focus on results of such collaborative endeavors as well as meta-analyses which pertain to the project itself. The workshop will also include invited speakers and will thus provide an opportunity for looking ahead toward industry-academia partnerships beyond ECHORD.
+}
+
+\clearpage
+
+
+\end{spacing}

@@ -1,0 +1,351 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Technical Program}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-15mm}
+\phantomsection \section{General Schedule}
+
+
+% Define event types
+\defineevent{invited_talk}  {0.21}{0.5} {0.16}{1.0}{1.0}{1.0}
+\defineevent{oralsession}   {0.0} {0.28}{1.0} {1.0}{1.0}{1.0}
+\defineevent{workshop}      {0.8} {0.3} {0.15} {1.0}{1.0}{1.0}
+\defineevent{poster_presentation} {1.0} {0.4} {0.2} {1.0}{1.0}{1.0}
+\defineevent{event}   {0.75} {0.75} {1.0} {0.0}{0.0}{0.0}
+\defineevent{break}   {1.0} {1.0} {1.0} {0.0}{0.0}{0.0}
+
+
+%TODO: Add place of the coffee breaks!
+\newcommand{\WorkshopsSchedule}[2]{
+  \event #1 {0900} {1030} {09:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
+  \event #1 {1030} {1100} {10:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}MAR}     {break}
+  \event #1 {1100} {1230} {11:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
+  %\event #1 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {MAR}                   {break}
+  \event #1 {1400} {1530} {14:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
+  \event #1 {1530} {1600} {15:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}MAR}     {break}
+  \event #1 {1600} {1730} {16:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
+}
+
+% Define the layout of your time tables
+\setslotsize{3cm}{1.3mm}
+\setslotcount {5} {168}
+\settopheight{5}
+\settextframe{1.5mm}
+\setbottomspace{0pt}
+% Start the time table
+\begin{timetable}
+  %define times to show:
+  \hours{8}{5}{0}
+  \englishdays{1}
+  %monday
+  \event 1 {0830} {0900} {08:45 Welcome}                      {\vspace{1.5mm}15~min}          {\vspace{1.5mm}H~0104}        {event}
+  \event 1 {0900} {0955} {09:00 Alyosha Ephros}               {55~min}                        {H~0104}                      {invited_talk}
+  \event 1 {0955} {1030} {09:55 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 1 {1030} {1100} {10:30 Break}                        {\vspace{1.5mm}30~min}          {\vspace{1.5mm}Lichthof}      {break}
+  \event 1 {1100} {1200} {11:00 Talks}                        {\vspace{-0.5em}1~long + 5~short\\60~min}{H~0104}             {oralsession}
+  \event 1 {1200} {1330} {12:00 Lunch Break}                  {90~min}                        {}                            {break}
+  \event 1 {1330} {1425} {13:30 Raffaello D'Andrea}           {55~min}                        {H~0104}                      {invited_talk}
+  \event 1 {1425} {1500} {14:25 Short Talks} 		          {\vspace{1.5mm}35~min}          {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 1 {1500} {1530} {15:00 Break}                        {\vspace{1.5mm}30 min}          {\vspace{1.5mm}Lichthof}      {break}
+  \event 1 {1530} {1600} {15:30 Spotlight}  			      {\vspace{1.5mm}30~min}          {\vspace{1.5mm}H~0104}        {invited_talk}
+  \event 1 {1600} {1630} {16:00 Short Talks}                  {\vspace{1.5mm}30~min}          {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 1 {1630} {1700} {16:30 Spotlight}  	              {\vspace{1.5mm}30~min}          {\vspace{1.5mm}H~0104}        {invited_talk}
+  \event 1 {1700} {2200} {17:00\\[0.2em]Opening\\\vspace{0.3em}Interactive Presentation\\\vspace{4.5em}{\footnotesize Interactive Food at 19:00}}      
+                                                              {5~h}                            {Lichthof}                      {poster_presentation}
+
+
+  %tuesday
+  \event 2 {0900} {0955} {09:00 Rodney Brooks}                {55~min}                        {H~0104}                      {invited_talk}
+  \event 2 {0955} {1030} {09:55 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 2 {1030} {1100} {10:30 Break}                        {\vspace{1.5mm}30~min}          {\vspace{1.5mm}Lichthof}      {break}
+  \event 2 {1100} {1200} {11:00 Talks}                        {\vspace{-0.5em}1 long + 6 short\\60~min}{H~0104}             {oralsession}
+  \event 2 {1200} {1330} {12:00\\[0.2em]Lunch Break}          {90~min}                        {}                            {break}
+  \event 2 {1330} {1500} {13:30 Talks}                        {\vspace{-0.5em}2 long + 5 short\\90~min}{H~0104}             {oralsession}
+  \event 2 {1500} {1530} {\vspace{-1.5mm}15:00 Break}         {\vspace{1.5mm}30 min}          {\vspace{1.5mm}Lichthof}      {break}
+  \event 2 {1530} {1800} {15:30\\\vspace{0.3em}Interactive Presentation}{2.5~h}               {Lichthof}                      {poster_presentation}
+  \event 2 {2000} {2200} {20:00\\\vspace{0.3em}Banquet}       {2~h}                              {\vspace{-0.7em}at Kater Holzig}     {event}
+
+
+  %wednesday
+  \event 3 {0900} {0955} {09:00 Julia Parrish}                        {55~min}                           {H~0104}                  {invited_talk}
+  \event 3 {0955} {1030} {09:55 Short Talks}                          {\vspace{1.5mm}35~min}             {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 3 {1030} {1100} {10:30 Break}                                {\vspace{1.5mm}30 min}             {\vspace{1.5mm}Lichthof}  {break}
+  \event 3 {1100} {1200} {11:00 Talks}                        {\vspace{-0.5em}1 long + 6 short\\60~min}{H~0104}             {oralsession}
+  \event 3 {1200} {1330} {12:00\\[0.2em]Lunch Break}                  {90~min}                           {}                        {break}
+  \event 3 {1330} {1425} {13:30\\Neil Burgess}                        {55~min}                           {H~0104}                   {invited_talk}
+  \event 3 {1425} {1500} {14:25 Short Talks} 		                  {\vspace{1.5mm}35~min}             {\vspace{1.5mm}H~0104}        {oralsession}
+  \event 3 {1500} {1530} {\vspace{-1.5mm}15:00 Break}                 {\vspace{1.5mm}25~min}             {\vspace{1.5mm}Lichthof}  {break}
+  \event 3 {1530} {1630} {15:30 Open Forum}                           {\vspace{1.5mm}45~min}             {\vspace{1.5mm}H~0104}    {event}
+  \event 3 {1630} {1800} {16:00 Interactive Presentation}             {4.5~h }                           {Lichthof}                  {poster_presentation}
+  \event 3 {1800} {1830} {18:00 Closing}                              {\vspace{1.5mm}30~min}             {\vspace{1.5mm}H~0104}    {event}
+  \event 3 {1830} {2100} {Interactive Presentation cont'd\\\vspace{1em}{\footnotesize Interactive Food at 18:30}}      {4.5~h}                            {\vspace{1.5mm}Lichthof}    {poster_presentation}
+
+
+  %thursday, workshop day 1
+  \WorkshopsSchedule{4}{1-14}
+  \event 4 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break\\[0.5em]\small Lab Tour}         {90~min}                {MAR}                   {break}
+  %friday, workshop day 2
+  \WorkshopsSchedule{5}{14-24}
+  \event 5 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {MAR}                   {break}
+
+\end{timetable}
+
+
+
+
+
+
+%%%%%%%%%%general config for the tables:
+\begingroup %limit the changes to the schedule tables
+\sffamily
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{4pt}
+
+%how to format each talk:
+\ifthenelse{\equal{\targetoutput}{print}}{      \newcommand{\addpaper}[5]{ #3: #1                        & #2     & #4 }  }{}
+\ifthenelse{\equal{\targetoutput}{usbstick}}{   
+   \newcommand{\addpaper}[5]{ 
+       \href{proceedings/#3.pdf}{#1}
+       \ifthenelse{\equal{#5}{}}{}{
+          (\href{proceedings/supplementary/#5}{supplementary})
+       }
+       & #2     
+       & #4
+   }  
+}{}
+\ifthenelse{\equal{\targetoutput}{online}}{     \newcommand{\addpaper}[4]{ \href{http://roboticsproceedings.org/rss09/#3.pdf}{#1} & #2 & 4} }{}
+
+
+\newcommand{\addtalk}[2]{ #1 & #2 &}
+\newcommand{\timeemph}[1]{\hline \\[-4mm] {\Large#1}}
+\newcommand{\begindailyscheduletabular}{ %config of the schedule tabular
+    \begin{tabular}{>{\small}r>{\footnotesize}r>{\small}p{14.5cm}>{\footnotesize \raggedright}p{6cm}>{\small}r}
+    {\footnotesize Start}&{\footnotesize Length}& & \multicolumn{2}{r}{\footnotesize Interactive session ID}\\
+
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\begin{landscape}
+\phantomsection \section{Monday, June 24}
+\begindailyscheduletabular
+\timeemph{08:45} & 15 & Welcome &&\\
+\timeemph{09:00} & 45+10& \addtalk{Invited Talk: Her Majesty the Data}{Alyosha Ephros}\\
+09:55&5+2& \addpaper{Multi-Hypothesis Social Grouping and Tracking for Mobile Robots}{Matthias Luber, Kai Arras}{p01}{01}{}\\
+&5+2& \addpaper{Audio based Relative Positioning System for a Swarm of Micro Air Vehicles}{Meysam Basiri, et al.}{p02}{02}{}\\%Felix Schill, Dario Floreano, Pedro Lima
+&5+2& \addpaper{High Altitude Stereo Visual Odometry}{Michael Warren, Ben Upcroft}{p03}{03}{}\\
+&5+2& \addpaper{Learning Semantic Maps from Natural Language Descriptions}{Matt Walter, et al.}{p04}{04}{}\\%Sachithra Hemachandra, Bianca Homberg, Stefanie Tellex, Seth Teller
+&5+2& \addpaper{Toward Interactive Grounded Language Acquisition}{Thomas Kollar, et al.}{p05}{05}{}\\%Jayant Krishnamurthy, Grant Strimel, Manuela Veloso
+\timeemph{10:30} &30 &Coffee Break & &\\
+\timeemph{11:00}&20+5&\addpaper{Anticipating Human Activities using Object Affordances for Reactive Robotic Response}{Hema Koppula, Ashutosh Saxena}{p06}{06}{}\\
+11:25&5+2& \addpaper{Online Coverage by a Tethered Autonomous Mobile Robot in Planar Unknown Environments}{Iddo Shnaps, Elon Rimon}{p07}{07}{p07_supplementary.mp4}\\
+&5+2& \addpaper{Quantitative Evaluation of Standing Stabilization Using Stiff and Compliant Actuators}{Jorhabib Eljaik, et al.}{p08}{08}{p08_supplementary.mp4}\\ %Jorhabib Eljaik, Marco Randazzo, Zhibin Li, Nikos Tsagarakis, Francesco Nori
+&5+2& \addpaper{Metastability for High-Dimensional Walking Systems on Stochastically Rough Terrain}{Mehdi Benallegue, Jean-Paul Laumond}{p09}{09}{}\\
+&5+2& \addpaper{An Exact Decentralized Cooperative Navigation Algorithm for Acoustically Networked Underwater Vehicles with Robustness to Faulty Communication: Theory and Experiment}{Jeffrey Walls, Ryan Eustice}{p10}{10}{}\\
+&5+2& \addpaper{Dynamics, Control and Planning for Cooperative Manipulation of Payloads Suspended by Cables from Multiple Quadrotor Robots}{Koushil Sreenath, Vijay Kumar}{p11}{11}{p11_supplementary.mp4}\\
+\timeemph{12:00} &90& Lunch Break && \\
+\timeemph{13:30} &45+10& \addtalk{Invited Talk: Actuated Wingsuits for Unconstrained Human Flight}{Raffaello D'Andrea} \\
+14:25&5+2& \addpaper{Deep Learning for Detecting Robotic Grasps}{Ian Lenz, Honglak Lee, Ashutosh Saxena}{p12}{12}{}\\
+&5+2& \addpaper{Receding Horizon Control in Dynamic Environments from Temporal Logic Specifications}{Alphan Ulusoy, Michael Marrazzo, Calin Belta}{p13}{13}{p13_supplementary.mp4}\\
+&5+2& \addpaper{On Provably Safe Obstacle Avoidance for Autonomous Robotic Ground Vehicles}{Stefan Mitsch, Khalil Ghorbal, Andre Platzer}{p14}{14}{}\\
+&5+2& \addpaper{Pregrasp Manipulation as Trajectory Optimization}{Jennifer King et al.}{p15}{15}{}\\ %Jennifer King, Matthew Klingensmith, Christopher Dellin, Mehmet Dogar, Prasanna Velagapudi, Nancy Pollard, Siddhartha Srinivasa
+&5+2& \addpaper{The Influence of Motion Path and Assembly Sequence on Stability of Assemblies}{Sourav Rakshit, Srinivas Akella}{p16}{16}{}\\
+\timeemph{15:00} &30& Coffee Break && \\
+\timeemph{15:30} &30& \addtalk{Early Career Spotlight: The Mathematics of Human Robot Interaction }{ Siddhartha Srinivasa}\\
+16:00&5+2& \addpaper{Minimum Constraint Displacement Motion Planning}{Kris Hauser}{p17}{17}{}\\
+&5+2& \addpaper{Integrated Perception and Planning in the Continuous Space: A POMDP Approach}{Haoyu Bai, Hsu David, Wee Sun Lee}{p18}{18}{p18_supplementary.pdf}\\
+&5+2& \addpaper{Active Bayesian Perception for Simultaneous Object Localization and Identification}{Nathan Lepora, Uriel~Martinez-Hernandez, Tony~Prescott}{p19}{19}{}\\
+&5+2& \addpaper{Gaussian Process-Based Decentralized Data Fusion and Active Sensing for Mobility-on-Demand System}{Jie Chen, Kian Hsiang Low and Colin Keng-Yan Tan}{p20}{20}{}\\
+\timeemph{16:30} &30& \addtalk{Early Career Spotlight: High-Level Verifiable Robotics}{Hadas Kress-Gazit}\\
+\timeemph{17:00}& 5~h& Opening Session and Interactive Presentation of today's talks& at Lichthof & \\
+19:00 & & Interactive Food& at Lichthof & \\
+22:00 & & End of session&& \\
+
+\hline
+\end{tabular}
+\vfill
+
+%%%%%%%%%%%%%%%%%%
+\clearpage
+\phantomsection \section{Tuesday, June 25}
+\begindailyscheduletabular
+\timeemph{09:00}  & 45+10&\addtalk{Invited Talk: Robotics Research Just Got A Whole Lot More Exciting}{Rodney Brooks}\\
+09:55&5+2& \addpaper{Exploiting Urban Scenes for Vision-aided Inertial Navigation}{Dimitrios Kottas, Stergios Roumeliotis}{p21}{01}{p21_supplementary.mp4}\\
+&5+2& \addpaper{Fast Interpolation and Time-Optimization on Implicit Contact Submanifolds}{Kris Hauser}{p22}{02}{p22_supplementary.mp4}\\
+&5+2& \addpaper{Sorry Dave, I'm Afraid I Can't Do That: Explaining Unachievable Robot Tasks Using Natural Language}{Vasumathi Raman, et al.}{p23}{03}{p23_supplementary.mov}\\ %Vasumathi Raman (Cornell University), Constantine Lignos (University of Pennsylvania), Cameron Finucane (), Kenton C. T. Lee (), Mitch Marcus (), Hadas Kress-Gazit (Cornell University)
+&5+2& \addpaper{Generating Legible Motion}{Anca Dragan, Siddhartha Srinivasa}{p24}{04}{}\\
+&5+2& \addpaper{Bayesian Fusion for Multi-Modal Aerial Images}{Alistair Reid, Fabio Ramos}{p25}{05}{}\\
+
+\timeemph{10:30} &30 &Coffee Break && \\
+
+\timeemph{11:00}&20+5& \addpaper{Modeling and Evaluating Narrative Gestures for Humanlike Robots}{Chien-Ming Huang, Bilge Mutlu}{p26}{06}{p26_supplementary.mp4}\\
+11:25&5+2& \addpaper{Unsupervised intrinsic calibration of depth sensors via SLAM}{Alex Teichman, Stephen Miller, Sebastian Thrun}{p27}{07}{p27_supplementary.avi}\\
+&5+2& \addpaper{6-D manipulation with aerial towed-cable systems}{Montserrat Manubens, Didier~Devaurs, Lluis~Ros, Juan~Cort\'es}{p28}{08}{p28_supplementary.mov}\\
+&5+2&  \addpaper{Automatic Online Calibration of Cameras and Lasers}{Jesse Levinson, Sebastian Thrun}{p29}{09}{p29_supplementary.mov}\\
+&5+2&  \addpaper{Goal Assignment and Trajectory Planning for Large Teams of Aerial Robots}{Matthew Turpin, et al.}{p30}{10}{p30_supplementary.mp4}\\ % Kartik Mohta, Nathan Michael, Vijay Kumar
+&5+2&  \addpaper{Finding Locally Optimal, Collision-Free Trajectories with Sequential Convex Optimization}{John Schulman, et al.}{p31}{11}{}\\% Alex Lee, Ibrahim Awwal, Henry Bradlow, Pieter Abbeel
+
+\timeemph{12:00} &90& Lunch Break && \\
+12:00 &90& Robotics in H2020 -- latest development: the Robotics Public-Private Partnership and beyond & Room H1036 (next to Lichthof) &\\
+
+\timeemph{13:30} &20+5& \addpaper{Vision-Based State Estimation and Trajectory Control Towards Aggressive Flight with a Quadrotor}{Shaojie Shen, et al.}{p32}{12}{p32_supplementary.mp4}\\%Yash Mulgaonkar, Nathan Michael, Vijay Kumar
+13:55&20+5&  \addpaper{Optimal Market-based Multi-Robot Task Allocation via Strategic Pricing}{Lantao Liu, Dylan Shell}{p33}{13}{}\\
+14:20&5+2&  \addpaper{Infinite Latent Conditional Random Fields for Modeling Environments through Humans }{Yun Jiang, Ashutosh Saxena}{p34}{14}{p34_supplementary.pdf}\\
+&5+2&  \addpaper{Real-Time Camera Tracking and 3D Reconstruction Using Signed Distance Functions}{Erik Bylow, et al.}{p35}{15}{p35_supplementary.mp4}\\%Erik Bylow (Lund University), JÃ¼rgen Sturm (Technische UniversitÃ¤t MÃ¼nchen), Christian Kerl (Technische UniversitÃ¤t MÃ¼nchen), Fredrik Kahl (Lund University), Daniel Cremers (Technische UniversitÃ¤t MÃ¼nchen)
+&5+2&  \addpaper{Grasp Moduli Spaces}{Florian Pokorny, Kaiyu Hang, Danica Kragic}{p36}{16}{p36_supplementary.mp4}\\
+&5+2&  \addpaper{Keyframe-Based Visual-Inertial SLAM using Nonlinear Optimization}{Stefan Leutenegger et al.}{p37}{17}{p37_supplementary.mp4}\\ % Stefan Leutenegger (ETH Zurich), Paul Furgale (ETH), Vincent Rabaud (Willow Garage), Margarita Chli (ETH), Kurt Konolige (Industrial Perception), Roland Siegwart (ETH Zurich)
+&5+2&  \addpaper{Maximum Mean Discrepancy Imitation Learning}{Beomjoon Kim, Joelle Pineau}{p38}{18}{}\\
+&5+2&  \addpaper{Perceiving, Learning, and Exploiting Object Affordances for Autonomous Pile Manipulation}{Dov Katz, et al.}{p39}{19}{p39_supplementary.mp4}\\ %Dov Katz (CMU), Arun Venkatraman (CMU), Moslem Kazemi (CMU), Drew Bagnell (), Anthony Stentz (CMU)
+
+\timeemph{15:00} &30& Coffee Break &&\\
+
+\timeemph{15:30} &2.5~h& Interactive Presentation of today's talks, light snacks and beverages & at Lichthof &\\
+18:00 & & End of session&& \\
+\hline\\
+\timeemph{20:00}&& Banquet & at Kater Holzig (see \nameref{sec:banquetinfo})&\\
+\hline
+\end{tabular}
+\vfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\phantomsection \section{Wednesday, June 26}
+\begindailyscheduletabular
+\timeemph{09:00}  & 45+10&\addtalk{Invited Talk: Life Lessons: Are Animal Aggregations Appropriate Models for Robotics?}{Julia Parrish}\\
+09:55&5+2& \addpaper{Correct Software Synthesis for Stable Speed-Controlled Robotic Walking}{Neil Dantam, et al.}{p40}{01}{p40_supplementary.mp4}\\%Neil Dantam (Georgia Tech), Ayonga Hereid (Texas A&M University), Aaron Ames (Texas A&M University), Mike Stilman (Georgia Tech)
+&5+2& \addpaper{Toward a Platform of Human-Like Fingertip Model in Haptic Environment for Studying Sliding Tactile Mechanism}{Anh-Van Ho, Shinichi Hirai}{p41}{02}{}\\
+&5+2& \addpaper{Incremental Block Cholesky Factorization for Nonlinear Least Squares in Robotics}{Lukas Polok}{p42}{03}{}\\ %Lukas Polok (BUT FIT), Viorela Ila (BUT FIT), Marek Solony (BUT FIT), Pavel Smrz (BUT FIT), Pavel Zemcik (BUT FIT)
+&5+2& \addpaper{Convex Optimization of Nonlinear Feedback Controllers via Occupation Measures}{Anirudha Majumdar, et al.}{p43}{04}{}\\%Anirudha Majumdar (MIT), Ram Vasudevan (MIT), Mark Tobenkin (MIT), Russ Tedrake (MIT)
+&5+2& \addpaper{Realtime Registration-Based Tracking via Approximate Nearest Neighbour Search}{Travis Dick, et al.}{p44}{05}{p44_supplementary.mp4}\\%Travis Dick (University of Alberta), Camilo Perez (University of Alberta), Martin Jagersand (University of Alberta), Azad Shademan (University of Alberta)
+
+\timeemph{10:30} &30 &Coffee Break && \\
+
+\timeemph{11:00} &20+5& \addpaper{A control framework for tactile servoing}{Qiang Li, et al.}{p45}{06}{p45_supplementary.avi}\\ %Qiang Li (Bielefeld University), Carsten SchÃ¼rmann (Neuroinformatics Group,Technical Faculty,Bielefeld University), Robert Haschke (Neuroinformatics Group,Technical Faculty,Bielefeld University), Helge Ritter (Neuroinformatics Group,Technical Faculty,Bielefeld University)
+%W2S session:
+11:25&5+2& \addpaper{Topological Approach to Using Cables to Separate and Manipulate Sets of Objects}{Soonkyum Kim, et al.}{p46}{07}{p46_supplementary.mp4}\\ %Soonkyum Kim (University of Pennsylvania), Subhrajit Bhattacharya (University of Pennslvania), Hordur Heidarsson (University of Southern California), Gaurav Sukhatme (University of Southern California), Vijay Kumar (University of Pennsylvania)
+&5+2& \addpaper{Learning to Plan for Constrained Manipulation from Demonstrations}{Phillips Mike, et al.}{p47}{08}{}\\ %Phillips Mike (CMU), Victor Hwang (Carnegie Mellon University), Sachin Chitta (Willow Garage), Maxim Likhachev (Carnegie Mellon University)
+&5+2& \addpaper{Incremental Semantically Grounded Learning from Demonstration}{Scott Niekum, et al.}{p48}{09}{p48_supplementary.mp4}\\ %Scott Niekum (University of Massachusetts), Sachin Chitta (Willow Garage), Andrew Barto (University of Massachusetts Amherst), Bhaskara Marthi (willow garage), Sarah Osentoski (Robert Bosch Corporation)
+&5+2& \addpaper{Fast Scheduling of Multi-Robot Teams with Temporospatial Constraints}{Matthew Gombolay, Ronald Wilcox, Julie Shah}{p49}{10}{}\\
+&5+2& \addpaper{Adaptive Estimation of Measurement Bias in Three-Dimensional Field Sensors with Angular Rate Sensors: Theory and Comparative Experimental Evaluation}{Giancarlo Troni, Louis Whitcomb}{p50}{11}{}\\
+
+\timeemph{12:00} &90& Lunch Break && \\
+
+\timeemph{13:30} &45+10& \addtalk{Invited Talk: Neural Mechanisms of Spatial Navigation}{Neil Burgess} \\
+%W3S session:
+14:25&5+2&  \addpaper{Stochastic Motion Planning for Robotic Information Gathering}{Geoffrey Hollinger, Gaurav Sukhatme}{p51}{12}{p51_supplementary.mp4}\\
+&5+2&  \addpaper{Kinodynamic Planning in the Configuration Space via Velocity Interval Propagation}{Quang-Cuong Pham, Yoshihiko Nakamura}{p52}{13}{p52_supplementary.mp4}\\
+&5+2&  \addpaper{Approximate Representations for Multi-Robot Control Policies that Maximize Mutual Information}{Benjamin Charrow, Vijay Kumar, Nathan Michael}{p53}{14}{p53_supplementary.mp4}\\
+&5+2&  \addpaper{Real-Time EMG driven Lower Limb Actuated Orthosis for Assistance As Needed Movement Strategy}{Walid Hassani, Samer Mohammed, Yacine Amirat}{p54}{15}{}\\
+&5+2&  \addpaper{A model of distributional handing interaction for a mobile robot}{Chao Shi, et al.}{p55}{16}{}\\ %Chao Shi (Osaka University, ATR), Masahiro Shiomi (ATR), Christian Smith (Royal Institute of Technology), Takayuki Kanda (ATR), Hiroshi Ishiguro (Osaka University, ATR)
+
+\timeemph{15:00} &30&Coffee Break && \\
+
+\timeemph{15:30} &45& Open Forum & &\\
+\timeemph{16:15}& 4.5~h& Interactive Presentation of today's talks& at Lichthof & \\
+18:00 & 30& Best Paper Award and Closing Session&at H 0104& \\
+18:30 & & Interactive Food& at Lichthof & \\
+21:00 & & end of main conference&& \\
+\hline
+\end{tabular}
+
+\normalsize
+\vfill
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%how to format each talk:
+\ifthenelse{\equal{\targetoutput}{print}}{      \newcommand{\addworkshop}[5]{#3 &           #1  & #2 & #4 \\ \hline} }{}
+\ifthenelse{\equal{\targetoutput}{usbstick}}{   \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4 \\ \hline} }{}
+\ifthenelse{\equal{\targetoutput}{online}}{     \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4 \\ \hline} }{}
+
+
+\renewcommand{\arraystretch}{2.0}
+\setlength{\tabcolsep}{7pt}
+\clearpage
+\phantomsection \section{Thursday, June 27: Workshops 1-14}
+\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{3.5cm}>{\small}r}
+\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Chair & \normalsize Notes\\
+\hline
+01 & \addworkshop{Aerial Mobile Manipulation}{R. Voyles}{4.063}{half day/morning}{http://mysite.du.edu/~rvoyles/RSSwebsite.pdf}
+02 & \addworkshop{Sensitive Robotics}{E. Torres-Jara}{0.003}{half day/morning}{http://users.wpi.edu/~etorresj/RSSSensitiveRobotics/}
+03 & \addworkshop{Workshop on Common Platforms in Robotic Manipulation}{L. Odhner}{0.010}{}{http://www.willowgarage.com/coman13}
+04 & \addworkshop{4th Workshop on Formal Methods for Robotics and Automation}{H. Kress-Gazit}{0.015}{}{http://verifiablerobotics.com/RSS13/index.html}
+05 & \addworkshop{Inverse Optimal Control \& Robot Learning from Demonstration}{B. Ziebart}{0.016}{}{http://www.cs.uic.edu/Ziebart/IOCRLfD}
+06 & \addworkshop{Robotics Challenges and Vision Workshop}{H. Chitsaz}{0.007}{}{http://compbio.cs.wayne.edu/robotics/rcv2013/}
+07 & \addworkshop{4th Workshop on RGB-D: Advanced Reasoning with Depth Cameras}{A. Saxena}{0.002}{}{http://www.cs.washington.edu/ai/Mobile_Robotics/rgbd-workshop-2013/}
+08 & \addworkshop{2nd Workshop on Robots in Clutter: Preparing robots for the real world}{M. Zillich}{0.001}{}{http://workshops.acin.tuwien.ac.at/clutter2013/}
+09 & \addworkshop{Active learning in robotics: Exploration, Curiosity, and Interaction}{M. Lopes}{0.011}{}{https://webdiis.unizar.es/~montesan/web/index.php/rss2013wsactivelearning}
+10 & \addworkshop{From Experience to Concepts and Back}{T. Asfour}{0.017}{}{http://i61www.ira.uka.de/users/asfour/Workshop-RSS2013/}
+11 & \addworkshop{Combined Robot Motion Planning and AI Planning for Practical Applications}{E. Plaku}{0.008}{}{http://faculty.cua.edu/plaku/CombinedPlanningRoboticsAI2013RSSws.html}
+12 & \addworkshop{Proposals for experimental protocols for Robotics Research}{F. Bonsignorio}{4.065}{half day/afternoon}{http://www.heronrobots.com/EuronGEMSig/gem-sig-events/proposals-for-experimental-protocols-rr}
+13 & \addworkshop{Robot Design and Control: Advanced Robot Motion}{S. Singh}{0.009}{half day/afternoon}{http://robotics.itee.uq.edu.au/wiki/pmwiki.php?n=Site.RSS2013RDC}
+14 & \addworkshop{Robotic Exploration, Monitoring, and Information Collection: Nonparametric Modeling, Information-based Control, and Planning under Uncertainty}{G. Hollinger and S. Karaman}{4.064}{two day}{http://sertac.scripts.mit.edu/rssworkshop/}
+&&&&\\ \hline
+ & \addworkshop{Lab Tour: Robotics and Biology Lab, TU Berlin}{}{5.065}{12:30-13:30}{http://www.robotics.tu-berlin.de/}
+
+\end{tabular}
+\vfill
+
+
+\clearpage
+
+\phantomsection \section{Friday, June 28: Workshops 14-24}
+\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{3.5cm}>{\small}r}
+\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Chair & \normalsize Notes\\
+\hline
+14 & \addworkshop{Robotic Exploration, Monitoring, and Information Collection: Nonparametric Modeling, Information-based Control, and Planning under Uncertainty}{G. Hollinger and S. Karaman}{	4.064}{two day}{http://sertac.scripts.mit.edu/rssworkshop/}
+15 & \addworkshop{Workshop on Multi-View Geometry in Robotics}{V. Indelman}{4.063}{half day / morning}{http://www.cc.gatech.edu/events/mvigro/}
+16 & \addworkshop{Resource-Efficient Integration of Perception, Control and Navigation for Micro Air Vehicles}{M. Suppa}{0.001}{}{http://rss2013_uav.visual-navigation.com/}
+17 & \addworkshop{Hierarchical and Structured Learning for Robotics}{G. Neumann}{0.002}{}{http://www.ias.tu-darmstadt.de/Workshops/RSS2013}
+18 & \addworkshop{Programming with constraints: Combining high-level action specification and low-level motion execution}{G. Borghesan}{0.007}{}{http://robohow.eu/meetings/rss-2013-constraints-workshop}
+19 & \addworkshop{Towards Active Lower Limb Prosthetic Systems: Design Issues and Solutions}{P. Beckerle}{0.008}{}{http://www.prothetik.tu-darmstadt.de/forschungsprojekte_prothetik/workshop__towards_active_lower_limb_prosthetic_systems/towards_active_lower_limb_prosthetic_systems.de.jsp}
+20 & \addworkshop{Robotics for Environmental Monitoring}{R. Smith}{0.010}{half day / morning}{http://www2.isr.uc.pt/~embedded/events/WREM/RSS2013/Home.html}
+21 & \addworkshop{Manipulation with Uncertain Models}{D. Katz}{0.011}{}{http://personalrobotics.ri.cmu.edu/RSS2013Uncertainty/}
+22 & \addworkshop{Human Robot Collaboration}{J. Boerkoel}{0.016}{}{http://people.csail.mit.edu/boerkoel/hrc2013/}
+23 & \addworkshop{What did we learn from the simulation phase of the DARPA Robotics Challenge}{E. Todorov}{0.017}{}{http://www.cs.washington.edu/DRCWorkshop/}
+24 & \addworkshop{Scientific and Structural Achievements from Academia-Industry Projects in ECHORD}{F. Röhrbein}{4.065}{half day / afternoon}{http://echord.info/wikis/website/rss-2013-proposed-workshop}
+%25 & \addworkshop{European Robotics Public Private Partnership}{}{0.003}{}{}
+
+\end{tabular}
+\vfill
+
+% %how to format each talk:
+% \ifthenelse{\equal{\targetoutput}{print}}{      \newcommand{\addinteractive}[3]{#1 & #2  & #3 &\\ \hline} }{}
+% \ifthenelse{\equal{\targetoutput}{usbstick}}{   \newcommand{\addinteractive}[3]{#1 & #2  & #3 &\\ \hline} }{}
+% \ifthenelse{\equal{\targetoutput}{online}}{     \newcommand{\addinteractive}[3]{#1 & #2  & #3 &\\ \hline} }{}
+% 
+% \clearpage
+% \phantomsection \section{Monday 24.6.: Interactive Session}
+% \begin{tabular}{r>{\small\raggedright}p{14cm}>{\small}p{3.5cm}>{\small}r}
+% \normalsize ID & \normalsize Title & \normalsize Presenter &\normalsize  Notes\\
+% \hline
+% \addinteractive{01}{title}{Name}
+% 
+% \end{tabular}
+% 
+% \clearpage
+% \phantomsection \section{Wednesday 26.6.: Interactive Session}
+% \begin{tabular}{>{\small}r>{\raggedright}p{14cm}>{\small}p{3.5cm}>{\small}r}
+% \normalsize ID & \normalsize Title & \normalsize Presenter &\normalsize  Notes\\
+% \hline
+% \addinteractive{01}{title}{Name}
+% 
+% \end{tabular}
+
+
+\end{landscape}
+
+
+\endgroup
+% \rmfamily
+% \renewcommand{\arraystretch}{1.0}
+
+
+
+
+
+
+
+
