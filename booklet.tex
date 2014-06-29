@@ -168,7 +168,7 @@
 {\Large Conference Booklet} \\[0.3cm]
        July 12--16, 2014 \\
        University of California, Berkeley\\
-       Berkeley, USA\\
+       Berkeley, California, USA\\
        www.roboticsconference.org
 \end{center}
 \clearpage
@@ -205,12 +205,15 @@
 
 \include{tex/abstracts_workshops} %abstracts of workshops
 
-\include{tex/organizers}    %some fame for us
-
 \begingroup
 \include{tex/schedule}   %contains the broad schedule of all days
 \endgroup
 
+\include{tex/organizers}    %some fame for us
+
+\include{tex/reviewers}  %credit to reviewers
+
+\include{tex/sponsors}   %contains the broad schedule of all days
 
 \ifthenelse{\equal{\targetoutput}{print}}{
 \phantomsection \chapter{Personal Notes}
@@ -220,14 +223,11 @@
 \thispagestyle{empty}
 \clearpage
 }{}
-
-\include{tex/sponsors}   %contains the broad schedule of all days
 %
 
 %%\clearpage
 %%\phantomsection
 %%\label{nextrss}
 %%\include{nextrss}
-
 
 \end{document}
