@@ -1,4 +1,4 @@
-\chapter{Technical Program}
+\chapter{Abstracts}
 \begin{spacing}{1.0}
 
 %\descriptionWorkshop{ID}{room}{title}{online link}{abstract}{timetable}
@@ -23,7 +23,7 @@
   }
   \hfill {\bf {\large #2} }
 }{
-  \href{#5}{\large Proceedings}
+  \href{#5}{\large Paper Link}
   %\hfill {\large \bf #2 }
 }
 
@@ -47,7 +47,961 @@ http://www.roboticsproceedings.org/rss10/p01.html
 In this paper, we revisit batch state estimation through the lens of Gaussian process (GP) regression. We consider continuous-discrete estimation problems wherein a trajectory is viewed as a one-dimensional GP, with time as the independent variable. Our continuous-time prior can be defined by any linear, time-varying stochastic differential equation driven by white noise; this allows the possibility of smoothing our trajectory estimates using a variety of vehicle dynamics models (e.g., ‘constant-velocity’). We show that this class of prior results in an inverse kernel matrix (i.e., covariance matrix between all pairs of measurement times) that is exactly sparse (block-tridiagonal) and that this can be exploited to carry out GP regression (and interpolation) very efficiently. Though the prior is continuous, we consider measurements to occur at discrete times. When the measurement model is also linear, this GP approach is equivalent to classical, discrete-time smoothing (at the measurement times). When the measurement model is nonlinear, we iterate over the whole trajectory (as is common in vision and robotics) to maximize accuracy. We test the approach experimentally on a simultaneous trajectory estimation and mapping problem using a mobile robot dataset.
 }
 
-\chapter{Technical Program}
+
+
+
+\descriptionPaper
+{A2}{Schedule}
+{
+Combining 3D Shape, Color, and Motion for Robust Anytime Tracking 
+}
+{
+David Held (Stanford University), Jesse Levinson (Stanford University), Sebastian Thrun (Stanford University), Silvio Savarese (Stanford University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p14.html
+}
+{
+Although object tracking has been studied for decades, real-time tracking algorithms often suffer from low accuracy and poor robustness when confronted with difficult, real-world data. We present a tracker that combines 3D shape, color (when available), and motion cues to accurately track moving objects in real-time. Our tracker allocates computational effort based on the shape of the posterior distribution. Starting with a coarse approximation to the posterior, the tracker successively refines this distribution, increasing in tracking accuracy over time. The tracker can thus be run for any amount of time, after which the current approximation to the posterior is returned. Even at a minimum runtime of 0.7 milliseconds, our method outperforms all of the baseline methods of similar speed by at least 10\%. If our tracker is allowed to run for longer, the accuracy continues to improve, and it continues to outperform all baseline methods. Our tracker is thus anytime, allowing the speed or accuracy to be optimized based on the needs of the application.
+}
+
+
+\descriptionPaper
+{A3}{Schedule}
+{
+Decision-Making Authority, Team Efficiency and Human Worker Satisfaction in Mixed Human-Robot Teams 
+}
+{
+Matthew Gombolay (MIT), Reymundo Gutierrez (MIT), Giancarlo Sturla (MIT), Julie Shah (MIT)
+}
+{
+http://www.roboticsproceedings.org/rss10/p46.html
+}
+{
+In manufacturing, advanced robotic technology has opened up the possibility of integrating highly autonomous mobile robots into human teams. However, with this capability comes the issue of how to maximize both team efficiency and the desire of human team members to work with robotic counterparts. We hypothesized that giving workers partial decision-making authority over a task allocation process for the scheduling of work would achieve such a maximization, and conducted an experiment on human subjects to test this hypothesis. We found that an autonomous robot can outperform a worker in the execution of part or all of the task allocation (p < 0.001 for both). However, rather than finding an ideal balance of control authority to maximize worker satisfaction, we observed that workers preferred to give control authority to the robot (p < 0.001). Our results indicate that workers prefer to be part of an efficient team rather than have a role in the scheduling process, if maintaining such a role decreases their efficiency. These results provide guidance for the successful introduction of semi-autonomous robots into human teams.
+}
+
+
+\descriptionPaper
+{A4}{Schedule}
+{
+Stiction Compensation in Agonist-Antagonist Variable Stiffness Actuators
+}
+{
+Luca Fiorio (Istituto Italiano di Tecnologia), Francesco Romano (Istituto Italiano di Tecnologia), Alberto Parmiggiani (Istituto Italiano di Tecnologia), Giulio Sandini (Istituto Italiano di Tecnologia), Francesco Nori (Istituto Italiano di Tecnologia)
+}
+{
+http://www.roboticsproceedings.org/rss10/p32.html
+}
+{
+In the last decade new actuator designs have been presented trying to introduce at mechanical level the advantages of compliance. Ranging from serial elastic actuators to different designs of variable stiffness actuators, various prototypes have been proposed and implemented on robots, thus allowing performance of novel and challenging tasks. Nevertheless some of these new devices often are affected by the drawbacks related to friction. In particular, static friction due to its discontinuous nature, can produce undesired behaviors that are rather difficult to compensate. In this paper we present a novel kind of passive variable stiffness actuator based on agonist-antagonist configuration. The specific design we adopted improves the capability of the system in mechanically compensating the external disturbances, but on the other hand intensifies the effect of stiction during the co-contraction of the agonist and antagonist side of the actuator. The consequence is the appearance of a set of neutral equilibrium configurations of the output joint that we named ``dead-band''. This issue is tackled analytically investigating the propagation and the distribution of the stiction components within the whole system. The result is a condition over the spring potential energies that is exploited to properly design the new non-linear springs. Eventually experimental tests are conducted on the real actuator, showing the effectiveness of our analytical approach.
+}
+
+
+\descriptionPaper
+{A5}{Schedule}
+{
+Simultaneous Compliance and Registration Estimation for Robotic Surgery
+}
+{
+Siddharth Sanan (Carnegie Mellon University), Stephen Tully (Medrobotics), Andrea Bajo (Vanderbilt University), Nabil Simaan (Vanderbilt University), Howie Choset (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p51.html
+}
+{
+Leveraging techniques pioneered by the SLAM community, we present a new filtering approach called simultaneous compliance and registration estimation or CARE. CARE is like SLAM in that it simultaneously determines the pose of a surgical robot while creating a map, but in this case, the map is a compliance map associated with a preoperative model of an organ as opposed to just positional information like landmark locations. The problem assumes that the robot is forcefully contacting and deforming the environment. This palpation has a dual purpose: 1) it provides the necessary geometric information to align or register the robot to \textit{a priori} models, and 2) with palpation at varying forces, the stiffness/compliance of the environment can be computed. By allowing the robot to palpate its environment with varying forces, we create a force balanced spring model within a Kalman filter framework to estimate both tissue and robot position. The probabilistic framework allows for information fusion and computational efficiency. The algorithm is experimentally evaluated using a continuum robot interacting with two bench-top flexible structures.
+}
+
+
+
+\descriptionPaper
+{B1}{Schedule}
+{
+Vision-based Landing Site Evaluation and Trajectory Generation Toward Rooftop Landing
+}
+{
+Vishnu Desaraju (Carnegie Mellon University), Nathan Michael (Carnegie Mellon University), Martin Humenberger (JPL), Roland Brockers (JPL), Stephan Weiss (JPL) Larry Matthies (JPL)
+}
+{
+http://www.roboticsproceedings.org/rss10/p44.html
+}
+{
+Autonomous landing is an essential function for micro air vehicles (MAVs) for many scenarios. We pursue an active perception strategy that enables MAVs with limited onboard sensing and processing capabilities to concurrently assess feasible rooftop landing sites with a vision-based perception system while generating trajectories that balance continued landing site assessment and the requirement to provide visual monitoring of an interest point. The contributions of the work are twofold: (1) a perception system that employs a dense motion stereo approach that determines the 3D model of the captured scene without the need of geo-referenced images, scene geometry constraints, or external navigation aids; and (2) an online trajectory generation approach that balances the need to concurrently explore available rooftop vantages of an interest point while ensuring confidence in the landing site suitability by considering the impact of landing site uncertainty as assessed by the perception system. Simulation and experimental evaluation of the performance of the perception and trajectory generation methodologies are analyzed independently and jointly in order to establish the efficacy of the proposed approach.
+}
+
+
+
+\descriptionPaper
+{B2}{Schedule}
+{
+Correct High-level Robot Behavior in Environments with Unexpected Events
+}
+{
+Kai Weng Wong (Cornell University), Rudiger Ehlers (University of Bremen), Hadas Kress-Gazit (Cornell University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p12.html
+}
+{
+Synthesis of correct-by-construction robot controllers from high-level specifications has the advantage of providing guaranteed robot behavior under different environments. Typically, when such controllers are synthesized, assumptions that the user makes about the behavior of the environment, if any, are incorporated into the resulting controller. In practice, however, the environment assumptions may be unknown to the user, thus preventing the application of synthesis. Even if environment assumptions are available, they may not hold during the robot's execution due to modeling errors or unforeseen anomalous operating conditions. In this paper, we address both of these problems. We present an approach for synthesizing controllers that include built-in recovery transitions, enabling the robot to make progress towards its goals in the event of environment assumption violation, whenever possible. Furthermore, we present a process for automatically augmenting a specification with environment assumptions that are computed from the robot's observations at runtime. We start with a set of candidate assumptions that is updated whenever violated at runtime.
+}
+
+
+\descriptionPaper
+{B3}{Schedule}
+{
+Persistent Monitoring of Stochastic Spatio-temporal Phenomena with a Small Team of Robots
+}
+{
+Sahil Garg (University of Southern California), Nora Ayanian (University of Southern California)
+}
+{
+http://www.roboticsproceedings.org/rss10/p38.html
+}
+{
+This paper presents a solution for persistent monitoring of real-world stochastic phenomena, where the underlying covariance structure changes sharply across time, using a small number of mobile robot sensors. We propose an adaptive solution for the problem where stochastic real-world dynamics are modeled as a Gaussian Process (GP). The belief on the underlying covariance structure is learned from recently observed dynamics as a Gaussian Mixture (GM) in the low-dimensional hyper-parameters space of the GP and adapted across time using Sequential Monte Carlo methods. Each robot samples a belief point from the GM and locally optimizes a set of informative regions by greedy maximization of the submodular entropy function. The key contributions of this paper are threefold: adapting the belief on the covariance using Markov Chain Monte Carlo (MCMC) sampling such that particles survive even under sharp covariance changes across time; exploiting the belief to transform the problem of entropy maximization into a decentralized one; and developing an approximation algorithm to maximize entropy on a set of informative regions in the continuous space. We illustrate the application of the proposed solution through extensive simulations using an artificial dataset and multiple real datasets from fixed sensor deployments, and compare it to three competing state-of-the-art approaches.
+}
+
+
+
+\descriptionPaper
+{B4}{Schedule}
+{
+Modeling and Controlling Friendliness for An Interactive Museum Robot
+}
+{
+Chien-Ming Huang (University of Wisconsin - Madison), Takamasa Iio (ATR), Satoru Satake (ATR), Takayuki Kanda (ATR)
+}
+{
+http://www.roboticsproceedings.org/rss10/p25.html
+}
+{
+Advances in robotic technologies have enabled interactive robots to utilize humanlike social behaviors to interact with people in public places such as museums. While these behaviors have shown promise in engaging people, they have been designed and applied to users uniformly. Humans, however, behave differently according to their relationships with others. Behavioral changes, from neutral to friendly, contribute to the development of interpersonal relationships. Friendliness, in particular, plays an important role in the early development of a relationship. In this work, we explore how an interactive robot might nonverbally express a variety of friendly behaviors in a museum scenario. Four behavioral variables—response time, approach speed, individual distance, and attentiveness—contributing to perceived friendliness were modeled and implemented for the interactive museum robot. The results of our study showed that people perceived the differences in the designed robot behaviors and related those differences to the friendliness of the robot to varying degrees. This work serves as a building block toward the development of human-robot relationships and has implications on designing friendly behaviors for interactive robots.
+}
+
+
+\descriptionPaper
+{B5}{Schedule}
+{
+Efficient Visual-Inertial Navigation using a Rolling-Shutter Camera with Inaccurate Timestamps
+}
+{
+Chao Guo (University of Minnesota), Dimitrios Kottas (University of Minnesota), Ryan DuToit (University of Minnesota), Ahmed Ahmed (University of Minnesota), Ruipeng Li (University of Minnesota), Stergios Roumeliotis (University of Minnesota)
+}
+{
+http://www.roboticsproceedings.org/rss10/p57.html
+}
+{
+In order to develop Vision-aided Inertial Navigation Systems (VINS) on mobile devices, such as cell phones and tablets, one needs to consider two important issues, both due to the commercial-grade underlying hardware: (i) The unknown and varying time offset between the camera and IMU clocks (ii) The rolling-shutter effect caused by CMOS sensors. Without appropriately modelling their effect and compensating for them online, the navigation accuracy will significantly degrade. In this work, we introduce a linear-complexity algorithm for fusing inertial measurements with time-misaligned, rolling-shutter images using a highly efficient and precise linear interpolation model. As a result, our algorithm achieves a better accuracy and improved speed compared to existing methods. Finally, we validate the superiority of the proposed algorithm through simulations and real-time, online experiments on a cell phone.
+}
+
+
+
+\descriptionPaper
+{B6}{Schedule}
+{
+Dynamically Feasible Motion Planning through Partial Differential Flatness
+}
+{
+Suresh Ramasamy (Carnegie Mellon University), Guofan Wu (Carnegie Mellon University), Koushil Sreenath (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p53.html
+}
+{
+Differential flatness is a property which substantially reduces the difficulty involved in generating dynamically feasible trajectories for underactuated robotic systems. However, there is a large class of robotic systems that are not differentially flat, and an efficient method for computing dynamically feasible trajectories does not exist. In this paper we introduce a weaker but more general form of differential flatness, termed partial differential flatness, which enables efficient planning of dynamic feasible motion plans for an entire new class of systems. We provide several examples of underactuated systems which are not differentially flat, but are partially differentially flat. We also extend the notion of partial differential flatness to hybrid systems. Finally, we consider the infamous cart-pole system and provide a concrete example of designing dynamically feasible trajectories in the presence of obstacles.
+}
+
+
+\descriptionPaper
+{B7}{Schedule}
+{
+Sky Segmentation with Ultraviolet Images Can Be Used for Navigation
+}
+{
+Thomas Stone (University of Edinburgh), Michael Mangan (University of Edinburgh), Paul Ardin (University of Edinburgh), Barbara Webb (University of Edinburgh)
+}
+{
+http://www.roboticsproceedings.org/rss10/p47.html
+}
+{
+Inspired by ant navigation, we explore a method for sky segmentation using ultraviolet (UV) light. A standard camera is adapted to allow collection of outdoor images containing light in the visible range, in UV only and in green only. Automatic segmentation of the sky region using UV only is significantly more accurate and far more consistent than visible wavelengths over a wide range of locations, times and weather conditions, and can be accomplished with a very low complexity algorithm. We apply this method to obtain compact binary (sky vs non-sky) images from panoramic UV images taken along a 2km route in an urban environment. Using either sequence SLAM or a visual compass on these images produces reliable localisation and orientation on a subsequent traversal of the route under different weather conditions.
+}
+
+
+
+\descriptionPaper
+{C1}{Schedule}
+{	
+Hierarchical Semantic Labeling for Task-Relevant RGB-D Perception
+}
+{
+Chenxia Wu (Cornell University), Ian Lenz (Cornell University), Ashutosh Saxena (Cornell University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p06.html
+}
+{
+Semantic labeling of RGB-D scenes is very important in enabling robots to perform mobile manipulation tasks, but different tasks may require entirely different sets of labels. For example, when navigating to an object, we may need only a single label denoting its class, but to manipulate it, we might need to identify individual parts. In this work, we present an algorithm that produces hierarchical labelings of a scene, following is-part-of and is-type-of relationships. Our model is based on a Conditional Random Field that relates pixel-wise and pair-wise observations to labels. We encode hierarchical labeling constraints into the model while keeping inference tractable. Our model thus predicts different specificities in labeling based on its confidence---if it is not sure whether an object is Pepsi or Sprite, it will predict soda rather than making an arbitrary choice. In extensive experiments, both offline on standard datasets as well as in online robotic experiments, we show that our model outperforms other state-of-the-art methods in labeling performance as well as in success rate for robotic tasks.
+}
+
+
+\descriptionPaper
+{C2}{Schedule}
+{	
+Multi-Heuristics A*
+}
+{
+Sandip Aine (IIIT-Delhi, India), Siddharth Swaminathan (Carnegie Mellon University), Venkatraman Narayanan (Carnegie Mellon University), Victor Hwang (Carnegie Mellon University), Maxim Likhachev (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p56.html
+}
+{
+The performance of heuristic search (such as A*) based planners depends heavily on the quality of the heuristic function used to focus the search. These algorithms work fast and generate high-quality solutions, even for high-dimensional problems, as long as they are given a well-designed heuristic function. Consequently, the research in developing an efficient planner for a specific domain becomes the design of a good heuristic function. However, for many domains, it is hard to design a single heuristic function that captures all the complexities of the problem. Furthermore, it is hard to ensure that heuristics are admissible and consistent, which is necessary for A* like searches to provide guarantees on completeness and bounds on suboptimality. In this paper, we develop a novel heuristic search, called Multi-Heuristic A* (MHA*), that takes in multiple, arbitrarily inadmissible heuristic functions in addition to a single consistent heuristic, and uses all of them simultaneously to search for a complete and bounded suboptimal solution. This simplifies the design of heuristics and enables the search to effectively combine the guiding powers of different heuristic functions. We support these claims with experimental analysis on several domains ranging from inherently continuous domains such as full-body manipulation and navigation to inherently discrete domains such as the sliding tile puzzle.
+}
+
+
+
+\descriptionPaper
+{C3}{Schedule}
+{	
+Learning Articulated Motions from Visual Demonstration
+}
+{
+Sudeep Pillai (MIT), Matthew Walter (MIT), Seth Teller (MIT)
+}
+{
+http://www.roboticsproceedings.org/rss10/p50.html
+}
+{
+Many functional elements of human homes and workplaces consist of rigid components which are connected through one or more sliding or rotating linkages. Examples include doors and drawers of cabinets and appliances; laptops; and swivel office chairs. A robotic mobile manipulator would benefit from the ability to acquire kinematic models of such objects from observation. This paper describes a method by which a robot can acquire an object model by capturing depth imagery of the object as a human moves it through its range of motion. We envision that in future, a machine newly introduced to an environment could be shown by its human user the articulated objects particular to that environment, inferring from these "visual demonstrations'' enough information to actuate each object independently of the user. Our method employs sparse (markerless) feature tracking, motion segmentation, component pose estimation, and articulation learning; it does not require prior object models. Using the method, a robot can observe an object being exercised, infer a kinematic model incorporating rigid, prismatic and revolute joints, then use the model to predict the object's motion from a novel vantage point. We evaluate the method's performance, and compare it to that of a previously published technique, for a variety of household objects.
+}
+
+
+\descriptionPaper
+{C4}{Schedule}
+{	
+An Analysis of Deceptive Robot Motion
+}
+{
+Anca Dragan (Carnegie Mellon University), Rachel Holladay (Carnegie Mellon University), Siddhartha Srinivasa (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p10.html
+}
+{
+Much robotics research explores how robots can clearly communicate true information. Here, we focus on the counterpart: communicating false information, or hiding information altogether -- in one word, deception. Robot deception is useful in conveying intentionality, and in making games against the robot more engaging. We study robot deception in goal-directed motion, in which the robot is concealing its actual goal. We present an analysis of deceptive motion, starting with how humans would deceive, moving to a mathematical model that enables the robot to autonomously generate deceptive motion, and ending with a study on the implications of deceptive motion for human-robot interactions.
+}
+
+
+
+\descriptionPaper
+{D1}{Schedule}
+{	
+Semantic Localization Via the Matrix Permanent 
+}
+{
+Nikolay Atanasov (University of Pennsylvania), Menglong Zhu (University of Pennsylvania), Kostas Daniilidis (University of Pennsylvania), George Pappas (University of Pennsylvania)
+}
+{
+http://www.roboticsproceedings.org/rss10/p43.html
+}
+{
+Most approaches to robot localization rely on low-level geometric features such as points, lines, and planes. In this paper, we use object recognition to obtain semantic information from the robot's sensors and consider the task of localizing the robot within a prior map of landmarks, which are annotated with semantic labels. As object recognition algorithms miss detections and produce false alarms, correct data association between the detections and the landmarks on the map is central to the semantic localization problem. Instead of the traditional vector-based representations, we use random finite sets to represent the object detections. This allows us to explicitly incorporate missed detections, false alarms, and data association in the sensor model. Our second contribution is to reduce the problem of computing the likelihood of a set-valued observation to the problem of computing a matrix permanent. It is this crucial transformation that enables us to solve the semantic localization problem with a polynomial-time approximation to the set-based Bayes filter. The performance of our approach is demonstrated in simulation and in a real environment using a deformable-part-model-based object detector. Comparisons are made with the traditional lidar-based geometric Monte-Carlo localization.
+}
+
+
+
+
+\descriptionPaper
+{D2}{Schedule}
+{	
+The Multi-Agent Navigation Transformation: Tuning-Free Multi-Robot Navigation
+}
+{
+Savvas Loizou (Cyprus University of Technology)
+}
+{
+http://www.roboticsproceedings.org/rss10/p17.html
+}
+{
+This paper proposes a novel methodology for decentralized multi-robot navigation with multiple arbitrarily shaped obstacles in 2-dimensional environments. The proposed methodology is based on the novel concepts of the Navigation Transformation and the Harmonic Function based Navigation Functions. A version of the Navigation Transformation - the Multi-Agent Navigation Transformation - is proposed in this paper to map geometrically complex topologies resulting from moving workspace entities to simple topologies enabling the construction of Harmonic Function based Navigation Functions. The resulting vector field is guaranteed to be free of local minima by construction. A construction of a candidate Multi-Agent Navigation Transformation is proposed. In addition to the theoretical guarantees, the effectiveness of the proposed methodology is demonstrated through non-trivial computer simulations utilizing the proposed construction.
+}
+
+
+\descriptionPaper
+{D3}{Schedule}
+{	
+An Automata-Theoretic Approach to the Vehicle Routing Problem
+}
+{
+Cristian Vasile (Boston University), Calin Belta (Boston University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p45.html
+}
+{
+We propose a new formulation and algorithms for the Vehicle Routing Problem (VRP). To accommodate persistent surveillance missions, which require executions in infinite time, we define Persistent VRP (P-VRP). The vehicles consume a resource, such as gas or battery charge, which can be replenished when they visit replenish stations. The mission specifications are given as rich, temporal logic statements about the sites, their service durations, and the time intervals in which services should be provided. We define a temporal logic, called Time-Window Temporal Logic (TWTL), whose formulae allow for simple, intuitive descriptions of such specifications. Two different optimization criteria are considered. The first is the infinite-time limit of the duration needed for the completion of a surveillance round. The second penalizes the long-term average of the same quantity. The proposed algorithms, which are based on concepts and tools from formal verification and optimization, generate collision-free motion plans automatically from the temporal logic statements and vehicle characteristics such as maximum operation time and minimum replenish time. Illustrative simulations and experimental trials for a team of quadrotors involved in persistent surveillance missions are included.
+}
+
+
+\descriptionPaper
+{D4}{Schedule}
+{	
+Effective Task Training Strategies for Instructional Robots 
+}
+{
+Allison Sauppe (University of Wisconsin - Madison), Bilge Mutlu (University of Wisconsin - Madison)
+}
+{
+http://www.roboticsproceedings.org/rss10/p02.html
+}
+{
+From teaching in labs to training for assembly, a key role that robots are expected to play is to instruct their users in completing physical tasks. While task instruction requires a wide range of capabilities, such as effective use of verbal and nonverbal language, a fundamental requirement for an instructional robot is to provide its students with task instructions in a way that maximizes their understanding of and performance in the task. In this paper, we present an autonomous instructional robot system and investigate how different instructional strategies affect user performance and experience. We collected data on human instructor-trainee interactions in a pipe-assembly task. Our analysis identified two key instructional strategies: (1) grouping instructions together and (2) summarizing the outcome of subsequent instructions. We implemented these strategies into a humanlike robot that autonomously instructed its users in the same pipe-assembly task. To achieve autonomous instruction, we also developed a repair mechanism that enabled the robot to correct mistakes and misunderstandings. An evaluation of the instructional strategies in a human-robot interaction study showed that employing the grouping strategy resulted in faster task completion and increased rapport with the robot, although it also increased the number of task breakdowns. Our model of instructional strategies and study findings offer strong implications for the design of instructional robots.
+}
+
+
+
+\descriptionPaper
+{D5}{Schedule}
+{	
+Learning to Locate from Demonstrated Searches 
+}
+{
+Paul Vernaza (Carnegie Mellon University), Anthony Stentz (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p35.html
+}
+{
+We consider the problem of learning to locate targets from demonstrated searches. In this concept, a human demonstrates tours of environments that are assumed to minimize the human’s expected time to locate the target, given the person’s latent prior over potential target locations. The latent prior is then learned as a function of environmental features, enabling a robot to search novel environments in a way that would be deemed efficient by the teacher. We present novel approaches to solve both the inference problem of planning an expected- time-optimal tour given a prior and the learning problem of deducing the prior from observed tours. Our learning algorithm is inspired by and similar to maximum margin planning (MMP), although it differs in key ways. On the inference side, we advance the state-of-the-art by proposing a novel graph-based search method incorporating heuristics obtained via efficiently- solved relaxations of the problem. An application to a home assistant scenario is discussed, and experimental results are given validating our methods in this domain.
+}
+
+
+
+\descriptionPaper
+{D6}{Schedule}
+{	
+Modeling High-Dimensional Humans for Activity Anticipation using Gaussian Process Latent CRFs
+}
+{
+Yun Jiang (Cornell University), Ashutosh Saxena (Cornell University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p15.html
+}
+{
+For robots, the ability to model human configurations and temporal dynamics is crucial for the task of anticipating future human activities, yet requires conflicting properties: On one hand, we need a detailed high-dimensional description of human configurations to reason about the physical plausibility of the prediction; on the other hand, we need a compact representation to be able to parsimoniously model the relations between the human and the environment. We therefore propose a new model, GP-LCRF, which admits both the high-dimensional and low-dimensional representation of humans. It assumes that the high-dimensional representation is generated from a latent variable corresponding to its low-dimensional representation using a Gaussian process. The generative process not only defines the mapping function between the high- and low-dimensional spaces, but also models a distribution of humans embedded as a potential function in GP-LCRF along with other potentials to jointly model the rich context among humans, objects and the activity. Through extensive experiments on activity anticipation, we show that our GP-LCRF consistently outperforms the state-of-the-art results and reduces the predicted human trajectory error by 11.6\%.
+}
+
+
+
+\descriptionPaper
+{D7}{Schedule}
+{	
+Manhattan and Piecewise-Planar Constraints for Dense Monocular Mapping 
+}
+{
+Alejo Concha (University of Zaragoza), Wajahat Hussain (University of Zaragoza), Luis Montano (University of Zaragoza), Javier Civera (University of Zaragoza)
+}
+{
+http://www.roboticsproceedings.org/rss10/p16.html
+}
+{
+Abstract—This paper presents a variational formulation for real-time dense 3D mapping from a RGB monocular sequence that incorporates Manhattan and piecewise-planar constraints in indoor and outdoor man-made scenes. The state-of-the-art variational approaches are based on the minimization of an energy functional composed of two terms, the first one accounting for the photometric compatibility in multiple views, and the second one favoring smooth solutions. We show that the addition of a third energy term modelling Manhattan and piecewise-planar structures greatly improves them accuracy of the dense visual maps, particularly for low-textured man-made environments where the data term can be ambiguous. We evaluate two different methods to provide such Manhattan and piecewise-planar constraints based on 1) multiview superpixel geometry and 2) multiview layout estimation and scene understanding. Our experiments include the largest map produced by variational methods from a RGB sequence and demonstrate a reduction in the median depth error up to a factor 5x.
+}
+
+
+
+
+\descriptionPaper
+{D8}{Schedule}
+{	
+Appearance-based Active, Monocular, Dense Reconstruction for Micro Aerial Vehicles 
+}
+{
+Christian Forster (University of Zurich), Matia Pizzoli (University of Zurich), Davide Scaramuzza (University of Zurich)
+}
+{
+http://www.roboticsproceedings.org/rss10/p29.html
+}
+{
+In this paper, we investigate the following problem: given the image of a scene, what is the trajectory that a robot-mounted camera should follow to allow optimal dense depth estimation? The solution we propose is based on maximizing the information gain over a set of candidate trajectories. In order to estimate the information that we expect from a camera pose, we introduce a novel formulation of the measurement uncertainty that accounts for the scene appearance (i.e., texture in the reference view), the scene depth and the vehicle pose. We successfully demonstrate our approach in the case of real-time, monocular reconstruction from a micro aerial vehicle and validate the effectiveness of our solution in both synthetic and real experiments. To the best of our knowledge, this is the first work on active, monocular dense reconstruction, which chooses motion trajectories that minimize perceptual ambiguities inferred by the texture in the scene.
+}
+
+
+
+\descriptionPaper
+{E1}{Schedule}
+{	
+Bio-Artificial Synergies for Grasp Posture Control of Supernumerary Robotic Fingers 
+}
+{
+Faye Wu (MIT), Harry Asada (MIT)
+}
+{
+http://www.roboticsproceedings.org/rss10/p27.html
+}
+{
+A new type of wrist-mounted robot, the Supernumerary Robotic (SR) Fingers, is proposed to work closely with the human hand and aid the human in performing a variety of prehensile tasks. For people with diminished functionality of their hands, these robotic fingers could provide the opportunity to live with more independence and work more productively. A natural and implicit coordination between the SR Fingers and the human fingers is required so the robot can be transformed to act as part of the human body. This paper presents a novel control algorithm, termed “Bio-Artificial Synergies”, which enables the SR and human fingers to share the task load together and adapt to diverse task conditions. Through grasp experiments and data analysis, postural synergies were found for a seven-fingered hand comprised of two SR Fingers and five human fingers. The synergy-based control law was then extracted from the experimental data using Partial Least Squares (PLS) regression and tested on the SR Finger prototype as a proof of concept.
+}
+
+
+
+\descriptionPaper
+{E2}{Schedule}
+{	
+Six-Degrees-of-Freedom Remote Actuation of Magnetic Microrobots
+}
+{
+Eric Diller (University of Toronto), Joshua Giltinan (Carnegie Mellon University), Guo Zhan Lum (Carnegie Mellon University), Zhou Ye (Carnegie Mellon University), Metin Sitti (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p13.html
+}
+{
+Existing remotely-actuated microrobots powered by magnetic coils far from the workspace exhibit a maximum of only five-degrees-of-freedom (DOF) actuation, as a driving torque about the magnetization axis is not achievable. This lack of orientation control limit the effectiveness of existing microrobots for precision tasks of object manipulation and orientation for advanced medical, biological and micro-manufacturing applications. This paper presents a novel magnetic actuation method that allows these robots to achieve full six-DOF actuation by allowing for a non-uniform magnetization profile within the microrobot body. This non-uniform magnetization results in additional rigid-body torques to be induced from magnetic forces via a moment arm. A general analytical model presents the working principle for continuous and discrete magnetization profiles. Using this model, microrobot design guidelines are introduced which guarantee six-DOF actuation capability. Several discrete magnetization designs which possess reduced coupling between magnetic forces and induced rigid-body torques are also presented. A simple permanent-magnet decoupled prototype is fabricated and used to quantitatively demonstrate the accuracy of the analytical model in a constrained-DOF environment and qualitatively for free motion in a viscous liquid three-dimensional environment. Results show that desired forces and torques can be created with high precision and limited parasitic actuation, allowing for full six-DOF actuation using limited feedback control.
+}
+
+
+
+
+\descriptionPaper
+{E3}{Schedule}
+{	
+5-DOF Manipulation of an Untethered Magnetic Device in Fluid using a Single Permanent Magnet
+}
+{
+Arthur Mahoney (University of Utah), Abbott Jake (University of Utah)
+}
+{
+http://www.roboticsproceedings.org/rss10/p37.html
+}
+{
+This paper presents a three degree-of-freedom (3-DOF) closed-loop position and 2-DOF open-loop orientation control method for an untethered mockup magnetic capsule endoscope in fluid with a single permanent magnet positioned by a commercial robotic manipulator and a 3-DOF capsule-position localization system. Using traditional methods known to roboticists, we study the kinematics of untethered magnetic manipulation using a single permanent magnet as the end-effector of a robot manipulator. We present a control method that maintains 5-DOF control of a magnetic capsule when the robot manipulator is not near a kinematic singularity, and seamlessly enables a capsule’s position to be controlled when the manipulator nears a kinematic singularity by sacrificing control over the capsule’s orientation. We demonstrate the method’s robustness to a control rate of 25 Hz, reduced localization rates down to 30 Hz, and the presence of manipulator singularities. 5-DOF manipulation of an untethered device has been previously demonstrated by electromagnetic systems only. This work has applications for robotic capsule endoscopy of a fluid-distended stomach.
+}
+
+
+
+\descriptionPaper
+{E4}{Schedule}
+{	
+Automatic Generation of Reduced CPG Control Networks for Locomotion of Arbitrary Modular Robot Structures
+}
+{
+Stephane Bonardi (Biorobotics Laboratory - EPFL), Massimo Vespignani (Biorobotics laboratory - EPFL), Rico Moeckel(Biorobotics laboratory - EPFL), Jesse Van den Kieboom (Biorobotics laboratory - EPFL), Soha Pouya (Biorobotics laboratory - EPFL), Alexander Sproewitz (Biorobotics laboratory - EPFL), Auke Ijspeert (Biorobotics laboratory - EPFL)
+}
+{
+http://www.roboticsproceedings.org/rss10/p04.html
+}
+{
+The design of efficient locomotion controllers for arbitrary structures of reconfigurable modular robots is challenging because the morphology of the structure can change dynamically during the completion of a task. In this paper, we propose a new method to automatically generate reduced Central Pattern Generator (CPG) networks for locomotion control based on the detection of bio-inspired sub-structures, like body and limbs, and articulation joints inside the robotic structure. We demonstrate how that information, coupled with the potential symmetries in the structure, can be used to speed up the optimization of the gaits and investigate its impact on the solution quality (i.e. the velocity of the robotic structure and the potential internal collisions between robotic modules). We tested our approach on three simulated structures and observed that the reduced network topologies in the first iterations of the optimization process performed significantly better than the fully open ones.
+}
+
+
+
+
+\descriptionPaper
+{E5}{Schedule}
+{	
+Cogging Torque Ripple Minimization via Position Based Characterization
+}
+{
+Matthew Piccoli (University of Pennsylvania), Mark Yim (University of Pennsylvania)
+}
+{
+http://www.roboticsproceedings.org/rss10/p42.html
+}
+{
+Smooth motion is critical to some robotic applications such as haptics or those requiring high precision force control. These systems are often direct-drive, so any torque ripple in the motor output must be minimal. Unfortunately, low inherent torque ripple motors are expensive. Low cost brushless DC motors are becoming more prevalent, especially from the hobby RC community. These motors often have the required high torque density; however, they also have significant torque ripple. This paper presents a system that is low cost using a method for anticogging - the compensation of cogging torque in low cost, high torque motors. While other methods exist to compensate for current-based torque ripple (mutual or reluctance torque), none have addressed cogging torque, except by adding expensive force sensors. This paper presents two methods that use a position sensor (already present for servo motors) to map cogging torque to rotor position. The map is played back according to position reported from the sensor to cancel the cogging torque. The design and testing of a low cost haptic arm using anticogging shows validation; however, the approach is much broader, and can be applied to any precision force application. Test results on eleven different motors show an average removal of 69\% of torque ripple with no added cost in robotic servo applications.
+}
+
+
+
+
+
+\descriptionPaper
+{F1}{Schedule}
+{	
+A Novel Type of Compliant, Underactuated Robotic Hand for Dexterous Grasping 
+}
+{
+Raphael Deimel (TU Berlin), Oliver Brock (TU Berlin)
+}
+{
+http://www.roboticsproceedings.org/rss10/p18.html
+}
+{
+We built a highly compliant, underactuated, robust and at the same time dexterous anthropomorphic hand. We evaluate its dexterous grasping capabilities by implementing the comprehensive Feix taxonomy of human grasps and by assessing the dexterity of its opposable thumb using the Kapandji test. We also illustrate the hand's payload limits and demonstrate its grasping capabilities in real-world grasping experiments. To support our claim that compliant structures are beneficial for dexterous grasping, we compare the dimensionality of control necessary to implement the diverse grasp postures with the dimensionality of the grasp postures themselves. We find that actuation space is smaller than posture space and explain the difference with the mechanic interaction between hand and grasped object. Additional desirable properties are derived from using soft robotics technology: the hand is robust to impact and blunt collisions, inherently safe, and not affected by dirt, dust, or liquids. Furthermore, the hand is simple and inexpensive to manufacture.
+}
+
+
+
+
+\descriptionPaper
+{F2}{Schedule}
+{	
+Pre- and Post-Contact Policy Decomposition for Planar Contact Manipulation Under Uncertainty 
+}
+{
+Michael Koval (Carnegie Mellon University), Nancy Pollard (Carnegie Mellon University), Siddhartha Srinivasa (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p34.html
+}
+{
+We consider the problem of using real-time feedback from contact sensors to create closed-loop pushing actions. To do so, we formulate the problem as a partially observable Markov decision process (POMDP) with a transition model based on a physics simulator and a reward function that drives the robot towards a successful grasp. We demonstrate that it is intractable to solve the full POMDP with traditional techniques and introduce a novel decomposition of the policy into pre- and post-contact stages to reduce the computational complexity. Our method uses an offline point-based solver on a variable-resolution discretization of the state space to solve for a post-contact policy as a pre-computation step. Then, at runtime, we use an A* search to compute a pre-contact trajectory. We prove that the value of the resulting policy is within a bound of the value of the optimal policy and give intuition about when it performs well. Additionally, we show the policy produced by our algorithm achieves a successful grasp more quickly and with higher probability than a baseline policy.
+}
+
+
+
+
+
+\descriptionPaper
+{F3}{Schedule}
+{	
+Modeling Robot Discrete Movements with State-varying Stiffness and Damping: A framework for integrated motion generation and impedance control 
+}
+{
+Mohammad Khansari (EPFL), Klas Kronander (EPFL), Aude Billard (EPFL)
+}
+{
+http://www.roboticsproceedings.org/rss10/p22.html
+}
+{
+Successful execution of many robotic tasks requires precise control of robot motion and its interaction with the environment. In robotics these two problems are mainly studied separately in the domain of robot motion generation and interaction control, respectively. Existing approaches rely on two control loops: a motion generator (planner) that provides a reference trajectory in the outer loop, and an active impedance controller that tracks the reference trajectory in the inner loop. Ensuring stability of the closed-loop system for this control architecture is non-trivial. In this paper, we propose a single-loop control architecture that performs motion generation and interaction control at once. We model robot discrete motions with a time-invariant dynamical system, which is expressed as a nonlinear combination of a set of linear spring-damper systems. This formulation represents the nominal motion and the impedance properties with a single set of parameters, simplifying stability analysis of the closed-loop system. We provide sufficient conditions to ensure global asymptotic stability of this system for movements in free-space, and its passivity during persistent contact with a passive environment. We validate our approach in simulation using the 7-DoF KUKA LWR-IV robot.
+}
+
+
+
+\descriptionPaper
+{F4}{Schedule}
+{	
+Robust Policies via Meshing for Metastable Rough Terrain Walking
+}
+{
+Cenk Oguz Saglam (UCSB), Katie Byl (UCSB)
+}
+{
+http://www.roboticsproceedings.org/rss10/p49.html
+}
+{
+In this paper, we present and verify methods for developing robust, high-level policies for metastable (i.e., rarely falling) rough-terrain robot walking. We focus on simultaneously addressing the important, real-world challenges of (1) use of a tractable mesh, to avoid the curse of dimensionality and (2) maintaining near-optimal performance that is robust to uncertainties. Toward our first goal, we present an improved meshing technique, which captures the step-to-step dynamics of robot walking as a discrete-time Markov chain with a small number of points. We keep our methods and analysis generic, and illustrate robustness by quantifying the stability of resulting control policies derived through our methods. To demonstrate our approach, we focus on the challenge of optimally switching among a finite set of low-level controllers for underactuated, rough-terrain walking. Via appropriate meshing techniques, we see that even terrain-blind switching between multiple controllers increases the stability of the robot, while lookahead (terrain information) makes this improvement dramatic. We deal with both noise on the lookahead information and on the state of the robot. These two robustness requirements are essential for our methods to be applicable to real high-DOF robots, which is the primary motivation of the authors.
+}
+
+
+
+\descriptionPaper
+{F5}{Schedule}
+{	
+Probably Approximately Correct MDP Learning and Control With Temporal Logic Constraints
+}
+{
+Jie Fu (University of Pennsylvania), Ufuk Topcu (University of Pennsylvania)
+}
+{
+http://www.roboticsproceedings.org/rss10/p39.html
+}
+{
+We consider synthesis of controllers that maximize the probability of satisfying given temporal logic specifications in unknown, stochastic environments. We model the interaction between the system and its environment as a Markov decision process with initially unknown transition probabilities. The solution we develop builds on the so-called model-based probably approximately correct Markov decision process (PAC-MDP) method. The algorithm attains an $\varepsilon$-approximately optimal policy with probability $1-\delta$ using samples (i.e. observations), time and space that grow polynomially with the size of the MDP, the size of the automaton expressing the temporal logic specification, $1/\varepsilon$, $1/\delta$ and a finite time horizon. In this approach, the system maintains a model of the initially unknown MDP, and constructs a product MDP based on its learned model and the specification automaton that expresses the temporal logic constraints. During execution, the policy is iteratively updated using observation of the transitions taken by the system. The iteration terminates in finitely many execution steps. With high probability, the resulting policy is such that, for any state, the difference between the probability of satisfying the specification under this policy and the optimal one is within a predefined bound.
+}
+
+
+
+
+\descriptionPaper
+{F6}{Schedule}
+{	
+Self-Calibration and Visual SLAM with a Multi-Camera System on a Micro Aerial Vehicle 
+}
+{
+Lionel Heng (ETH Zurich), Gim Hee Lee (ETH Zurich), Marc Pollefeys (ETH Zurich)
+}
+{
+http://www.roboticsproceedings.org/rss10/p08.html
+}
+{
+The use of a multi-camera system enables a robot to obtain a surround view, and thus, maximize its perceptual awareness of its environment. An accurate calibration is a necessary prerequisite if vision-based simultaneous localization and mapping (vSLAM) is expected to provide reliable pose estimates for a micro aerial vehicle (MAV) with a multi-camera system. On our MAV, we set up each camera pair in a stereo configuration. We propose a novel vSLAM-based self-calibration method for a multi-sensor system that includes multiple calibrated stereo cameras and an inertial measurement unit (IMU). Our self-calibration estimates the transform with metric scale between each camera and the IMU. Once the MAV is calibrated, the MAV is able to estimate its global pose via a multi-camera vSLAM implementation based on the generalized camera model. We propose a novel minimal and linear 3-point algorithm that uses inertial information to recover the relative motion of the MAV with metric scale. Our constant-time vSLAM implementation with loop closures runs on-board the MAV in real-time. To the best of our knowledge, no published work has demonstrated real-time on-board vSLAM with loop closures. We show experimental results in both indoor and outdoor environments. The code for both the self-calibration and vSLAM is available as a set of ROS packages at \url{https://github.com/hengli/vmav-ros-pkg}.
+}
+
+
+
+\descriptionPaper
+{F7}{Schedule}
+{	
+Control of Robotic Mobility-On-Demand Systems: a Queueing-Theoretical Perspective 
+}
+{
+Rick Zhang (Stanford University), Marco Pavone (Stanford University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p26.html
+}
+{
+In this paper we present and analyze a queueing-theoretical model for autonomous mobility-on-demand (MOD) systems where robotic, self-driving vehicles transport customers within an urban environment and rebalance themselves to ensure acceptable quality of service throughout the entire network. We cast an autonomous MOD system within a closed Jackson network model with passenger loss. It is shown that an optimal rebalancing algorithm minimizing the number of (autonomously) rebalancing vehicles and keeping vehicles availabilities balanced throughout the network can be found by solving a linear program. The theoretical insights are used to design a robust, real-time rebalancing algorithm, which is applied to a case study of New York City. The case study shows that the current taxi demand in Manhattan can be met with about 8,000 robotic vehicles (roughly 70\% of the size of the current taxi fleet operating in Manhattan). Finally, we extend our queueing-theoretical setup to include congestion effects, and we study the impact of autonomously rebalancing vehicles on overall congestion. Collectively, this paper provides a rigorous approach to the problem of system-wide coordination of autonomously driving vehicles, and provides one of the first characterizations of the sustainability benefits of robotic transportation networks.
+}
+
+
+
+\descriptionPaper
+{G1}{Schedule}
+{	
+Multiscale Topological Trajectory Classification with Persistent Homology
+}
+{
+Florian Pokorny (KTH Royal Institute of Tech.), Majd Hawasly (University of Edinburgh), Subramanian Ramamoorthy (University of Edinburgh)
+}
+{
+http://www.roboticsproceedings.org/rss10/p54.html
+}
+{
+Topological approaches to studying equivalence classes of trajectories in a configuration space have recently received attention in robotics since they allow a robot to reason about trajectories at a high level of abstraction. While recent work has approached the problem of topological motion planning under the assumption that the configuration space and obstacles within it are explicitly described in a noise-free manner, we focus on trajectory classification and present a sampling-based approach which can handle noise, which is applicable to general configuration spaces and which relies only on the availability of collision free samples. Unlike previous sampling-based approaches in robotics which use graphs to capture information about the path-connectedness of a configuration space, we construct a multiscale approximation of neighborhoods of the collision free configurations based on filtrations of simplicial complexes. Our approach thereby extracts additional homological information which is essential for a topological trajectory classification. By computing a basis for the first persistent homology groups, we obtain a multiscale classification algorithm for trajectories in configuration spaces of arbitrary dimension. We furthermore show how an augmented filtration of simplicial complexes based on a cost function can be defined to incorporate additional constraints. We present an evaluation of our approach in 2, 3, 4 and 6 dimensional configuration spaces in simulation and using a Baxter robot.
+}
+
+
+\descriptionPaper
+{G2}{Schedule}
+{	
+Asking for Help Using Inverse Semantics 
+}
+{
+Stefanie Tellex (Brown), Ross Knepper (MIT), Adrian Li (University of Cambridge), Daniela Rus (MIT), Nicholas Roy (MIT)
+}
+{
+http://www.roboticsproceedings.org/rss10/p24.html
+}
+{
+Robots inevitably fail, often without the ability to recover autonomously. We demonstrate an approach for enabling a robot to recover from failures by communicating its need for specific help to a human partner using natural language. Our approach automatically detects failures, then generates targeted spoken-language requests for help such as ``Please give me the white table leg that is on the black table.'' Once the human partner has repaired the failure condition, the system resumes full autonomy. We present a novel inverse semantics algorithm for generating effective help requests. In contrast to forward semantic models that interpret natural language in terms of robot actions and perception, our inverse semantics algorithm generates requests by emulating the human's ability to interpret a request using the Generalized Grounding Graph framework. To assess the effectiveness of our approach, we present a corpus-based online evaluation, as well as an end-to-end user study, demonstrating that our approach increases the effectiveness of human interventions compared to static requests for help.
+}
+
+
+\descriptionPaper
+{G3}{Schedule}
+{	
+LOAM: Lidar Odometry and Mapping in Real-time
+}
+{
+Ji Zhang (Carnegie Mellon University), Sanjiv Singh (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p07.html
+}
+{
+We propose a real-time method for odometry and mapping using range measurements from a 2-axis lidar moving in 6-DOF. The problem is hard because the range measurements are received at different times, and errors in motion estimation can cause mis-registration of the resulting point cloud. To date, coherent 3D maps can be built by off-line batch methods, often using loop closure to correct for drift over time. Our method achieves both low-drift and low-computational complexity without the need for high accuracy ranging or inertial measurements. The key idea in obtaining this level of performance is the division of the complex problem of simultaneous localization and mapping, which seeks to optimize a large number of variables simultaneously, by two algorithms. One algorithm performs odometry at a high frequency but low fidelity to estimate velocity of the lidar. Another algorithm runs at a frequency of an order of magnitude lower for fine matching and registration of the point cloud. Combination of the two algorithms allows the method to map in real-time. The method has been evaluated by a large set of experiments as well as on the KITTI odometry benchmark. The results indicate that the method can achieve accuracy at the level of state of the art offline batch methods.
+}
+
+
+
+
+\descriptionPaper
+{G4}{Schedule}
+{	
+Combining the Benefits of Function Approximation and Trajectory Optimization
+}
+{
+Igor Mordatch (University of Washington), Emo Todorov (University Washington)
+}
+{
+http://www.roboticsproceedings.org/rss10/p52.html
+}
+{
+Neural networks have recently solved many hard problems in Machine Learning, but their impact in control remains limited. Trajectory optimization has recently solved many hard problems in robotic control, but using it online remains challenging. Here we leverage the high-fidelity solutions obtained by trajectory optimization to speed up the training of neural network controllers. The two learning problems are coupled using the Alternating Direction Method of Multipliers (ADMM). This coupling enables the trajectory optimizer to act as a teacher, gradually guiding the network towards better solutions. We develop a new trajectory optimizer based on inverse contact dynamics, and provide not only the trajectories but also the feedback gains as training data to the network.
+}
+
+
+
+\descriptionPaper
+{G5}{Schedule}
+{	
+Enhanced 3D Kinematic Modeling of Wheeled Mobile Robots
+}
+{
+Neal Seegmiller (Carnegie Mellon University), Alonzo Kelly (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p20.html
+}
+{
+Most fielded wheeled mobile robots (WMRs) today use basic 2D kinematic motion models in their planning, control, and estimation systems. On uneven or low traction terrain, or during aggressive maneuvers, higher fidelity models are required which account for suspension articulations, wheel slip, and liftoff. In this paper we present a simple, algorithmic method to construct 3D kinematic models for any WMR configuration. We also present a novel enhancement to predict the effects of slip on body-level motion. Extensive experimental results are presented to validate our model formulation. We show odometry improvement by calibrating to data logs and modeling 3D articulations. We also show comparable predictive accuracy of our enhanced kinematic model to a full dynamic model, at much lower computational cost.
+}
+
+
+
+\descriptionPaper
+{G6}{Schedule}
+{	
+Tell Me Dave: Context-Sensitive Grounding of Natural Language to Manipulation Instructions
+}
+{
+Dipendra Kumar Misra (Cornell University), Jaeyong Sung (Cornell University), Kevin Lee (Cornell University), Ashutosh Saxena (Cornell University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p05.html
+}
+{
+We consider performing a sequence of mobile manipulation tasks with instructions given in natural language (NL). Given a new environment, even a simple task such as of boiling water would be performed quite differently depending on the presence, location and state of the objects. We start by collecting a dataset of task descriptions in free-form natural language and the corresponding grounded task-logs of the tasks performed in an online robot simulator. We then build a library of verb-environment- instructions that represents the possible instructions for each verb in that environment—these may or may not be valid for a different environment and task context. We present a model that takes into account the variations in natural language, and ambiguities in grounding them to robotic instructions with appropriate environment context and task constraints. Our model also handles incomplete or noisy NL instructions. Our model is based on an energy function that encodes such properties in a form isomorphic to a conditional random field. In evaluation, we show that our model produces sequences that perform the task successfully in a simulator and also significantly outperforms the state-of-the-art. We also verify by executing our output instruction sequences on a PR2 robot.
+}
+
+
+\descriptionPaper
+{G7}{Schedule}
+{	
+Nonlinear Graph Sparsification for SLAM
+}
+{
+Mladen Mazuran (University of Freiburg), Tipaldi Gian Diego (University of Freiburg), Spinello Luciano (University of Freiburg), Wolfram Burgard (University of Freiburg)
+}
+{
+http://www.roboticsproceedings.org/rss10/p40.html
+}
+{
+In this paper we present a novel framework for nonlinear graph sparsification in the context of simultaneous localization and mapping. Our approach is formulated as a convex minimization problem, where we select the set of nonlinear measurements that best approximate the original distribution. In contrast to previous algorithms, our method does not require a global linearization point and can be used with any nonlinear measurement function. Experiments performed on several publicly available datasets demonstrate that our method outperforms the state of the art with respect to the Kullback-Leibler divergence and the sparsity of the solution.
+}
+
+
+\descriptionPaper
+{G8}{Schedule}
+{	
+Fully Decentralized Task Swaps with Optimized Local Searching
+}
+{
+Lantao Liu (Carnegie Mellon University), Nathan Michael (Carnegie Mellon University), Dylan Shell (Texas A\&M University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p21.html
+}
+{
+Communication constraints dictated by hardware often require a multi-robot system to make decisions and take actions locally. Unfortunately, local knowledge may impose limits that run antithetical to global optimality in a decentralized optimization problem. This paper redesigns the task-swap mechanism recently introduced in an anytime assignment algorithm to tackle the problem of decentralized task allocation for large scale multi-robot systems. We propose a fully decentralized approach that allows local search processes to execute concurrently while minimizing interactions amongst the processes, needing neither global broadcast nor a multi-hop communication protocol. The formulation is analyzed in a novel way using tools from group theory and the optimization duality theory to show that the convergence of local searching processes is related to a shortest path routing problem on a graph subject to the network topology. Simulation results show that this fully decentralized method converges quickly while sacrificing little optimality.
+}
+
+
+
+
+
+\descriptionPaper
+{H1}{Schedule}
+{	
+Robot Programming by Demonstration with Interactive Action Visualizations
+}
+{
+Sonya Alexandrova (University of Washington), Maya Cakmak (University of Washington), Kaijen Hsiao (Bosch Research), Leila Takayama (Google[X])
+}
+{
+http://www.roboticsproceedings.org/rss10/p48.html
+}
+{
+Existing approaches to Robot Programming by Demonstration (PbD) require multiple demonstrations to capture task information that lets robots generalize to unseen situations. However, providing these demonstrations is cumbersome for end-users. In addition, users who are not familiar with the system often fail to demonstrate sufficiently varied demonstrations. We propose an alternative PbD framework that involves demonstrating the task once and then providing additional task information explicitly, through interactions with a visualization of the action. We present a simple action representation that supports this framework and describe a system that implements the framework on a two-armed mobile manipulator. We demonstrate the power of this system by evaluating it on a diverse task benchmark that involves manipulation of everyday objects. We then demonstrate that the system is easy to learn and use for novice users through a user study in which participants program a subset of the benchmark. We characterize the limitations of our system in task generalization and end-user interactions and present extensions that could address some of the limitations.
+}
+
+
+
+
+\descriptionPaper
+{H2}{Schedule}
+{	
+An Online Sparsity-Cognizant Loop-Closure Algorithm for Visual Navigation
+}
+{
+Yasir Latif (Universidad de Zaragoza), Guoquan Huang (MIT), John Leonard (MIT), Jose Neira (University of Zaragosa)
+}
+{
+http://www.roboticsproceedings.org/rss10/p36.html
+}
+{
+It is essential for a robot to be able to detect revisits or loop closures for long-term visual navigation. A key insight is that the loop-closing event inherently occurs sparsely, i.e., the image currently being taken matches with only a small subset (if any) of previous observations. Based on this observation, we formulate the problem of loop-closure detection as a sparse, convex l-1-minimization problem. By leveraging on fast convex optimization techniques, we are able to efficiently find loop closures, thus enabling real-time robot navigation. This novel formulation requires no offline dictionary learning, as required by most existing approaches, and thus allows online incremental operation. Our approach ensures a global, unique hypothesis by choosing only a single globally optimal match when making a loop-closure decision. Furthermore, the proposed formulation enjoys a flexible representation, with no restriction imposed on how images should be represented, while requiring only that the representations be close to each other when the corresponding images are visually similar. The proposed algorithm is validated extensively using public real-world datasets.
+}
+
+
+\descriptionPaper
+{H3}{Schedule}
+{	
+Scene Signatures: Localised and Point-less Features for Localisation
+}
+{
+Colin McManus (University of Oxford), Ben Upcroft (Queensland University of Technology), Paul Newmann (University of Oxford)
+}
+{
+http://www.roboticsproceedings.org/rss10/p23.html
+}
+{
+This paper is about localising across extreme lighting and weather conditions. We depart from the traditional point-feature-based approach as matching under dramatic appearance changes is a brittle and hard thing. Point feature detectors are fixed and rigid procedures which pass over an image examining small, low-level structure such as corners or blobs. They apply the same criteria applied all images of all places. This paper takes a contrary view and asks what is possible if instead we learn a bespoke detector for every place. Our localisation task then turns into curating a large bank of spatially indexed detectors and we show that this yields vastly superior performance in terms of robustness in exchange for a reduced but tolerable metric precision. We present an unsupervised system that produces broad-region detectors for distinctive visual elements, called scene signatures, which can be associated across almost all appearance changes. We show, using 21km of data collected over a period of 3 months, that our system is capable of producing metric localisation estimates from night-to-day or summer-to-winter conditions.
+}
+
+
+
+\descriptionPaper
+{H4}{Schedule}
+{	
+Active Reward Learning 
+}
+{
+Christian Daniel (TU Darmstadt), Malte Viering (TU Darmstadt), Jan Metz (TU Darmstadt), Oliver Kroemer (TU Darmstadt), Jan Peters (TU Darmstadt)
+}
+{
+http://www.roboticsproceedings.org/rss10/p31.html
+}
+{
+While reward functions are an essential component of many robot learning methods, defining such functions remains a hard problem in many practical applications. For tasks such as grasping, there are no reliable success measures available. Defining reward functions by hand requires extensive task knowledge and often leads to undesired emergent behavior. Instead, we propose to learn the reward function through active learning, querying human expert knowledge for a subset of the agent's rollouts. We introduce a framework, wherein a traditional learning algorithm interplays with the reward learning component, such that the evolution of the action learner guides the queries of the reward learner. We demonstrate results of our method on a robot grasping task and show that the learned reward function generalizes to a similar task.
+}
+
+
+
+\descriptionPaper
+{H5}{Schedule}
+{	
+Learning to Recognize Human Activities from Soft Labeled Data
+}
+{
+Ninghang Hu (University of Amsterdam), Zhongyu Lou (University of Amsterdam), Gwenn Englebienne (University of Amsterdam), Ben Krose (University of Amsterdam)
+}
+{
+http://www.roboticsproceedings.org/rss10/p03.html
+}
+{
+An activity recognition system is a very important component for assistant robots, but training such a system usually requires a large and correctly labeled dataset. Most of the previous works only allow training data to have a single activity label per segment, which is overly restrictive because the labels are not always certain. It is, therefore, desirable to allow multiple labels for ambiguous segments. In this paper, we introduce the method of "soft labeling", which allows annotators to assign multiple, weighted, labels to data segments. This is useful in many situations, e.g. when the labels are uncertain, when part of the labels are missing, or when multiple annotators assign inconsistent labels. We treat the activity recognition task as a sequential labeling problem. Latent variables are embedded to exploit sub-level semantics for better estimation. We propose a novel method for learning model parameters from soft-labeled data in a max-margin framework. The model is evaluated on a challenging dataset (CAD-120), which is captured by a RGB-D sensor mounted on the robot. To simulate the uncertainty in data annotation, we randomly change the labels for transition segments. The results show significant improvement over the state-of-the-art approach.
+}
+
+
+
+
+\descriptionPaper
+{H6}{Schedule}
+{	
+Planning Single-arm Manipulations with n-Arm Robots
+}
+{
+Benjamin Cohen (University of Pennsylvania), Mike Phillips (Carnegie Mellon University), Maxim Likhachev (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p33.html
+}
+{
+Many robotic systems are comprised of two or more arms. Such systems range from dual-arm household manipulators to factory floors populated with a multitude of industrial robotic arms. While the use of multiple arms increases the productivity of the system and extends dramatically its workspace, it also introduces a number of challenges. One such challenge is planning the motion of the arm(s) required to relocate an object from one location to another. This problem is challenging because it requires reasoning over which arms and in which order should manipulate the object, finding a sequence of valid handoff locations between the consecutive arms and finally choosing the grasps that allow for successful handoffs. In this paper, we show how to exploit the characteristics of this problem in order to construct a planner that can solve it effectively without sacrificing guarantees on completeness. We analyze our approach experimentally on a number of simulated examples ranging from a 2-arm system operating at a table to a 3-arm system working at a bar and to a 4-arm system in a factory setting.
+}
+
+
+
+
+\descriptionPaper
+{H7}{Schedule}
+{	
+Robust and Agile 3D Biped Walking with Steering Capability Using a Footstep Predictive Approach 
+}
+{
+Salman Faraji (Biorobotics laboratory - EPFL), Soha Pouya (Biorobotics laboratory - EPFL), Auke Ijspeert (Biorobotics laboratory - EPFL)
+}
+{
+http://www.roboticsproceedings.org/rss10/p28.html
+}
+{
+In this paper, we formulate a novel hierarchical controller for walking of torque controlled humanoid robots. Our method uses a whole body optimization approach which generates joint torques, given Cartesian accelerations of different points on the robot. Over such variable translation, we can plan our desired foot trajectories in Cartesian space between starting and ending positions of the foot on the ground. On top level, we use the simplified Linear Inverted Pendulum Model to predict the future motion of the robot. With LIPM, we derive a formulation where the whole system is described by the state of center of mass and footstep locations serve as discrete inputs to this linear system. We then use model predictive control to plan optimal future footsteps which resemble a reference plan, given desired sagittal and steering velocities determined by the high-end user. Using simulations on a kid-size torque controlled humanoid robot, the method tolerates various disturbances such as external pushes, sensor noises, model errors and delayed communication in the control loop. It can perform robust walking over slopes and uneven terrains blindly and turn rapidly at the same time. Our generic dynamics model-based method does not depend on any off-line optimization, being suitable for typical torque controlled humanoid robots.
+}
+
+
+
+\descriptionPaper
+{I1}{Schedule}
+{	
+Open-vocabulary Object Retrieval 
+}
+{
+Sergio Guadarrama (University of California, Berkeley), Erik Rodner (International Computer Science Institute), Kate Saenko (University of Massachussetts, Lowell), Ning Zhang (University of California, Berkeley), Ryan Farrell (University of California, Berkeley), Jeff Donahue (University of California, Berkeley), Trevor Darrell (University of California, Berkeley)
+}
+{
+http://www.roboticsproceedings.org/rss10/p41.html
+}
+{
+In this paper, we address the problem of retrieving objects based on open-vocabulary natural language queries: Given a phrase describing a specific object, e.g., ``the corn flakes box'', the task is to find the best match in a set of images containing candidate objects. When naming objects, humans tend to use natural language with rich semantics, including basic-level categories, fine-grained categories, and instance-level concepts such as brand names. Existing approaches to large-scale object recognition fail in this scenario, as they expect queries that map directly to a fixed set of pre-trained visual categories, e.g. ImageNet synset tags. We address this limitation by introducing a novel object retrieval method. Given a candidate object image, we first map it to a set of words that are likely to describe it, using several learned image-to-text projections. We also propose a method for handling open-vocabularies, i.e., words not contained in the training data. We then compare the natural language query to the sets of words predicted for each candidate and select the best match. Our method can combine category- and instance-level semantics in a common representation. We present extensive experimental results on several datasets using both instance-level and category-level matching and show that our approach can accurately retrieve objects based on extremely varied open-vocabulary queries. The source code of our approach will be publicly available together with pre-trained models at \url{http://openvoc.berkeleyvision.org} and could be directly used for robotics applications.
+}
+
+
+
+\descriptionPaper
+{I2}{Schedule}
+{	
+State Representation Learning in Robotics: Using Prior Knowledge about Physical Interaction
+}
+{
+Rico Jonschkowski (TU Berlin), Oliver Brock (TU Berlin)
+}
+{
+http://www.roboticsproceedings.org/rss10/p19.html
+}
+{
+State representations critically affect the effectiveness of learning in robots. In this paper, we propose a robotics-specific approach to learning such state representations. Robots accomplish tasks by interacting with the physical world. Physics in turn imposes structure on both the changes in the world and on the way robots can effect these changes. Using prior knowledge about interacting with the physical world, robots can learn state representations that are consistent with physics. We identify five robotic priors and explain how they can be used for representation learning. We demonstrate the effectiveness of this approach in a simulated slot car racing task and a simulated navigation task with distracting moving objects. We show that our method extracts task-relevant state representations from high-dimensional observations, even in the presence of task-irrelevant distractions. We also show that the state representations learned by our method greatly improve generalization in reinforcement learning.
+}
+
+
+
+
+
+\descriptionPaper
+{I3}{Schedule}
+{	
+Conditioned Basis Array Factorization: An Approach to Gait Pattern Extraction 
+}
+{
+Chaohui Gong (Carnegie Mellon University), Matthew Travers (Carnegie Mellon University), Henry Astley (Georgia Tech), Lu Li (Carnegie Mellon University), Joseph Mendelson (Zoo ATL), David Hu (Georgia Tech), Daniel Goldman (Georgia Tech), Howie Choset (Carnegie Mellon University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p55.html
+}
+{
+Snakes locomote through sophisticated coordinated motions of their many degrees of freedom (DoFs). The exhibited regularity of their body undulation implies the existence of low dimensional representations of snake gaits. We posit that investigating the underlying motion patterns will lead to insights for understanding how animals control low-level joint motions in a coupled fashion to achieve behavior-level control targets. To study snake motions in a concise way, we develop a novel modal decomposition algorithm called conditioned basis array factorization (CBAF). Unlike most modal decomposition algorithms, CBAF uses analytical bases which can be identified with temporal, spatial, and behavioral (e.g., moving in a straight line, turning, etc.) components of snake motions. Applying CBAF to shape change data collected from a series of snake behaviors results in analytical representations of the recorded motions. These analytical representations provide insight into biological system models, as well as generate families of gaits for snake robots. Although this work focuses on snakes, the generality of the analysis techniques suggest that a similar approach can be used as an effective motion generation technique for any system whose locomotion is kinematic in nature.
+}
+
+
+
+\descriptionPaper
+{I4}{Schedule}
+{	
+Online Trajectory Planning in Dynamic Environment for Surgical Task Automation
+}
+{
+Takayuki Osa (University of Tokyo), Naohiko Sugita (University of Tokyo), Mamoru Mitsuishi (University of Tokyo)
+}
+{
+http://www.roboticsproceedings.org/rss10/p11.html
+}
+{
+Automation of robotic surgery has the potential to improve the performance of surgeons and the quality of the life of patients. However, the automation of surgical tasks has challenging problems that must be resolved. One such problem is the adaptive online trajectory planning based on the state of the surrounding dynamic environment. This study presents a framework for online trajectory planning in a dynamic environment for automatic assistance in robotic surgery. In the proposed system, a demonstration under various states of the environment is used for learning. The distribution of the demonstrated trajectory over the environmental conditions is modeled using a statistical model. The trajectory, under given environmental conditions, is computed as a conditional expectation using the learned model. Because of its low computational cost, the proposed scheme is able to generalize and plan a trajectory online in a dynamic environment. To design the motion of the system to track the planned trajectory in a stable and smooth manner, the concept of a sliding mode control was employed; its stability was proved theoretically. The proposed scheme was implemented on a robotic surgical system and the performance was verified through experiments and simulations. These experiments and simulations verified that the developed system successfully planned and updated the trajectories of the learned tasks in response to the changes in the dynamic environment.
+}
+
+
+
+\descriptionPaper
+{I5}{Schedule}
+{	
+Articulated Pose Estimation via Over-parametrization and Noise Projection
+}
+{
+Jonathan Brookshire (MIT), Seth Teller (MIT)
+}
+{
+http://www.roboticsproceedings.org/rss10/p09.html
+}
+{
+We describe an algorithm to estimate the pose of a generic articulated object. Our algorithm takes as input a description of the object and a potentially incomplete series of observations; it outputs an on-line estimate of the object's configuration. This task is challenging because: (1) the distribution of object states is often multi-modal; (2) the object is not assumed to be under our control, limiting our ability to predict its motion; and (3) rotational joints make the state space highly non-linear. The proposed method represents three principal contributions to address these challenges. First, we use a particle filter implementation which is unique in that it does not require a reliable state transition model. Instead, the method relies primarily on observations during particle proposal, using the state transition model only at singularities. Second, our particle filter formulation explicitly handles missing observations via a novel proposal mechanism. Although existing particle filters can handle missing observations, they do so only by relying on good state transition models. Finally, our method evaluates noise in the observation space, rather than state space. This reduces the variability in performance due to choice of parametrization, and effectively handles non-linearities caused by rotational joints. We compare our method to a baseline implementation without these techniques and demonstrate, for a fixed error, more than an order-of-magnitude reduction in the number of required particles, an increase in the number of effective particles, and an increase in frame rate. Source code for the method is available at \url{http://rvsn.csail.mit.edu/articulated}.
+}
+
+
+\descriptionPaper
+{I6}{Schedule}
+{	
+DART: Dense Articulated Real-Time Tracking
+}
+{
+Tanner Schmidt (University of Washington), Richard Newcombe (University of Washington), Dieter Fox (University of Washington)
+}
+{
+http://www.roboticsproceedings.org/rss10/p30.html
+}
+{
+This paper introduces DART, a general framework for tracking articulated objects composed of rigid bodies chained together through a kinematic chain. DART can track a broad set of objects encountered in indoor environments, including furniture, tools, human bodies, human hands, and robot manipulators. To achieve the efficiency required for robust tracking, DART extends the signed distance function representation to articulated objects and takes full advantage of highly parallelized GPU algorithms for data association and pose optimization. We demonstrate the capabilities of DART on different types of objects that each have required dedicated tracking techniques in the past (human hand, robot interacting with object).
+}
+
 
 \vspace*{-2.0cm}
 
