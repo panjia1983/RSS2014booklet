@@ -1,0 +1,57 @@
+\chapter{Technical Program}
+\begin{spacing}{1.0}
+
+%\descriptionWorkshop{ID}{room}{title}{online link}{abstract}{timetable}
+
+\newcommand{\descriptionPaper}[6]{
+\begingroup{}
+\vspace{8mm}
+{\large \textbf{#1}} {\large \emph{#3}}
+\\*
+{\large {#4}}
+\\*
+\\*
+\textbf{Abstract:}{#6}
+\\*
+\\*
+%whether to add link or not::
+\ifthenelse{\equal{\targetoutput}{print}}{
+  \ifthenelse{\equal{#5}{}}{
+  
+  }{
+      Proceedings\footnote{\url{#5}} 
+  }
+  \hfill {\bf {\large #2} }
+}{
+  \href{#5}{\large Proceedings}
+  %\hfill {\large \bf #2 }
+}
+
+\endgroup{}
+}
+
+\vspace*{-2.0cm}
+
+\descriptionPaper
+{A1}{Schedule}
+{
+Batch Continuous-Time Trajectory Estimation as Exactly Sparse Gaussian Process Regression
+}
+{
+Tim Barfoot (University Toronto), Chi Hay Tong (University of Oxford), Simo Sarkka (Aalto University)
+}
+{
+http://www.roboticsproceedings.org/rss10/p01.html
+}
+{
+In this paper, we revisit batch state estimation through the lens of Gaussian process (GP) regression. We consider continuous-discrete estimation problems wherein a trajectory is viewed as a one-dimensional GP, with time as the independent variable. Our continuous-time prior can be defined by any linear, time-varying stochastic differential equation driven by white noise; this allows the possibility of smoothing our trajectory estimates using a variety of vehicle dynamics models (e.g., ‘constant-velocity’). We show that this class of prior results in an inverse kernel matrix (i.e., covariance matrix between all pairs of measurement times) that is exactly sparse (block-tridiagonal) and that this can be exploited to carry out GP regression (and interpolation) very efficiently. Though the prior is continuous, we consider measurements to occur at discrete times. When the measurement model is also linear, this GP approach is equivalent to classical, discrete-time smoothing (at the measurement times). When the measurement model is nonlinear, we iterate over the whole trajectory (as is common in vision and robotics) to maximize accuracy. We test the approach experimentally on a simultaneous trajectory estimation and mapping problem using a mobile robot dataset.
+}
+
+\chapter{Technical Program}
+
+\vspace*{-2.0cm}
+
+\clearpage
+
+
+\end{spacing}

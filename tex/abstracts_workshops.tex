@@ -5,9 +5,10 @@
 
 \newcommand{\descriptionWorkshop}[5]{
 \begingroup{}
-\vspace{8mm}
-  \section*{{\huge \textbf{#1}} #3}  
-
+\vspace{5mm}
+  %\section*{{\large \textbf{#1}} #3}  
+{\large \textbf{#1}} {\large \emph{#3}}
+\\*
 %whether to add link or not::
 \ifthenelse{\equal{\targetoutput}{print}}{
   \ifthenelse{\equal{#4}{}}{
@@ -17,10 +18,10 @@
   }
   \hfill {\bf {\large #2} }
 }{
-  \href{#4}{workshop homepage}
+  \href{#4}{\large workshop homepage}
   \hfill {\bf #2 }
 }
-\\*
+\\*\\*
 {#5}
 \endgroup{}
 }
