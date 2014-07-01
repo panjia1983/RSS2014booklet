@@ -16,13 +16,12 @@
 
 %TODO: Add place of the coffee breaks!
 \newcommand{\WorkshopsSchedule}[2]{
-  \event #1 {0900} {1030} {09:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
-  \event #1 {1030} {1100} {10:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}MAR}     {break}
-  \event #1 {1100} {1230} {11:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
-  %\event #1 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {MAR}                   {break}
-  \event #1 {1400} {1530} {14:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
-  \event #1 {1530} {1600} {15:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}MAR}     {break}
-  \event #1 {1600} {1730} {16:00\\\vspace{0.2em}Workshops #2}        {90~min}                {MAR}                   {workshop}
+  \event #1 {0900} {1030} {09:00\\\vspace{0.2em}Workshops #2}        {90~min}                {Wheeler Hall}                   {workshop}
+  \event #1 {1030} {1100} {10:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}Wheeler Hall}     {break}
+  \event #1 {1100} {1230} {11:00\\\vspace{0.2em}Workshops #2}        {90~min}                {Wheeler Hall}                   {workshop}
+  \event #1 {1400} {1530} {14:00\\\vspace{0.2em}Workshops #2}        {90~min}                {Wheeler Hall}                   {workshop}
+  \event #1 {1530} {1600} {15:30 Break}                              {\vspace{1.5mm}30 min}  {\vspace{0.5em}Wheeler Hall}     {break}
+  \event #1 {1600} {1730} {16:00\\\vspace{0.2em}Workshops #2}        {90~min}                {Wheeler Hall}                   {workshop}
 }
 
 % Define the layout of your time tables
@@ -45,42 +44,42 @@
   \event 2 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {}                   {break}
 
   %monday
-  \event 3 {0830} {0900} {08:45 Welcome}                      {\vspace{1.5mm}15~min}          {\vspace{1.5mm}H~0104}        {event}
-  \event 3 {0900} {1000} {09:00 Chris Urmson}                 {60~min}                        {H~0104}                      {invited_talk}
-  \event 3 {1000} {1035} {10:00 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}H~0104}        {oralsession}
-  \event 3 {1035} {1130} {10:35 Break}                        {\vspace{1.5mm}55~min}          {\vspace{1.5mm}Lichthof}      {break}
-  \event 3 {1130} {1235} {11:30 Talks}                        {\vspace{-0.5em}1~long + 6~short\\65~min}{H~0104}             {oralsession}
+  \event 3 {0830} {0900} {08:45 Welcome}                      {\vspace{1.5mm}15~min}          {\vspace{1.5mm}Room 150}        {event}
+  \event 3 {0900} {1000} {09:00 Chris Urmson}                 {60~min}                        {Room 150}                      {invited_talk}
+  \event 3 {1000} {1035} {10:00 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}Room 150}        {oralsession}
+  \event 3 {1035} {1130} {10:35 Break}                        {\vspace{1.5mm}55~min}          {\vspace{1.5mm}Room 150}      {break}
+  \event 3 {1130} {1235} {11:30 Talks}                        {\vspace{-0.5em}1~long + 6~short\\65~min}{Room 150}             {oralsession}
   \event 3 {1235} {1400} {12:35 Lunch Break}                  {85~min}                        {}                            {break}
-  \event 3 {1400} {1500} {14:00 Genevieve Bell}               {60~min}                        {H~0104}                      {invited_talk}
-  \event 3 {1500} {1530} {15:00 Short Talks} 		      {\vspace{1.5mm}30~min}          {\vspace{1.5mm}H~0104}        {oralsession}
-  \event 3 {1530} {1645} {15:30 Break and Posters}            {\vspace{1.5mm}75~min}          {\vspace{1.5mm}Lichthof}      {break}
-  \event 3 {1645} {1800} {16:45 Talks}                        {\vspace{-0.5em}1~long + 7~short\\75~min}{H~0104}             {oralsession}
-  \event 3 {1800} {1930} {18:00 Reception}  	              {\vspace{1.5mm}90~min}          {\vspace{1.5mm}H~0104}        {event}
+  \event 3 {1400} {1500} {14:00 Genevieve Bell}               {60~min}                        {Room 150}                      {invited_talk}
+  \event 3 {1500} {1530} {15:00 Short Talks} 		      {\vspace{1.5mm}30~min}          {\vspace{1.5mm}Room 150}        {oralsession}
+  \event 3 {1530} {1645} {15:30 Break and Posters}            {\vspace{1.5mm}75~min}          {\vspace{1.5mm}Wheeler Hall}      {break}
+  \event 3 {1645} {1800} {16:45 Talks}                        {\vspace{-0.5em}1~long + 7~short\\75~min}{Room 150}             {oralsession}
+  \event 3 {1800} {1930} {18:00 Reception}  	              {\vspace{1.5mm}90~min}          {\vspace{1.5mm}Wheeler Hall}        {event}
 
 
   %tuesday
-  \event 4 {0900} {1000} {09:00 Brad Nelson}                 {60~min}                        {H~0104}                      {invited_talk}
-  \event 4 {1000} {1035} {10:00 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}H~0104}        {oralsession}
-  \event 4 {1035} {1130} {10:35 Break and Posters}            {\vspace{1.5mm}55~min}          {\vspace{1.5mm}Lichthof}      {break}
-  \event 4 {1130} {1235} {11:30 Talks}                        {\vspace{-0.5em}1 long + 6 short\\65~min}{H~0104}             {oralsession}
+  \event 4 {0900} {1000} {09:00 Brad Nelson}                 {60~min}                        {Room 150}                      {invited_talk}
+  \event 4 {1000} {1035} {10:00 Short Talks}                  {\vspace{1.5mm}35~min}          {\vspace{1.5mm}Room 150}        {oralsession}
+  \event 4 {1035} {1130} {10:35 Break and Posters}            {\vspace{1.5mm}55~min}          {\vspace{1.5mm}Wheeler Hall}      {break}
+  \event 4 {1130} {1235} {11:30 Talks}                        {\vspace{-0.5em}1 long + 6 short\\65~min}{Room 150}             {oralsession}
   \event 4 {1235} {1400} {12:35\\[0.2em]Lunch Break}          {85~min}                        {}                            {break}
-  \event 4 {1400} {1530} {14:00 Talks}                        {\vspace{-0.5em}2 long + 6 short\\90~min}{H~0104}             {oralsession}
-  \event 4 {1530} {1645} {15:30 Break and Posters}            {\vspace{1.5mm}75~min}          {\vspace{1.5mm}Lichthof}      {break}
-  \event 4 {1645} {1800} {16:45 Talks}                        {\vspace{-0.5em}1 long + 6 short\\75~min}{H~0104}             {oralsession}
-  \event 4 {1800} {2000} {18:00\\\vspace{0.3em}Buses Depart for Banquet}       {2~h}          {\vspace{-0.7em}at Kater Holzig}     {event}
+  \event 4 {1400} {1530} {14:00 Talks}                        {\vspace{-0.5em}2 long + 6 short\\90~min}{Room 150}             {oralsession}
+  \event 4 {1530} {1645} {15:30 Break and Posters}            {\vspace{1.5mm}75~min}          {\vspace{1.5mm}Wheeler Hall}      {break}
+  \event 4 {1645} {1800} {16:45 Talks}                        {\vspace{-0.5em}1 long + 6 short\\75~min}{Room 150}             {oralsession}
+  \event 4 {1800} {2000} {18:00\\\vspace{0.3em}Buses Depart for Banquet}       {2~h}          {\vspace{-0.7em}at San Francisco Bay}     {event}
 
 
 
   %wednesday
-  \event 5 {0900} {1000} {09:00 Andrew Ng}                            {60~min}                           {H~0104}                      {invited_talk}
-  \event 5 {1000} {1042} {10:00 Short Talks}                          {\vspace{1.5mm}42~min}             {\vspace{1.5mm}H~0104}        {oralsession}
-  \event 5 {1042} {1140} {10:30 Break and Posters}                    {\vspace{1.5mm}58 min}             {\vspace{1.5mm}Lichthof}      {break}
-  \event 5 {1140} {1210} {11:40 Forum}                                {\vspace{1.5mm}30~min}             {\vspace{1.5mm}H~0104}                      {event}
+  \event 5 {0900} {1000} {09:00 Andrew Ng}                            {60~min}                           {Room 150}                      {invited_talk}
+  \event 5 {1000} {1042} {10:00 Short Talks}                          {\vspace{1.5mm}42~min}             {\vspace{1.5mm}Room 150}        {oralsession}
+  \event 5 {1042} {1140} {10:30 Break and Posters}                    {\vspace{1.5mm}58 min}             {\vspace{1.5mm}Wheeler Hall}      {break}
+  \event 5 {1140} {1210} {11:40 Forum}                                {\vspace{1.5mm}30~min}             {\vspace{1.5mm}Room 150}                      {event}
   \event 5 {1210} {1400} {12:10\\[0.2em]Lunch and Lab Tours}          {110~min}                          {}                            {break}
-  \event 5 {1400} {1500} {14:00 Nancy Amato}                          {60~min}                           {H~0104}                      {invited_talk}
-  \event 5 {1500} {1600} {15:00 Early Career Spotlights} 	      {\vspace{1.5mm}60~min}             {\vspace{1.5mm}H~0104}        {event}
-  \event 5 {1600} {1630} {16:00 Awards} 	              {\vspace{1.5mm}15~min}             {\vspace{1.5mm}H~0104}        {event}
-  \event 5 {1630} {1700} {16:15 Farewell} 	              {\vspace{1.5mm}45~min}             {\vspace{1.5mm}H~0104}        {break}
+  \event 5 {1400} {1500} {14:00 Nancy Amato}                          {60~min}                           {Room 150}                      {invited_talk}
+  \event 5 {1500} {1600} {15:00 Early Career Spotlights} 	      {\vspace{1.5mm}60~min}             {\vspace{1.5mm}Room 150}        {event}
+  \event 5 {1600} {1630} {16:00 Awards} 	              {\vspace{1.5mm}15~min}             {\vspace{1.5mm}Room 150}        {event}
+  \event 5 {1630} {1700} {16:15 Farewell} 	              {\vspace{1.5mm}45~min}             {\vspace{1.5mm}Room 150}        {break}
   \event 5 {1700} {2000} {17:00\\\vspace{0.3em}Evening at Google}     {3~h}                              {at Google}     {event}
 \end{timetable}
 
