@@ -10,13 +10,14 @@
  \begingroup
   \sf
   {\Large #4\\}
+  \\*
   {\LARGE #1\\}
   \begin{spacing}{1.0}
 
      {\LARGE \raggedright #2}
      
   \end{spacing}
-  %\vspace{5mm}
+  \vspace{1mm}
   \endgroup
   \normalsize
   #6
@@ -35,7 +36,6 @@
      #3 \\[5mm]
   \end{flushright}
   {\small \textbf{Biography}
-  
   #7
   
   }
@@ -97,12 +97,11 @@ Nancy M. Amato is Unocal Professor and Interim Department Head of the Department
 
 \chapter{Early Career Spotlight}
 
-\invitedTalk{Julie A. Shah}{The Mathematics of Human Robot Interaction}{MIT}{Wednesday, July 16, 15:00}{srinivasa.jpg}
+\invitedTalk{Julie A. Shah}{Integrating Robots into Team-Oriented Environments}{MIT}{Wednesday, July 16, 15:00}{shah.jpg}
 {
-For years, the focus of robot motion planning has been to produce functional motion: industrial robots move to weld parts, vacuuming robots move to suck dust, and personal robots move to clean up a dirty table. We have been exploring the thesis that although functional motion is ideal when robots perform tasks in isolation, it is insufficient for collaboration, where a human and a robot are manipulating in a tightly-coupled shared workspace. Our goal is to make this collaboration fluent and seamless. To this end, we have been developing algorithms where the notion of an observer watching the motion is woven into the fabric of the motion planner. This perspective has allowed us to formalize qualitative notions such as predictability and legibility in psychology in terms of Bayesian inference and inverse optimal control, and to develop generative models for such motion using functional gradient optimization. I will also describe some of our user studies on applying these algorithms to human-robot handovers, 
-assistive teleoperation, and shared workspace collaboration, and ongoing work on deception, ambiguity, and emotive motion.
+Recent advances in computation, sensing, and hardware enable robotics to perform an increasing percentage of traditionally manual tasks in manufacturing. Yet, often the assembly mechanic cannot be removed entirely from the process. This provides new economic motivation to explore opportunities where human workers and industrial robots may work in close physical collaboration. In this talk, I will present the development of new algorithmic techniques for collaborative plan execution that scale to real-world industrial applications. I also discuss the design of new models for robot planning, which use insights and data derived from the planning and execution strategies employed by successful human teams, to support more seamless robot participation in human work practices. This includes models for human-robot team training, which involves hands-on practice to clarify sequencing and timing of actions, and for team planning, which includes communication to negotiate and clarify allocation and sequencing of work. The aim is to support both the human and robot workers in co-developing a common understanding of task responsibilities and information requirements, to produce more effective human-robot partnerships.
 }{
-Siddhartha Srinivasa is an Associate Professor at the Robotics Institute at Carnegie Mellon University. His research focuses on manipulation, with the goal of enabling robots to robustly and gracefully interact with the world to perform complex manipulation tasks in uncertain, unstructured, and cluttered environments. His current research focuses on physics-based nonprehensile manipulation for reconfiguring clutter, functional gradient methods for motion planning, and formalizing HRI principles using machine learning, motion planning and optimization algorithms. Sidd is a recipient of the HRI Best Paper Award (2010), ONR Young Investigator Award (2012), Okawa Research Award (2012), and a best-paper finalist at RSS (2012, 2013), IEEE ICRA (2009, 2010, 2012), IEEE IROS (2010), and RO-MAN (2012). Sidd also captains the CMU squash team, and dreams of running ultra-marathons.
+Julie Shah is an Assistant Professor in the Department of Aeronautics and Astronautics at MIT and leads the Interactive Robotics Group of the Computer Science and Artificial Intelligence Laboratory. Shah received her SB (2004) and SM (2006) from the Department of Aeronautics and Astronautics at MIT, and her PhD (2010) in Autonomous Systems from MIT. Before joining the faculty, she worked at Boeing Research and Technology on robotics applications for aerospace manufacturing. She has developed innovative methods for enabling fluid human-robot teamwork in time-critical, safety-critical domains, ranging from manufacturing to surgery to space exploration. Her group draws on expertise in artificial intelligence, human factors, and systems engineering to develop interactive robots that emulate the qualities of effective human team members to improve the efficiency of human-robot teamwork. Shah is the recipient of a 2014 NSF CAREER Award, and her work was recognized by the Technology Review as one of the 10 Breakthrough Technologies of 2013. She has received international recognition in the form of best paper awards and nominations from the International Conference on Automated Planning and Scheduling, the American Institute of Aeronautics and Astronautics, the IEEE/ACM International Conference on Human-Robot Interaction, and the International Symposium on Robotics.
 }
 
 
