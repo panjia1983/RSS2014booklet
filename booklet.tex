@@ -5,9 +5,9 @@
 \usepackage{ifthen}
 
 %define to switch between different flavours:
-%\def \targetoutput {print}  %generate for printing (no colored hyperlinks, pages are all upright)
+\def \targetoutput {print}  %generate for printing (no colored hyperlinks, pages are all upright)
 %\def \targetoutput {usbstick} %optimized for screen viewing, pre-rotated landscape pages, links to local files
-\def \targetoutput {online}
+%\def \targetoutput {online}
 
 \usepackage{fleqn}
 %\usepackage{latexpackages/my}
@@ -99,17 +99,17 @@
 \usepackage{fancyhdr}
 %\titleformat{\chapter}{\bf\huge\center}{\thechapter}{0.2cm}{}
 %don't print chapter name at the chapter beginning:
-\titleformat{\chapter}{}{ }{0pt}{}
+\titleformat{\chapter}{\bf \huge}{\thechapter}{1cm}{#1}
 \titlespacing{\chapter}
    {0cm}% left
-   {0cm}% before
-   {0cm}% after
+   {-0.75cm}% before
+   {1cm}% after
 
 \titleformat{\section}{\sf \LARGE}{\thesection}{1em}{#1}
 \titleformat{\subsection}{\sf \Large}{\thesubsection}{1em}{#1}
 %\titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
 \titlespacing{\section} {0pt}{0.5ex plus 3ex}{0.8ex}
-
+\titlespacing{\subsection} {0pt}{0.5ex plus 3ex}{0.8ex}
 
 
 \fancypagestyle{default}{%
@@ -171,9 +171,9 @@
        Berkeley, California, USA\\
        www.roboticsconference.org
 \end{center}
+
 \clearpage
 \pagestyle{front}
-
 
 
 %%this puts the TOC on the same page as the preface
@@ -187,11 +187,13 @@
 % 
 
 \newpage
+
 \thispagestyle{empty}
 \mbox{}
-
+\setcounter{page}{0}
 
 \include{tex/preface}   %contains the preface page with the welcome
+
 \clearpage
 \setcounter{tocdepth}{1}
 \begingroup
@@ -211,6 +213,8 @@
 \endgroup
 
 \include{tex/abstracts_invited} %abstracts of invited talks
+
+\include{tex/abstracts_spotlight} %abstracts of early career spotlights
 
 \include{tex/abstracts_workshops} %abstracts of workshops
 

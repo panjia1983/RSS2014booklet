@@ -1,3 +1,4 @@
+\titleformat{\chapter}{\bf \huge}{\thechapter}{1cm}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Invited Talks}
@@ -9,7 +10,7 @@
  \vspace{1em}
  \begingroup
   \sf
-  {\Large #4\\}
+  {\LARGE #4\\}
   \\*
   {\LARGE #1\\}
   \begin{spacing}{1.0}
@@ -17,7 +18,7 @@
      {\LARGE \raggedright #2}
      
   \end{spacing}
-  \vspace{1mm}
+  \vspace{3mm}
   \endgroup
   \normalsize
   #6
@@ -92,26 +93,4 @@ Andrew Ng's research is in the areas of machine learning and artificial intellig
 Protein motions, ranging from molecular flexibility to large-scale conformational change, play an essential role in many biochemical processes. For example, some devastating diseases such as Alzheimer's and bovine spongiform encephalopathy (Mad Cow) are associated with the misfolding of proteins. Despite the explosion of structural and functional data, our understanding of protein movement is still very limited because it is difficult to measure experimentally and computationally expensive to simulate. In this talk, we describe how techniques developed for motion planning in robotics have been adapted and applied to model and analyze protein motions and to reason about the structure, flexibility and interactions of proteins and other biomolecules. These techniques adapt sampling-based methods developed for robotic configuration spaces to construct approximate maps of a protein's potential energy landscape which can be used, e.g., to generate transitional motions of a protein to the native state from unstructured conformations or between specified conformations. For example, we show how our map-based tools for modeling and analyzing folding landscapes can capture subtle folding differences between protein G and its mutants, NuG1 and NuG2.
 }{
 Nancy M. Amato is Unocal Professor and Interim Department Head of the Department of Computer Science and Engineering at Texas A\&M University where she co-directs the Parasol Lab. She received undergraduate degrees in Mathematical Sciences and Economics from Stanford University, and M.S. and Ph.D. degrees in Computer Science from UC Berkeley and the University of Illinois at Urbana-Champaign. Her main areas of research focus are motion planning and robotics, computational biology and geometry, and parallel and distributed computing. She was Editor-in-Chief of the IEEE/RSJ IROS Conference Paper Review Board from 2011-2013, has served on the editorial boards of the IEEE Transactions of Robotics and Automation, IEEE Transactions on Parallel and Distributed Computing, and is an elected member of the Administrative Committee of the IEEE Robotics and Automation Society. She was co-Chair of the NCWIT Academic Alliance (2009-2011), is a member of the Computing Research Association's Committee on the Status of Women in Computing Research (CRA-W) and of the Coalition to Diversity Computing (CDC). She was an AT\&T Bell Laboratories PhD Scholar, received an NSF CAREER Award, is a Distinguished Speaker for the ACM Distinguished Speakers Program, and was a Distinguished Lecturer for the IEEE Robotics and Automation Society. She received the 2013 IEEE Hewlett-Packard/Harriet B. Rigas Award, and a University-level teaching award and the Betty M. Unterberger Award for Outstanding Service to Honors Education at Texas A\&M. She is a AAAS Fellow and an IEEE Fellow.
-}
-
-
-\chapter{Early Career Spotlight}
-
-\invitedTalk{Julie A. Shah}{Integrating Robots into Team-Oriented Environments}{MIT}{Wednesday, July 16, 15:00}{shah.jpg}
-{
-Recent advances in computation, sensing, and hardware enable robotics to perform an increasing percentage of traditionally manual tasks in manufacturing. Yet, often the assembly mechanic cannot be removed entirely from the process. This provides new economic motivation to explore opportunities where human workers and industrial robots may work in close physical collaboration. In this talk, I will present the development of new algorithmic techniques for collaborative plan execution that scale to real-world industrial applications. I also discuss the design of new models for robot planning, which use insights and data derived from the planning and execution strategies employed by successful human teams, to support more seamless robot participation in human work practices. This includes models for human-robot team training, which involves hands-on practice to clarify sequencing and timing of actions, and for team planning, which includes communication to negotiate and clarify allocation and sequencing of work. The aim is to support both the human and robot workers in co-developing a common understanding of task responsibilities and information requirements, to produce more effective human-robot partnerships.
-}{
-Julie Shah is an Assistant Professor in the Department of Aeronautics and Astronautics at MIT and leads the Interactive Robotics Group of the Computer Science and Artificial Intelligence Laboratory. Shah received her SB (2004) and SM (2006) from the Department of Aeronautics and Astronautics at MIT, and her PhD (2010) in Autonomous Systems from MIT. Before joining the faculty, she worked at Boeing Research and Technology on robotics applications for aerospace manufacturing. She has developed innovative methods for enabling fluid human-robot teamwork in time-critical, safety-critical domains, ranging from manufacturing to surgery to space exploration. Her group draws on expertise in artificial intelligence, human factors, and systems engineering to develop interactive robots that emulate the qualities of effective human team members to improve the efficiency of human-robot teamwork. Shah is the recipient of a 2014 NSF CAREER Award, and her work was recognized by the Technology Review as one of the 10 Breakthrough Technologies of 2013. She has received international recognition in the form of best paper awards and nominations from the International Conference on Automated Planning and Scheduling, the American Institute of Aeronautics and Astronautics, the IEEE/ACM International Conference on Human-Robot Interaction, and the International Symposium on Robotics.
-}
-
-
-\invitedTalk{Ashutosh Saxena}{Scaling Robotics: Perception, Planning and Language}{Cornell University}{Wednesday, July 16, 15:30}{saxena.jpg}
-{
-For building future robotic applications, robots need to learn from multi-modal data such as images, videos, 3D point-clouds, video game logs and natural language.  How can such robot learning be scaled to thousands and even millions of examples?   
-
-In this talk, I will present learning algorithms that start learning from large-scale unsupervised datasets, and through different forms of human feedback learn about concepts such as object affordances and basic physics.  Through a few examples, I will show that such learning is very effective in performing a variety of tasks including 3D scene labeling, human activity detection and ancipatoon, grasping and path planning, language understanding, and so on.
-
-}{
-Ashutosh Saxena is an assistant professor in the Computer Science department at Cornell University. His research interests include machine learning, robotics and computer vision. He received his MS in 2006 and Ph.D. in 2009 from Stanford University with Prof. Andrew Ng, and his B.Tech. in 2004 from Indian Institute of Technology (IIT) Kanpur.  He was named a co-chair of IEEE technical committee on robot learning and is an associate editor of IEEE Transactions of Robotics. He was a recipient of National Talent Scholar award in India and Google Faculty award in 2011. He was named a Alred P. Sloan Fellow in 2011, named a Microsoft Faculty Fellow in 2012, received a NSF Career award in 2013, and received Early Career Spotlight Award at RSS 2014.
-He has developed learning algorithms for capturing rich context from multi-modal data such as images, videos, 3D point clouds and natural language.  His algorithms have enabled several robots to perform a variety of tasks, for example:  his single image depth estimation (Make3D) algorithm has enabled aerial robots to fly; his human behavior modeling algorithm (`hallucinating humans') has enabled robots to detect objects in 3D scenes, anticipate human actions, and underwrite non-prime financial lending; his co-active learning algorithm has enabled manipulators to plan user preferred motions.  His robots (such as STAIR, POLAR and Kodiak) perform household chores such as unload items from a dishwasher, arrange a disorganized house, and cook simple kitchen recipes. His work has received a lot of attention in the popular press such as the frontage of New York Times, BBC, ABC, New Scientist, Discovery Science, Wired Magazine and many others.
 }

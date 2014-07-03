@@ -1,3 +1,4 @@
+\titleformat{\chapter}{\bf \huge}{\thechapter}{1cm}{}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Technical Program}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -6,11 +7,12 @@
 
 
 % Define event types
-\defineevent{invited_talk}  {0.21}{0.5} {0.16}{1.0}{1.0}{1.0}
-\defineevent{oralsession}   {0.0} {0.28}{1.0} {1.0}{1.0}{1.0}
-\defineevent{workshop}      {0.8} {0.3} {0.15} {1.0}{1.0}{1.0}
+\defineevent{invited_talk}  {0.2}{0.7} {0.36}{1.0}{1.0}{1.0}
+\defineevent{oralsession}   {0.4} {0.28}{1.0} {1.0}{1.0}{1.0}
+\defineevent{workshop}      {1.0} {0.843} {0.05} {0.0}{0.0}{0.0}
 \defineevent{poster_presentation} {1.0} {0.4} {0.2} {1.0}{1.0}{1.0}
-\defineevent{event}   {0.75} {0.75} {1.0} {0.0}{0.0}{0.0}
+\defineevent{event}   {1.0} {0.922} {0.804} {0.0}{0.0}{0.0}
+%\defineevent{event}   {1.0} {0.647} {0.0} {0.0}{0.0}{0.0}
 \defineevent{break}   {1.0} {1.0} {1.0} {0.0}{0.0}{0.0}
 
 
@@ -40,7 +42,7 @@
   \WorkshopsSchedule{1}{1-14}
   \event 1 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {}                   {break}
   %friday, workshop day 2
-  \WorkshopsSchedule{2}{14-24}
+  \WorkshopsSchedule{2}{1-14}
   \event 2 {1230} {1400} {12:30\\\vspace{0.2em}Lunch Break}         {90~min}                {}                   {break}
 
   %monday
@@ -126,55 +128,53 @@
 \begin{landscape}
 
 %how to format each talk:
-\ifthenelse{\equal{\targetoutput}{print}}{      \newcommand{\addworkshop}[5]{#3 &           #1  & #2 & #4 \\ \hline} }{}
-\ifthenelse{\equal{\targetoutput}{usbstick}}{   \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4 \\ \hline} }{}
-\ifthenelse{\equal{\targetoutput}{online}}{     \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4 \\ \hline} }{}
-
+\ifthenelse{\equal{\targetoutput}{print}}{      \newcommand{\addworkshop}[5]{#3 &           #1  & #2 & #4\\ \hline} }{}
+\ifthenelse{\equal{\targetoutput}{usbstick}}{   \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4\\ \hline} }{}
+\ifthenelse{\equal{\targetoutput}{online}}{     \newcommand{\addworkshop}[5]{#3 & \href{#5}{#1} & #2 & #4\\ \hline} }{}
 
 \renewcommand{\arraystretch}{2.0}
 \setlength{\tabcolsep}{7pt}
 \clearpage
 \phantomsection \section{Saturday, July 12: Workshops SAT1-SAT14}
-\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{3.5cm}>{\small}r}
-\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Chair & \normalsize Notes\\
+\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{5cm}>{\small}r}\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Organizers & \\
 \hline
 SAT1 & \addworkshop{5th Workshop on Formal Methods for Robotics and Automation}{H. Kress-Gazit, C. Belta}{123}{}{http://verifiablerobotics.com/RSS14/index.html}
-SAT2 & \addworkshop{5th Workshop on RGB-D Perception: Reconstruction and Recognition}{H. Koppula, J. Xiao, A. Saxena, J. Leonard}{200}{}{http://www.cs.cornell.edu/~hema/rgbd-workshop-2014/}
-SAT3 & \addworkshop{Autonomous Control, Adaptation, and Learning for Underwater Vehicles}{G. Hollinger, M. Hsieh, F. Hover, R. Smith}{130}{}{http://drexelsaslab.appspot.com/workshops/rss2014/index.html}
+SAT2 & \addworkshop{5th Workshop on RGB-D Perception: Reconstruction and Recognition}{H. Koppula, J. Xiao, A. Saxena, J.~Leonard}{200}{}{http://www.cs.cornell.edu/~hema/rgbd-workshop-2014/}
+SAT3 & \addworkshop{Autonomous Control, Adaptation, and Learning for Underwater Vehicles}{G. Hollinger, M. Hsieh, F. Hover, R.~Smith}{130}{}{http://drexelsaslab.appspot.com/workshops/rss2014/index.html}
 SAT4 & \addworkshop{DARPA Robotics Challenge: Lessons Learned and What's Next}{M. Fallon and S. Kuindersma}{110}{}{http://drcworkshop.csail.mit.edu/}
 SAT5 & \addworkshop{Distributed Control and Estimation for Robotic Vehicle Networks}{N. Ahmed, S. Martinez, J. Cortes}{20}{}{https://sites.google.com/site/rss2014dceworkshop}
-SAT6 & \addworkshop{Human versus Robot Grasping and Manipulation—How Can We Close the Gap?}{O. Brock, D. Berenson, J. Mainprice, M. Roa, C. Eppner}{210}{}{http://www.mobilemanipulation.org/rss2014}
-SAT7 & \addworkshop{Human–Robot Collaboration for Industrial Manufacturing}{A. Sauppe, M. Gombolay, J. Shah, B. Mutlu}{101}{}{http://hci.cs.wisc.edu/workshops/RSS2014/}
+SAT6 & \addworkshop{Human versus Robot Grasping and Manipulation—How Can We Close the Gap?}{O. Brock, D. Berenson, J.~Mainprice, M.~Roa, C. Eppner}{210}{}{http://www.mobilemanipulation.org/rss2014}
+SAT7 & \addworkshop{Human–Robot Collaboration for Industrial Manufacturing}{A. Sauppe, M. Gombolay, J. Shah, B.~Mutlu}{101}{}{http://hci.cs.wisc.edu/workshops/RSS2014/}
 SAT8 & \addworkshop{Moral, Ethical, and Legal Issues in Robotics}{J. Gillula, J. Urban}{203}{}{http://hybrid.eecs.berkeley.edu/workshops/2014/RSS/law-ethics/}
 SAT9 & \addworkshop{Non-parametric Learning in Robotics}{R. Triebel, L. Spinello}{220}{}{http://ais.informatik.uni-freiburg.de/nonparam_rss14/index.html}
 SAT10 & \addworkshop{Optimization Techniques for Motion Generation in Robotics}{A. Escande, K. Mombaur}{213}{}{http://www.orb.uni-hd.de/conferences-workshops/RSS2014}
-SAT11 & \addworkshop{Resource-efficient Integration of Planning and Perception for True Autonomous Operation of Micro Air Vehicles (MAVs)}{D. Burschka, M. Suppa, R. Siegwart, K. Schmid, M. Achtelik}{106}{}{http://rss2014_uav.visual-navigation.com/}
+SAT11 & \addworkshop{Resource-efficient Integration of Planning and Perception for True Autonomous Operation of Micro Air Vehicles (MAVs)}{D. Burschka, M. Suppa, R. Siegwart, K.~Schmid, M. Achtelik}{106}{}{http://rss2014_uav.visual-navigation.com/}
 SAT12 & \addworkshop{Robot Makers: The Future of Digital Rapid Design and Fabrication of Robots}{A. Mehta, M. Tolley, N. Bezzo, C. Onal}{122}{}{http://www.seas.upenn.edu/~nicbezzo/RoMa2014/}
-SAT13 & \addworkshop{Workshop on Robotics Methods for Structural and Dynamic Modeling of Molecular Systems}{L. Tapia, J. Corts, J. J. Cheng, A. Shehu, K. Manavi}{206}{}{https://cs.unm.edu/amprg/rss14workshop/}
-SAT14 & \addworkshop{Workshop on Women in Robotics}{J. Pineau, A. Tomaz, M. Bennewitz, L. Takayama}{100}{}{http://www.cs.mcgill.ca/~jpineau/rss14-wir.html}
+SAT13 & \addworkshop{Workshop on Robotics Methods for Structural and Dynamic Modeling of Molecular Systems}{L. Tapia, J. Corts, J. J. Cheng, A.~Shehu, K. Manavi}{206}{}{https://cs.unm.edu/amprg/rss14workshop/}
+SAT14 & \addworkshop{Workshop on Women in Robotics}{J. Pineau, A. Tomaz, M. Bennewitz, L.~Takayama}{100}{}{http://www.cs.mcgill.ca/~jpineau/rss14-wir.html}
 \end{tabular}
 \vfill
 
 
 \clearpage
 \phantomsection \section{Sunday, July 13: Workshops SUN1-SUN14}
-\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{3.5cm}>{\small}r}
-\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Chair & \normalsize Notes\\
+\begin{tabular}{>{\small}rr>{\raggedright}p{14cm}>{\small \raggedright}p{4.5cm}>{\small}r}
+\normalsize ID & \normalsize Room & \normalsize Title & \normalsize Organizers & \\
 \hline
-SUN1 & \addworkshop{Affordances in Vision for Cognitive Robotics}{K. M. Varadarajan, M. Vincze, T. Darrell, J. Gall}{100}{}{http://affordances.info/workshops/RSS.html}
+SUN1 & \addworkshop{Affordances in Vision for Cognitive Robotics}{K. M. Varadarajan, M. Vincze, T.~Darrell, J. Gall}{100}{}{http://affordances.info/workshops/RSS.html}
 SUN2 & \addworkshop{Communication-aware Robotics: New Tools for Multi-Robot Networks, Autonomous Vehicles, and Localization}{D. Rus, S. Gil, N. Ayanian, S. Kumar}{122}{}{http://groups.csail.mit.edu/drl/wiki/index.php?title=RSS_2014_Proposed_Workshop}
 SUN3 & \addworkshop{Constrained decision-making in robotics: models, algorithms, and applications}{S Carpin, M. Pavone}{210}{}{http://robotics.ucmerced.edu/RSS2014Workshop}
 SUN4 & \addworkshop{Dynamic Locomotion}{A. Ames, K. Sreenath}{220}{}{http://www.dynamiclocomotion.org/}
 SUN5 & \addworkshop{Guaranteed Safety for Uncertain Robotic Systems}{J. Gillula, S. Kaynama}{24}{}{http://hybrid.eecs.berkeley.edu/workshops/2014/RSS/safety}
 SUN6 & \addworkshop{Humans and Sensing in Cyber-Physical Systems}{A. Aswani, R. Vasudevan}{203}{}{http://ieor.berkeley.edu/~aaswani/rss14_cps/}
 SUN7 & \addworkshop{Information-based Grasp and Manipulation Planning}{S. Patil, R. Platt Jr.}{200}{}{http://rll.berkeley.edu/RSS2014Workshop}
-SUN8 & \addworkshop{Learning Plans with Context from Human Signals}{D. Bagnell, A. Jain, J. Peters, A. Saxena}{123}{}{http://learningplans.cs.cornell.edu/}
+SUN8 & \addworkshop{Learning Plans with Context from Human Signals}{D. Bagnell, A. Jain, J. Peters, A.~Saxena}{123}{}{http://learningplans.cs.cornell.edu/}
 SUN9 & \addworkshop{Managing Software Variability in Robot Control Systems}{D. Brugali, C. Schlegel\footnote{Half day}}{206}{}{http://robotics.unibg.it/tcsoft/rss2014/}
 SUN10 & \addworkshop{Next-Generation Robotics: Academia, Start-ups and Industry}{S. Chitta, I. Sucan, T. Kroeger}{110}{}{http://moveit.ros.org/rss-2014-workshop/}
 SUN11 & \addworkshop{Self-Driving Vehicles: Technology and Policy}{J. Leonard, J. Levinson}{213}{}{http://jleonard.scripts.mit.edu/sdv/}
-SUN12 & \addworkshop{Advances on Soft Robotics}{C. Laschi, F. Iida, J. Rossiter, L. Margheri}{106}{}{http://www.robosoftca.eu/events/RSS2014-workshop/}
+SUN12 & \addworkshop{Advances on Soft Robotics}{C. Laschi, F. Iida, J. Rossiter, L.~Margheri}{106}{}{http://www.robosoftca.eu/events/RSS2014-workshop/}
 SUN13 & \addworkshop{Workshop on Multi-View Geometry in Robotics (MVIGRO 2014)}{V. Indelman, L. Carlone, F. Dellaert}{130}{}{http://www.cc.gatech.edu/events/mvigro/}
-SUN14 & \addworkshop{Workshop on Robotic Monitoring}{A. Breitenmoser, J. Muller, J. Das, R. Smith, C. Detweiler}{101}{}{http://cinaps.usc.edu/rss2014/}
+SUN14 & \addworkshop{Workshop on Robotic Monitoring}{A. Breitenmoser, J. Muller, J. Das, R.~Smith, C. Detweiler}{101}{}{http://cinaps.usc.edu/rss2014/}
 \end{tabular}
 
 
