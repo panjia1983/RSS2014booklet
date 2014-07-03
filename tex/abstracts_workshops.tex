@@ -5,56 +5,61 @@
 
 %\descriptionWorkshop{ID}{room}{title}{online link}{abstract}{timetable}
 
-\newcommand{\descriptionWorkshop}[5]{
+\newcommand{\descriptionWorkshop}[6]{
 \begingroup{}
-\vspace{5mm}
-  %\section*{{\large \textbf{#1}} #3}  
-{\large \textbf{#1}} {\large \emph{#3}}
+\vspace{6mm}
+{\large \textbf{#1}} {\large \emph{#3}} 
+\\*
+{\large {#5}}
+\\*
+{\bf {\large #2 } }
+\\*
+\\*
+\textbf{Abstract:}{#6}
+\\*
 \\*
 %whether to add link or not::
 \ifthenelse{\equal{\targetoutput}{print}}{
   \ifthenelse{\equal{#4}{}}{
   
   }{
-      workshop homepage\footnote{\url{#4}} 
+      Workshop homepage\footnote{\url{#4}} 
   }
-  \hfill {\bf {\large #2} }
+  %\hfill {\bf {\large #2} }
 }{
-  \href{#4}{\large workshop homepage}
-  \hfill {\bf #2 }
+  \href{#4}{\large Workshop homepage}
+  %\hfill {\bf #2 }
 }
-\\*\\*
-{#5}
 \endgroup{}
 }
 
 
-\newcommand{\descriptionLabTour}[5]{
-\begingroup{}
-\vspace{8mm}
-  \section*{{\huge \textbf{#1}} #3}  
-
-%whether to add link or not::
-\ifthenelse{\equal{\targetoutput}{print}}{
-  \ifthenelse{\equal{#4}{}}{
-  
-  }{
-      Lab homepage\footnote{\url{#4}} 
-  }
-  \hfill {\bf {\large #2} }
-}{
-  \href{#4}{Lab homepage}
-  \hfill {\bf #2 }
-}
-\\*
-{#5}
-\endgroup{}
-}
-
+%\newcommand{\descriptionLabTour}[5]{
+%\begingroup{}
+%\vspace{8mm}
+%  \section*{{\huge \textbf{#1}} #3}  
+%
+%%whether to add link or not::
+%\ifthenelse{\equal{\targetoutput}{print}}{
+%  \ifthenelse{\equal{#4}{}}{
+%  
+%  }{
+%      Lab homepage\footnote{\url{#4}} 
+%  }
+%  \hfill {\bf {\large #2} }
+%}{
+%  \href{#4}{Lab homepage}
+%  \hfill {\bf #2 }
+%}
+%\\*
+%{#5}
+%\endgroup{}
+%}
 
 \vspace*{-1.0cm}
 
 \descriptionWorkshop{SAT1}{Saturday, Room 123}{5th Workshop on Formal Methods for Robotics and Automation}{http://verifiablerobotics.com/RSS14/index.html}
+{Hadas Kress-Gazit (Cornell), Calin Belta (Boston University)}
 {
 How can we guarantee robots will never cause harm? How can we prove that complicated mechanical systems, controlled by computers and programmed by people will always behave as expected, under changing conditions and in a variety of uncertain environments?  How do we formalize what such behaviors are?
 
@@ -65,26 +70,26 @@ This full day workshop brings together leading researchers from the robotics, fo
 }
 
 \descriptionWorkshop{SAT2}{Saturday, Room 200}{5th Workshop on RGB-D Perception: Reconstruction and Recognition}{http://www.cs.cornell.edu/~hema/rgbd-workshop-2014/}
+{Hema Koppula (Cornell), Jianxiong Xiao (Princeton), Ashutosh Saxena (Cornell), John Leonard (MIT)}
 {
 RGB-D 2014 is a full-day workshop to be held in conjunction with the Robotics Science and Systems (RSS) conference 2014, in Berkeley, July 12, 2014. We seek to bring together ongoing research efforts on RGB-D cameras in robotics as well as contributions from related fields such as computer vision, graphics and machine learning.
 
 The recent advances in RGB-D sensors, such as Kinect, have been transforming robotics research and applications. There have been a large number of research efforts in algorithms and application of RGB-D perception for enabling robots to operate in unstructured real-world environments. Some of the key challenges in this direction are to understand humans and their environments, which is key for robots to operate and perform various tasks in human environments. Our workshop welcomes high-quality work on all topics related to robotics and RGB-D. We will particularly promote and encourage contributions in the direction of applying RGB-D perception to understand human environments and activities, which enable robots to perform various tasks such as detection, navigation, manipulation and observation in human environments.
-
-
 }
 
 
-
+%
 \descriptionWorkshop{SAT3}{Saturday, Room 130}{Autonomous Control, Adaptation, and Learning for Underwater Vehicles}{http://drexelsaslab.appspot.com/workshops/rss2014/index.html}
+{Geoff Hollinger (Oregon State University), Ani Hsieh (Drexel University), Franz Hover (MIT), Ryan Smith (Fort Lewis College)}
 {
 There has been a steady increase in the deployment of autonomous underwater and surface vehicles (AUVs and ASVs) for applications such as hazardous waste mitigation, inspection and recovery of marine structures, environmental monitoring, and tracking of various biological, chemical, and physical processes. These emerging applications require solving unique challenges that arise when working in the underwater environment. The lack of reliable wireless communications between robots and a base station or with other robots makes remote control difficult; underwater vehicle dynamics are tightly coupled with the environmental dynamics making controls hard; and wellunderstood perception technologies do not always apply to the underwater environment. These challenges, in addition to our limited understanding of the complexities of the fluidic environment, make closed-loop control, online learning, and adaptive decision making challenging at best. 
-
+\clearpage
 The purpose of this workshop is to bring together experts in the highly interdisciplinary field of autonomous underwater robotics to bridge the gap between (1) modeling and prediction for closed-loop control and (2) online learning and adaptation in highly dynamic and uncertain environments. Specifically we would like to highlight new work that lies at the intersection of robotics, control theory, artificial intelligence, machine learning, ocean science, and transport theory that addresses issues in modeling and prediction of the underwater environment. The techniques developed in this workshop will lead to improvements in control, learning, and adaptation for underwater systems that are paramount to achieving prolonged persistent autonomy in these environments. 
-
 }
 
 
 \descriptionWorkshop{SAT4}{Saturday, Room 110}{DARPA Robotics Challenge: Lessons Learned and What's Next}{http://drcworkshop.csail.mit.edu/}
+{Maurice Fallon (MIT), Scott Kuindersma (MIT)}
 {
 Over the last 2 years, the DARPA Robotics Challenge (DRC) has driven the development of robot systems and software capable of assisting humans in responding to natural and man-made disasters—a problem that demands beyond-state-of-the-art approaches to manipulation, locomotion, perception, and human-robot interaction (HRI). The December 2013 DRC Trials demonstrated to the world robots capable of manipulating doors and valves, cutting through walls, climbing ladders, driving vehicles, and traversing challenging terrain, all aided by a remote operator using only feedback from the robot sensors suite over a limited, field-realistic communications link. The participating teams represented some of the most advanced robotics research organizations in the world.
 
@@ -93,28 +98,34 @@ This workshop is intended to be a forum where participants and organizers can sh
 
 
 \descriptionWorkshop{SAT5}{Saturday, Room 20}{Distributed Control and Estimation for Robotic Vehicle Networks}{https://sites.google.com/site/rss2014dceworkshop}
+{Nisar Ahmed (University of Colorado, Boulder), Sonia Martinez (UCSD), Jorge Cortes (UCSD)}
 {
 Applications for autonomous multi-vehicle networks have grown significantly in recent years, and have stimulated research on distributed strategies for optimal/robust cooperative autonomy in multi-vehicle systems. Ideally, distributed approaches not only perform as well as centralized methods, but also lead to better scalability, naturally parallelized computation, and resilience to communication loss and hardware failures. In practice, it is usually convenient to assume that distributed control and distributed estimation problems can be treated separately. While state-of-the-art techniques for distributed planning (e.g. graph-based trajectory generation, consensus-/graph-based task allocation) and perception (e.g. multi-robot SLAM/SAM, Bayesian/consensus sensor fusion for cooperative tracking) can be combined with good results, the assumed “separation principle” is heuristic and leaves open many questions: how should off-the-shelf solutions for different parts of the same problem be jointly selected or modified to work best together, and what guarantees (if any) are there for optimal/robust behavior? Alternative integrated approaches have also emerged for multi-vehicle systems (e.g. distributed optimization, model predictive control, reinforcement learning), which formally capture and exploit subtle yet important dynamic linkages between the control and estimation problems. However, these approaches raise their own questions: are the assumptions/approximations required for analytical and computational tractability reasonable for general applications, and how can state-of-the-art planning/perception methods for individual mobile robots be leveraged?
 
 This workshop will bring together control/planning and estimation/perception specialists from the robotics and controls communities who are interested in autonomous multi-vehicle networks to: (i) discuss these and other related research questions; (ii) promote new ideas for unifying distributed control and estimation, while improving awareness of state-of-the-art techniques; and (iii) foster interactions for developing theoretical ideas and practical applications.
 }
 
+\clearpage 
+
 \descriptionWorkshop{SAT6}{Saturday, Room 210}{Human versus Robot Grasping and Manipulation—How Can We Close the Gap?}{http://www.mobilemanipulation.org/rss2014}
+{Oliver Brock (Technische Universitat Berlin), Dmitry Berenson (WPI), Jim Mainprice (WPI), Maximo Roa (DLR), Clemens Eppner (Technische Universitat Berlin)}
 {
 Grasping and manipulation are easy for humans: they quickly acquire visual information, process the scene, decide how to grasp, and execute the required motion, even under difficult conditions and with previously unseen objects. Several decades of robotics research did not enable us to transfer comparable abilities to robots. This workshop will bring together leading researchers from the human and the robotics sides of grasping research.
 }
 
 
-
+%
 \descriptionWorkshop{SAT7}{Saturday, Room 101}{Human–Robot Collaboration for Industrial Manufacturing}{http://hci.cs.wisc.edu/workshops/RSS2014/}
+{Allison Sauppe (University of Wisconsin-Madison), Matthew Gombolay (MIT), Julie Shah (MIT), Bilge Mutlu (University of Wisconsin-Madison)}
 {
 This workshop aims to bring together researchers in academia and industry to develop strategies and identify practical limitations for effective human-robot collaboration in manufacturing. Traditionally, robots have been caged off from human activity; however, improvements in advanced robotic technology are opening up the possibility of one-to-one collaboration between human workers and their robotic counterparts. Already, the introduction of automation in manufacturing has resulted in an improvement in quality and productivity. However, developing robotic systems that can serve as effective teammates remains a challenge in both academia and industry.
 
 Robot systems capable of effectively collaborating with humans requires the coordination of a number of subsystems, such as the mechanical manipulation of the robot’s joints, social behavior of the robot, planning and coordinating algorithms, and safety mechanisms. The goal of this workshop is to bring together researchers and industry practitioners to forge interdisciplinary collaborations that translate academic advancements into real systems. We believe that this workshop will provide a forum where practitioners can discuss challenges in implementing human-robot systems and researchers can relate the state of the art in robotic technology.
 }
 
-
+%
 \descriptionWorkshop{SAT8}{Saturday, Room 203}{Moral, Ethical, and Legal Issues in Robotics}{http://hybrid.eecs.berkeley.edu/workshops/2014/RSS/law-ethics/}
+{Jeremy Gillula (UC Berkeley), Jennifer Urban (UC Berkeley)}
 {
 The widespread use of robotic systems outside the controlled environments in which they have traditionally been found – from autonomous cars on public roads, to drones in the US airspace, to in-home service robots – generates a wide array of moral, ethical, and legal issues that robotics researchers have not had to deal with in the past. For example:
 
@@ -131,6 +142,7 @@ The purpose of this workshop is to attempt to bring roboticists, lawyers, ethici
 
 
 \descriptionWorkshop{SAT9}{Saturday, Room 220}{Non-parametric Learning in Robotics}{http://ais.informatik.uni-freiburg.de/nonparam_rss14/index.html}
+{Rudolph Triebel (Technical University of Munich), Luciano Spinello (University of Freiburg)}
 {
 The growing interest in non-parametric machine learning methods is driven by their flexibility and expressive power on one side and by their efficiency when applied to large data sets on the other side. The latter is particularly interesting for robotic learning tasks, and recent achievements show the potential that these methods can have in practice. 
 
@@ -140,6 +152,7 @@ Renowed experts in the field will present their work, and there will be ample op
 
 
 \descriptionWorkshop{SAT10}{Saturday, Room 213}{Optimization Techniques for Motion Generation in Robotics}{http://www.orb.uni-hd.de/conferences-workshops/RSS2014}
+{Adrien Escande (CNRS/AIST Joint Robotics Laboratory), Katja Mombaur (University of Heidelberg)}
 {
 Numerical optimization and optimal control algorithms have become more and more powerful in recent years which also made them increasingly interesting to generate motions in robotics.  Optimization provides the possibility to easily handle redundant mechanisms, to assign the degrees of freedom of the robot to multiple and possibly concurrent tasks, to enforce hard constraints corresponding to physical limitations, etc., to name just a few.  Optimization is used in numerous schemes for generalized inverse kinematics, linear and non-linear control, direct and inverse optimal control, trajectory optimization, planning, etc., with already impressive achievements. However, the increasing complexity of robot models and problems, and the need for fast computations still yield hard challenges and call for many more developments.
 
@@ -152,11 +165,12 @@ The goal of this workshop is to give, via a mix of invited talks, posters and di
 
 
 \descriptionWorkshop{SAT11}{Saturday, Room 106}{Resource-efficient Integration of Planning and Perception for True Autonomous Operation of Micro Air Vehicles (MAVs)}{http://rss2014_uav.visual-navigation.com/}
+{Darius Burschka (TU Munich), Michael Suppa (DLR), Roland Siegwart (ETH Zürich), Korbinian Schmid (DLR), Markus Achtelik (ETH Zürich)}
 {
 The wide availability of small and cheap flying platforms (e.g. quadrotors) in combination with advances in embedded systems, high density batteries and lightweight sensors has made small UAS very attractive for a wide range of applications like area surveillance, asset inspection, mapping or search and rescue. The compact size and small weight also make them easier to deploy, both due to their high portability and because obtaining an operational permit is typically easier for such systems.
 
 A disadvantage of using compact, low-power sensors is often their slower speed and lower accuracy making them unsuitable for direct capture and control of high dynamic motion. On the other hand, the inherent instability of some systems (e.g. helicopters or quadrotors), their limited on-board resources and payload, their multi-DOF design and the uncertain and dynamic environment they operate in, present unique challenges both in achieving robust low level control and in implementing higher level functions, like navigation, exploration or object tracking. These challenges can be exacerbated in search and rescue missions where the lack of communications infrastructure and the need for beyond-line-of-sight flying creates the need for operating at a higher degree of autonomy.
-
+\clearpage
 The perceptual evaluation of high dynamic motion can be improved through fusion of proprioceptive (e.g. inertial) and exteroceptive (e.g. vision) sensors, through the use of internal environment representations and/or through the coordinated use of multiple platforms. Perception and action need to be strongly coupled to allow long-term stabilization in the face of challenging platform dynamics, external disturbances, sensor uncertainty and on-board failures. The same is true between perception and navigation/planning to achieve both the necessary reactive behaviors (e.g. for obstacle avoidance or for formation keeping), as well as the execution of goal-oriented tasks.
 
 The goal of the workshop is to collect current state-of-the art solutions to the aforementioned issues. Our key interests lie in the latest developments in the area of robust integration of perception with control and planning of the highly dynamic motion of resource-limited flying platforms. We are also interested in new developments in the field of internal environment representation and collaborative approaches in perception and exploration.
@@ -164,9 +178,8 @@ The goal of the workshop is to collect current state-of-the art solutions to the
 After the great success of the last RSS workshop, we aim to bring together again researchers working on aspects of sensor data processing and fusion for robust navigation of flying platforms. The goal is to provide an opportunity to compare and discuss the current state-of-the-art approaches and solutions to the aforementioned problems. We encourage video and live presentations of the approaches during the conference. We aim to organize a panel at the end of the workshop to discuss current challenges in the field and to foster collaborations between the research groups.
 }
 
-
-
 \descriptionWorkshop{SAT12}{Saturday, Room 122}{Robot Makers: The Future of Digital Rapid Design and Fabrication of Robots}{http://www.seas.upenn.edu/~nicbezzo/RoMa2014/}
+{Ankur Mehta (MIT), Mike Tolley (Harvard), Nicola Bezzo (UPenn), Cagdas Onal (WPI)}
 {
 A future enriched by personal on-demand programmable robots will require multi-disciplinary advancements across a range of research areas. New algorithms and programming languages will be necessary to define, evaluate, and optimize behavioral specifications and designs. New paradigms and tools will be needed for on-demand design generation. And new fabrication methods will be needed to realize custom electromechanical devices. Within this workshop, we aim to bring together researchers pushing forward the state of the art in these and related fields. Through talks and discussions, this workshop will seek to identify key issues facing the realization of custom cyber-physical systems; by gathering like-minded researchers together, we can address these issues and begin to develop a roadmap for upcoming research. This interactive, multi-prong, cross-disciplinary workshop will define and advance the future of robot making.
 }
@@ -174,6 +187,7 @@ A future enriched by personal on-demand programmable robots will require multi-d
 
 
 \descriptionWorkshop{SAT13}{Saturday, Room 206}{Workshop on Robotics Methods for Structural and Dynamic Modeling of Molecular Systems}{https://cs.unm.edu/amprg/rss14workshop/}
+{Lydia Tapia (University of New Mexico), Juan Cortes (LAAS/CNRS), Jianlin Jack Cheng (Missouri), Amarda Shehu (George Mason) Kasra Manavi (University of New Mexico)}
 {
 Biological macromolecules such as proteins or RNA, at the atomic scale, can be seen as extremely complex mobile systems. The development of methods for modeling the structure and the motion of such systems is essential to better understand their physiochemical properties and biological functions. In recent years, many computer scientists in Robotics and Artificial Intelligence (AI) have made significant contributions to modeling biological systems. Research expertise in planning, search, learning, evolutionary computation, constraint programming, machine learning, data mining is being used to make great progress on molecular motion, structure prediction, and design. 
 
@@ -183,8 +197,9 @@ Interaction between the sub-communities of robotics, AI, and molecular modeling 
 }
 
 
-
+\clearpage
 \descriptionWorkshop{SAT14}{Saturday, Room 100}{Workshop on Women in Robotics}{http://www.cs.mcgill.ca/~jpineau/rss14-wir.html}
+{Joelle Pineau (McGill University), Andrea Tomaz (Georgia Institute of Technology), Maren Bennewitz (University of Freiburg), Leila Takayama (Google)}
 {
 Robotics is undergoing tremendous growth in recent years, over a wide range of important areas, from transportation, to manufacturing, entertainment, space exploration, health-care and education. While the field is progressing forward, both in research findings and industrial markets, the percentage of female roboticists continues to lag far behind their male counterparts. By organizing the first Workshop on Women in Robotics, we aim to: (1) raise visibility of women in robotics by presenting invited talks by women that are leaders in the field, (2) strengthen the community and provide an opportunity for networking by providing an event dedicated to women in robotics, (3) foster mentorship of junior female researchers via a poster session and travel awards.
 }
@@ -194,6 +209,7 @@ Robotics is undergoing tremendous growth in recent years, over a wide range of i
 \vspace*{-1.0cm}
 
 \descriptionWorkshop{SUN1}{Sunday, Room 100}{Affordances in Vision for Cognitive Robotics}{http://affordances.info/workshops/RSS.html/}
+{Karthik Mahesh Varadarajan (Technical University of Vienna), Markus Vincze (Technical University of Vienna), Trevor Darrell (University of California, Berkeley), Jürgen Gall (University of Bonn)}
 {
 Based on the Gibsonian principle of defining objects by their function, "affordances" have been studied extensively by psychologists and visual perception researchers, resulting in the creation of numerous cognitive models. These models are being increasingly revisited and adapted by computer vision and robotics researchers to build cognitive models of visual perception and behavioral algorithms in recent years. This workshop attempts to explore this nascent, yet rapidly emerging field of affordance based cognitive robotics while integrating the efforts and language of affordance communities not just in computer vision and robotics, but also psychophysics and neurobiology by creating an open affordance research forum, feature framework and ontology called AfNet (theaffordances.net). In particular, the workshop will focus on emerging trends in affordances and other human-centered function/action features that can be used to build computer vision and robotic applications. The workshop also features contributions from researchers involved in traditional theories to affordances, especially from the point of view of psychophysics and neuro-biology. Avenues to aiding research in these fields using techniques from computer vision and cognitive robotics will also be explored.
 
@@ -202,19 +218,20 @@ The workshop also seeks to address key challenges in robotics with regard to fun
 
 
 \descriptionWorkshop{SUN2}{Sunday, Room 122}{Communication-aware Robotics: New Tools for Multi-Robot Networks, Autonomous Vehicles, and Localization}{http://groups.csail.mit.edu/drl/wiki/index.php?title=RSS_2014_Proposed_Workshop/}
+{Daniela Rus (MIT), Stephanie Gil (MIT), Nora Ayanian (USC), Swarun Kumar (MIT)}
 {
 Recent advances in communication are enabling teams of robots to achieve new and exciting capabilities. Of current interest in the robotics literature are multi-agent teams for their applications to distributed exploration, search and rescue, and in the near future, global connectivity. The effectiveness of these coordinated systems inherently depends on communication infrastructure and hinges on the assumption of adequate inter-agent communication. This necessitates the development of robust communication tools with guaranteed performance in real-world environments.
 
 Emerging technologies in the communications field include using information exchange as a virtual sensor to be used by autonomous cars in future networked cities, leveraging WiFi to "see through walls" to track people or objects behind occlusions, and processing of wireless signals for the purpose of localization in an environment. From providing the necessary communication quality guarantees to achieve coordination tasks amongst robot teams in real-world environments, to using wireless signals as sensors for localization and/or tracking, cutting edge advancements in communication are becoming a critical component of future robotic systems. The potential for robotic systems that are tightly coupled with the newest and most capable tools in communication is pressing. However, in order for us to achieve these goals we must encourage collaboration between the largely independent fields of communication and robotics.
 
 The goal of this full day workshop is to bring together leaders of both fields to discuss recent and targeted advances in communication for robotic systems, identify the major needs and challenges in translating these capabilities to practical arenas, and encourage an exchanging of ideas from robotics and communication experts to tackle these challenges towards development of high performing and reliable networked multi-agent systems for the real-world.
-
 }
 
 
-
+\clearpage
 \descriptionWorkshop{SUN3}{Sunday, Room 210}{Constrained Decision-making in Robotics: Models, Algorithms, and Applications
 }{http://robotics.ucmerced.edu/RSS2014Workshop}
+{Stefano Carpin (University of California, Merced), Marco Pavone (Stanford University)}
 {
 As the complexity of robotic tasks grows, robotic decision makers increasingly face the problem of trading off different objectives. For example, a rescue robot might be required to plan trajectories so as to maximize the probability of success to reach a victim and, at the same time, minimize the duration of the traversal (a task often contrasting the one of ensuring safety). A natural framework for this class of problems is constrained decision-making, whereby a decision maker seeks to optimize a given cost function (often stochastic) while keeping other costs (usually involving risk assessments) below given bounds. In the last decade, the operations research community has made significant strides on the topics of constrained decision-making (notoriously more challenging than the unconstrained counterpart) and risk assessments in dynamic scenarios. The result is a comprehensive theory and a set of algorithmic tools for (risk)-constrained decision-making. Yet, despite their relevance, these results have seen limited application within the robotics domain. Accordingly, the objective of this workshop is threefold: 
 
@@ -228,6 +245,7 @@ As the complexity of robotic tasks grows, robotic decision makers increasingly f
 
 
 \descriptionWorkshop{SUN4}{Sunday, Room 220}{Dynamic Locomotion}{http://www.dynamiclocomotion.org/}
+{Aaron Ames (Texas A\& M), Koushil Sreenath (CMU)}
 {
 Locomotion has received great interest in recent years, especially during the ongoing DARPA Robotics Challenge (DRC).  Legged locomotion is challenging because it combines the challenges of dealing with periodic motions, high degree-of-freedom systems, nonlinear and hybrid dynamics, underactuation, and unilateral constraints.  This has led to most approaches approaches that appear in practice, e.g., at the DRC, to be predominantly flat-footed, slow and quasi-static.  The goal of this workshop is to put together leaders in dynamic locomotion, from controls, dynamics and robotics communities, to foster a platform for exchanging ideas to enable complex experimental robots to exhibit dynamic locomotion.
 }
@@ -235,6 +253,7 @@ Locomotion has received great interest in recent years, especially during the on
 
 
 \descriptionWorkshop{SUN5}{Sunday, Room 24}{Guaranteed Safety for Uncertain Robotic Systems}{http://hybrid.eecs.berkeley.edu/workshops/2014/RSS/safety}
+{Jeremy Gillula (UC Berkeley), Shahab Kaynama (UC Berkeley)}
 {
 Automated systems are increasingly being used in uncontrolled environments by people who are not robotics experts: autonomous automobiles are being driven on public roads, robotic surgery systems are becoming standard in hospitals, and the FAA will soon pass rules allowing UAVs to fly in US airspace, just to name a few. A common theme among these and other examples is that a modern robot's workspace is less likely to be a meticulously designed factory floor, and more likely to be an everyday place like a road or a small business. In order to enable robots to successfully make this transition, however, we must be able to guarantee that the robots we create are safe even in the face of uncertainty.
 
@@ -244,6 +263,7 @@ This workshop will thus focus on how to design algorithms for guaranteeing safet
 
 
 \descriptionWorkshop{SUN6}{Sunday, Room 203}{Humans and Sensing in Cyber-Physical Systems}{http://ieor.berkeley.edu/~aaswani/rss14_cps/}
+{Anil Aswani (UC Berkeley), Ram Vasudevan (MIT)}
 {
 Sensor limitations, natural disasters, and adversarial users pose unique challenges during the design of networked robotic systems interacting with the environment. Traditional models of uncertainty for these cyber-physical systems utilize stochasticity, game theory, or worst-case analysis, but integration of such models into the design and validation process of cyber-physical systems has languished due to computational and theoretical limitations. This workshop will cover some of the current work in the field of integrating sensors and humans with cyber-physical systems and its application to infrastructure and automation systems.
 }
@@ -251,54 +271,57 @@ Sensor limitations, natural disasters, and adversarial users pose unique challen
 
 
 \descriptionWorkshop{SUN7}{Sunday, Room 200}{Information-based Grasp and Manipulation Planning}{http://rll.berkeley.edu/RSS2014Workshop}
+{Sachin Patil (UC Berkeley), Robert Platt Jr. (Northeastern University)}
 {
 In order for robots to perform grasping and manipulation tasks robustly in the presence of environmental uncertainty, it is important to be able to reason about the acquisition of perceptual knowledge and to perform information gathering actions as necessary. This is especially important today because many recently developed inexpensive robots sacrifice actuator accuracy and performance for cost savings. In order for this tradeoff to work, it is necessary to make up for actuator error with improved perceptual capabilities.
 
 This workshop will focus on the intersection between grasping/manipulation and planning under uncertainty. One the one hand, we are interested in planning algorithms that enable a robot to reason about how to obtain relevant information in the context of performing a task. On the other, we are looking for ways that these planning algorithms can make robot grasping and manipulation more robust. We envision a robot manipulation system that gains information by interacting with objects (touching, pushing, changing viewing perspective, etc.) in order to perform grasping, placement, insertion, assembly, or other tasks more robustly.
 
 This workshop will bring together researchers working in sensing and perception, grasp and motion planning, and information/belief space planning to discuss the current state of the art and identify new research opportunities.
-
-
 }
 
 
 \descriptionWorkshop{SUN8}{Sunday, Room 123}{Learning Plans with Context from Human Signals}{http://learningplans.cs.cornell.edu/}
+{Drew Bagnell (CMU), Ashesh Jain (Cornell), Jan Peters (TU Darmstadt), Ashutosh Saxena (Cornell)}
 {
 This workshop aims at a broader audience and will bring together people from machine learning, planning and HRI communities.
 
 Human environments such as homes, warehouses and offices are very rich with the context of the objects and humans present and the task to be performed. Robots should incorporate this rich context and plan human-preferred motions. Furthermore, the robots should learn from different kinds of human feedback, which can range from optimal demonstrations to sub-optimal incremental signals. From an HRI perspective, signals come in various forms and we need new machine learning techniques to use these signals for meaningful motion planning. Through this workshop we bring together people from the areas of machine learning, planning and HRI to discuss how robots can learn to plan and act in context-rich human environments.
 }
 
-
+\clearpage
 \descriptionWorkshop{SUN9}{Sunday, Room 206}{Managing Software Variability in Robot Control Systems}{http://robotics.unibg.it/tcsoft/rss2014/}
+{Davide Brugali (University of Bergamo), Christian Schlegel (Fakultät Informatik Hochschule Ulm)}
 {
 Sensing, planning, controlling, and reasoning, are human like capabilities that can be artificially replicated in an autonomous robot as software systems, which implement data structures and algorithms devised on a large spectrum of theories, from probability theory, mechanics, and control theory to ethology, economy, and cognitive sciences. Software plays a key role in the development of robotic systems as it is the medium to embody intelligence in the machine. In this scenario, software development is increasingly becoming the bottleneck of robotic system engineering and calls for new approaches and tools that support and promote the software reuse. The routine use of existing solutions in the development of new systems is a key attribute of every mature engineering discipline. While systematic software reuse is a state of the practice development approach in various application domains, such as telecommunications, factory automation, automotive, and avionics, it is still a research issue in Robotics. The tutorial presents a set of model-driven tools that support variability modeling, composition, and resolution of robot software control systems built on popular robotic component-based middlewares and runtime infrastructures. The tools simplify systems configuration and application deployment by system integrators without advanced skills in software development.
-
 }
 
 
 
 \descriptionWorkshop{SUN10}{Sunday, Room 110}{Next-Generation Robotics: Academia, Start-ups and Industry}{http://moveit.ros.org/rss-2014-workshop/}
+{Sachin Chitta (SRI International), Ioan Sucan (Google Inc.), Torsten Kroeger (Stanford University)}
 {
 This full-day workshop is intended to bring before the RSS audience speakers from industry and start-ups. In the morning session, industry experts from different domains including automation, manufacturing, automobile, aerospace, healthcare will talk about the next-generation of problems for robotics to address. They will talk about the need for new types of robots and capabilities, the research directions that academia could take and the potential for greater industry-academic collaboration. In the afternoon session, founders and other members from start-ups in Robotics will talk about their experience in creating start-ups and bringing new technology to the market, the opportunities for new companies to emerge in the field and the lessons learned. Audience participation will be encouraged through panel discussions in each of the sessions with the opportunity for the audience to interact with the panelists.
 }
 
 
 \descriptionWorkshop{SUN11}{Sunday, Room 213}{Self-Driving Vehicles: Technology and Policy}{http://jleonard.scripts.mit.edu/sdv/}
+{John Leonard (MIT), Jesse Levinson (Stanford)}
 {
 The goal of this workshop is to explore the fast-changing topic of self-driving vehicles, from the perspectives of robotics research and policy.  Led by the efforts of Google and many leading automobile manufacturers, interest in the field of self-driving vehicles has surged in the past several years.  This workshop will solicit contributions in the core technologies of mobile robotics that underpin self-driving vehicles, including: sensors, localization, mapping, path-planning and control, and human-machine interfaces.  We will also bring in policy experts  to discuss some of the potential legal and economic impacts of this transformative technology.
 }
 
-
+\clearpage
 \descriptionWorkshop{SUN12}{Sunday, Room 106}{Advances on Soft Robotics}{http://www.robosoftca.eu/events/RSS2014-workshop}
+{Cecilia Laschi (Scuola Superiore Sant'Anna), Fumiya Iida (ETH), Jonathan Rossiter (University of Bristol), Laura Margheri (Scuola Superiore Sant'Anna)}
 {
 This one day Workshop will gather experts across multiple fields in the scientific community of soft robotics. The workshop is organized to be part of the series of scientific events planned in the framework of RoboSoft Coordination Action (European Commission funded project under FP7-ICT-2013-C, Future and Emerging Technologies FET-Open scheme, \url{http://www.robosoftca.eu/}) aimed at bringing together researchers to enable the step-change in technologies and standards needed to advance soft robotics.
 
 Invited talks, contributed paper talks and roundtable sessions will discuss the development of general theories, new and non-conventional approaches and techniques for most of the technologies involved in soft robotics, like smart soft materials, soft (muscle-like) actuators, soft sensors, modelling and control of soft robots, energy harvesting, design principles for soft robotics and morphological computation. Thanks to the high interdisciplinarity of the field of soft robotics the event will gather together researchers of different scientific background and potential stakeholders.
-
 }
 
 \descriptionWorkshop{SUN13}{Sunday, Room 130}{Workshop on Multi-View Geometry in Robotics (MVIGRO 2014)}{http://www.cc.gatech.edu/events/mvigro/}
+{Vadim Indelman (GaTech), Luca Carlone (GaTech), Frank Dellaert (GaTech)}
 {
 Following up on the success and the broad participation in MVIGRO 2013, this workshop brings together researchers from the robotics and computer vision communities, to discuss recent advances in multiple view geometry with application to robotics. Multi-view geometry plays a key role in many areas of robotics and ongoing research includes different fields such as visual servoing and control, surveillance, indoor and outdoor vision-aided navigation, simultaneous localization and mapping (SLAM), cooperative localization, detection of moving objects and operation in dynamic environments. While the research field witnessed a proliferation of excellent contributions and working solutions, some challenges still stand on the way to fully autonomous robots. Examples of these challenges are long-term robust operation (e.g. autonomous driving), ability to deal with dynamic, deformable, and cluttered environments (e.g., robot-assisted surgery or navigation in human populated environments), and high level scene understanding (e.g., object recognition and tracking). Harnessing the full potential of multiple view geometry can address these challenges, enhancing the societal impact of robotics. 
 
@@ -307,10 +330,9 @@ This workshop aims to bring forward the latest breakthroughs and cutting edge re
 
 
 \descriptionWorkshop{SUN14}{Sunday, Room 101}{Workshop on Robotic Monitoring}{http://cinaps.usc.edu/rss2014/}
+{Andreas Breitenmoser (USC), Jorg Muller (USC), Jnaneshwar Das (USC), Ryan Smith (USC), Carrick Detweiler (University of Nebraska-Lincoln Lincoln)}
 {
 The goal of this workshop is to bring together researchers from various fields to present and discuss recent advances in robotic monitoring. Limited sensing capabilities while monitoring vast areas pose fundamental challenges in the deployment and coordination of autonomous mobile robots. Intelligent algorithms can facilitate efficient robotic monitoring by adaptively selecting the most interesting regions to observe and by leveraging the coordinated planning and control of (complementary heterogeneous) teams of robots. The underlying state estimation, planning, and information-theoretic decision making algorithms must be integrated into robust real-world robotic systems. By this workshop, we want to stimulate the exchange of recent achievements in theory and application among researchers working in environmental monitoring, industrial inspection, persistent coverage and surveillance, and other related fields. We hope that this will lead the way toward advancing and integrating existing and new techniques for effective robots and cyber-physical systems in monitoring tasks.
-
-
 }
 
 \clearpage
