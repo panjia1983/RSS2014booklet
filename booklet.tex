@@ -224,16 +224,24 @@
 
 \include{tex/reviewers}  %credit to reviewers
 
-\include{tex/sponsors}   %contains the broad schedule of all days
-
 \ifthenelse{\equal{\targetoutput}{print}}{
 \phantomsection \chapter{Personal Notes}
 \mbox{}
 \clearpage
+}{}
+\ifthenelse{\equal{\targetoutput}{print}}{
+\phantomsection \chapter{Personal Notes}
 \mbox{}
-\thispagestyle{empty}
 \clearpage
 }{}
+\ifthenelse{\equal{\targetoutput}{print}}{
+\phantomsection \chapter{Personal Notes}
+\mbox{}
+\clearpage
+}{}
+
+\include{tex/sponsors}   %contains the broad schedule of all days
+
 %
 
 %%\clearpage
